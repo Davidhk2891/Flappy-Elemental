@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 /*
@@ -5,16 +6,16 @@ using UnityEngine;
 - Moves at a fixed speed
 - Using Time.deltaTime (so it's smooth)
 - Keeps all the movement on the parent (not the child)
-
+- Scrolls left at a fixed rate
+- Deactivates itself when off-screen (ready for pooling)
 This will be the vase for all animated obstacles later
 */
-public class BouncerObstacle : MonoBehaviour
+public class BouncerController : BaseObjectController
 {
-
+    [Header("Vertical Movement")]
     public float topLimit = 3f;
     public float bottomLimit = -4f;
     public float moveSpeed = 2f;
-
     private bool movingUp = true;
 
     void Start()
@@ -22,9 +23,17 @@ public class BouncerObstacle : MonoBehaviour
         
     }
 
-    void Update()
+    protected override void Update()
     {
-        // Move up or down based on direction
+        // Leftward motion + off-screen kill check
+        base.Update();
+        // Own child behaviour
+        VerticalMovement();
+    }
+    
+    // Move up or down based on direction
+    private void VerticalMovement()
+    {
         if (movingUp)
         {
             transform.position += moveSpeed * Time.deltaTime * Vector3.up;
@@ -35,7 +44,7 @@ public class BouncerObstacle : MonoBehaviour
         else
         {
             transform.position += moveSpeed * Time.deltaTime * Vector3.down;
-            if (transform.position.y <= bottomLimit) movingUp = true; 
+            if (transform.position.y <= bottomLimit) movingUp = true;
         }
     }
 }
