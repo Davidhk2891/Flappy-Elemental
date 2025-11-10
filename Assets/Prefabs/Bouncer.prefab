@@ -110,6 +110,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22bf69596bc6a474ebda96f8ab2cd548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BouncerObstacle
+  moveSpeedX: 2
+  deadZone: -5
   topLimit: 3
   bottomLimit: -4
   moveSpeed: 5
@@ -192,8 +194,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: d645d644fd1854264a609c8f300b840d, type: 3}
-  m_Color: {r: 0.8773585, g: 0.15312389, b: 0.15312389, a: 1}
+  m_Sprite: {fileID: -6857145063815349584, guid: d4c7db63410c94649b7c26e6fff7bb7c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
