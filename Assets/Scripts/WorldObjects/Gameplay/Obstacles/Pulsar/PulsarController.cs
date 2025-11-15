@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PulsarController : MonoBehaviour
@@ -6,30 +7,66 @@ public class PulsarController : MonoBehaviour
     [Header("Pulse Settings")]
     // Reference to PulsarSprite transform
     public Transform sprite;
-    // Smallest size
-    public float minScale = 0.8f;
-    // Largest size
-    public float maxScale = 1.5f;
-    // Pulse speed
-    public float pulseSpeed = 6f;
     
-    // Pulse timer
-    private float pulseTimer = 0f;
+    // Resting size
+    public float baseScale = 1f;
+    // Minimum spike
+    public float minPulseScale = 0.5f;
+    // Maximum spike
+    public float maxPulseScale = 1f;
+
+    // Fast expansion
+    public float growSpeed = 8f;
+    // Slow contraction
+    public float shrinkSpeed = 2f;
+    // Time it stays big
+    public float holdDuration = 0.25f;
+
+    private float targetScale;
+    private float holdTimer;
+    private enum PulseState
+    {
+        Growing,
+        Holding,
+        Shrinking
+    }
+    private PulseState state = PulseState.Growing;
+
+    void Start()
+    {
+        // Pick first random pulse size
+        targetScale = Random.Range(minPulseScale, maxPulseScale);
+        sprite.localScale = Vector3.one * baseScale;
+    }
 
     void Update()
     {
-        Pulse();
+        switch (state)
+        {
+            case PulseState.Growing:
+                Grow();
+                break;
+            case PulseState.Holding:
+                Hold();
+                break;
+            case PulseState.Shrinking:
+                Shrink();
+                break;
+        }
     }
 
-    private void Pulse()
+    private void Grow()
     {
-        pulseTimer += Time.deltaTime * pulseSpeed;
+        
+    }
 
-        // Sine oscillation: 0 -> 1 -> 0 - > 1...
-        float t = (Mathf.Sin(pulseTimer) + 1f) * 0.5f;
+    private void Hold()
+    {
+        
+    }
 
-        float scale = Mathf.Lerp(minScale, maxScale, t);
-
-        sprite.localScale = new Vector3(scale, scale, 1f);
+    private void Shrink()
+    {
+        
     }
 }
