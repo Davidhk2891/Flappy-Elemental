@@ -17,6 +17,12 @@ public class BouncerSpawner : MonoBehaviour
 
     private float timer = 0f;
 
+    //New arrays for randimez Y coordinates
+
+    [Header("Spawn Positions")]
+    public float[] possibleYPositions = new float[] { -3f, -1.5f, 0f, 1.5f, 3f };
+
+
     void Update()
     {
         timer += Time.deltaTime;
@@ -33,11 +39,24 @@ public class BouncerSpawner : MonoBehaviour
         GameObject bouncer = bouncerPool.GetBouncer();
         bouncer.transform.SetParent(environmentParent);
 
-        if (bouncer != null)
+        if (bouncer == null)
+            return;
+            
+ bouncer.transform.SetParent(environmentParent);
+
+        float randomY;
+
+        if (possibleYPositions != null && possibleYPositions.Length > 0)
         {
-            float randomY = Random.Range(minY, maxY);
-            bouncer.transform.position = new Vector3(spawnX, randomY, 0f);
-            bouncer.SetActive(true);
+            int index = Random.Range(0, possibleYPositions.Length);
+            randomY = possibleYPositions[index];
         }
+        else
+        {
+            randomY = Random.Range(minY, maxY);
+        }
+
+        bouncer.transform.position = new Vector3(spawnX, randomY, 0f);
+        bouncer.SetActive(true);
     }
 }

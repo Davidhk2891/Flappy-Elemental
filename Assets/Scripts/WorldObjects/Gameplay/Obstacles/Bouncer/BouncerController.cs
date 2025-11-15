@@ -18,19 +18,46 @@ public class BouncerController : BaseObjectController
     public float moveSpeed = 2f;
     private bool movingUp = true;
 
+
+    [Header("Animation Frames")]            // NEW
+    public Sprite[] animationFrames;        // NEW
+    public float animationSpeed = 0.1f;  
+
+
+    private SpriteRenderer sr;              // NEW
+    private int frameIndex = 0;             // NEW
+    private float frameTimer = 0f;          // NEW
+
     void Start()
     {
-        
+        sr = GetComponent<SpriteRenderer>();     // NEW
     }
 
     protected override void Update()
     {
         // Leftward motion + off-screen kill check
         base.Update();
-        // Own child behaviour
+
+        Animate();           // NEW
         VerticalMovement();
     }
-    
+
+    // NEW
+    private void Animate()
+    {
+        if (animationFrames == null || animationFrames.Length == 0)
+            return;
+
+        frameTimer += Time.deltaTime;
+
+        if (frameTimer >= animationSpeed)
+        {
+            frameIndex = (frameIndex + 1) % animationFrames.Length;
+            sr.sprite = animationFrames[frameIndex];
+            frameTimer = 0f;
+        }
+    }
+
     // Move up or down based on direction
     private void VerticalMovement()
     {
@@ -38,13 +65,15 @@ public class BouncerController : BaseObjectController
         {
             transform.position += moveSpeed * Time.deltaTime * Vector3.up;
 
-            // Check if we reached the top
-            if (transform.position.y >= topLimit) movingUp = false;
+            if (transform.position.y >= topLimit)
+                movingUp = false;
         }
         else
         {
             transform.position += moveSpeed * Time.deltaTime * Vector3.down;
-            if (transform.position.y <= bottomLimit) movingUp = true;
+
+            if (transform.position.y <= bottomLimit)
+                movingUp = true;
         }
     }
 }

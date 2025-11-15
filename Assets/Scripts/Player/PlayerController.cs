@@ -6,12 +6,14 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rb;
     private SpriteRenderer sr;
-    public float flapStrength = 5f;
+    public float flapStrength = 5f; //Twea
 
     [Header("Kirby Sprites")]
+       //Guille added more animations in the idle
     public Sprite kirbyIdle;
-    public Sprite kirbyFlap;
-    public float flapDuration = 0.15f;
+    public Sprite[] kirbyFlap;
+
+    public float flapDuration = 0.15f; // Tweak
 
     void Start()
     {
@@ -32,11 +34,15 @@ public class PlayerController : MonoBehaviour
     }
 
     private IEnumerator FlapAnimation()
+{
+    foreach (Sprite s in kirbyFlap)
     {
-        sr.sprite = kirbyFlap;
-        yield return new WaitForSeconds(flapDuration);
-        sr.sprite = kirbyIdle;
+        sr.sprite = s;
+        yield return new WaitForSeconds(flapDuration / kirbyFlap.Length);
     }
+
+    sr.sprite = kirbyIdle;
+}
 
     void OnCollisionEnter2D(Collision2D collision)
     {
