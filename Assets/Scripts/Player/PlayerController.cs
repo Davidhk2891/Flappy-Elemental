@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rb;
     private SpriteRenderer sr;
-    public float flapStrength = 5f;
+    public float flapStrength = 10f;
 
     [Header("Kirby Sprites")]
     public Sprite kirbyIdle;

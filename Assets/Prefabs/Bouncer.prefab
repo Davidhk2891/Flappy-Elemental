@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8396472697543004408}
-  - component: {fileID: 2928593065356860890}
+  - component: {fileID: 5044563199187322684}
   - component: {fileID: 3359472631770660212}
   - component: {fileID: 4208178228117934870}
   m_Layer: 0
@@ -29,14 +29,14 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -4, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.8, y: 1.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2949966845322091804}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &2928593065356860890
-CircleCollider2D:
+--- !u!60 &5044563199187322684
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -70,7 +70,37 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.39360672, y: 0.5948165}
+      - {x: 0.2737877, y: 0.67460763}
+      - {x: -0.026655527, y: 0.64420795}
+      - {x: -0.1908552, y: 0.6100104}
+      - {x: -0.41751993, y: 0.46466076}
+      - {x: -0.48184425, y: 0.34868544}
+      - {x: -0.507155, y: 0.19294408}
+      - {x: -0.5720014, y: 0.024404392}
+      - {x: -0.57533944, y: -0.16877995}
+      - {x: -0.51279163, y: -0.30975318}
+      - {x: -0.5022407, y: -0.39392313}
+      - {x: -0.5646319, y: -0.43084595}
+      - {x: -0.5406791, y: -0.5427536}
+      - {x: -0.37307823, y: -0.6662381}
+      - {x: -0.077148706, y: -0.67543834}
+      - {x: 0.17550308, y: -0.52214885}
+      - {x: 0.41601887, y: -0.31085786}
+      - {x: 0.5676412, y: -0.1373731}
+      - {x: 0.56516755, y: 0.36304158}
+  m_UseDelaunayMesh: 0
 --- !u!50 &3359472631770660212
 Rigidbody2D:
   serializedVersion: 5
@@ -109,12 +139,12 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 22bf69596bc6a474ebda96f8ab2cd548, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BouncerObstacle
-  moveSpeedX: 2
-  deadZone: -5
-  topLimit: 3
-  bottomLimit: -4
-  moveSpeed: 5
+  m_EditorClassIdentifier: Assembly-CSharp::BouncerController
+  moveSpeedX: 4
+  deadZone: -9
+  topLimit: 8
+  bottomLimit: -10
+  moveSpeed: 8
 --- !u!1 &2394982680879006913
 GameObject:
   m_ObjectHideFlags: 0

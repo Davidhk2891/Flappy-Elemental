@@ -6,19 +6,22 @@ public class SegmentSpawner : MonoBehaviour
     [Header("Pipe set Settings")]
     public PipePool pipePool;
     public Transform pipeSetEnvironment;
-    public float pipeSpawnX = 5f;
-    public float pipeHeightOffset = 1f;
+    public float pipeSpawnX = 10f;
+    public float pipeHeightOffset = 4f;
 
     [Header("Obstacle segment Settings")]
     public BouncerPool bouncerPool;
     public Transform obstacleEnvironment;
     public int obstaclesPerSegment = 5;
-    public float delayBeforeObstacles = 1.5f;
-    public float intervalBetweenObstacles = 2.5f;
-    public float delayAfterObstacles = 1.0f;
-    public float obstacleSpawnX = 5f;
+    public float delayBeforeObstacles = 2.5f;
+    public float intervalBetweenObstacles = 3f;
+    public float delayAfterObstacles = 1f;
+    public float obstacleSpawnX = 10f;
     public float obstacleMinY = -3f;
     public float obstacleMaxY = 3f;
+
+    [Header("Checkpoint")]
+    public float checkpointPipeGap = 3f;
 
     private void Start()
     {
@@ -47,7 +50,7 @@ public class SegmentSpawner : MonoBehaviour
             SpawnPipeSet();
 
             // Delay before next segment (this will change)
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(checkpointPipeGap);
         }
     }
 
