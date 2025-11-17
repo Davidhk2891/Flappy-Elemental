@@ -11,6 +11,7 @@ public class SegmentSpawner : MonoBehaviour
 
     [Header("Obstacle segment Settings")]
     public BouncerPool bouncerPool;
+    public PulsarPool pulsarPool;
     public Transform obstacleEnvironment;
     public int obstaclesPerSegment = 5;
     public float delayBeforeObstacles = 2.5f;
@@ -75,9 +76,15 @@ public class SegmentSpawner : MonoBehaviour
     private void SpawnObstacle()
     {
         // Bouncer
-        GameObject bouncer = bouncerPool.GetBouncer();
-        bouncer.transform.SetParent(obstacleEnvironment);
-        bouncer.transform.position = new Vector3(obstacleSpawnX, 0f, 0f);
-        bouncer.SetActive(true);
+        // GameObject bouncer = bouncerPool.GetBouncer();
+        // bouncer.transform.SetParent(obstacleEnvironment);
+        // bouncer.transform.position = new Vector3(obstacleSpawnX, 0f, 0f);
+        // bouncer.SetActive(true);
+
+        // Pulsar
+        GameObject pulsar = pulsarPool.GetPulsar();
+        pulsar.transform.SetParent(obstacleEnvironment);
+        pulsar.transform.position = new Vector3(obstacleSpawnX, 0f, 0f);
+        pulsar.SetActive(true);
     }
 }
