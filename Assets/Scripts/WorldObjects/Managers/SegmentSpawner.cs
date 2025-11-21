@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.AI;
+using System.Collections.Generic;
 
 public class SegmentSpawner : MonoBehaviour
 {
@@ -86,5 +88,7 @@ public class SegmentSpawner : MonoBehaviour
         pulsar.transform.SetParent(obstacleEnvironment);
         pulsar.transform.position = new Vector3(obstacleSpawnX, 0f, 0f);
         pulsar.SetActive(true);
+
+        
     }
 }
