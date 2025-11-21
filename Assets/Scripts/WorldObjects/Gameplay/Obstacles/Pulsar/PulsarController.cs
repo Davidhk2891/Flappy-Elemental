@@ -4,8 +4,6 @@ public class PulsarController : BaseObjectController
 {
 
     [Header("Pulse Settings")]
-    // Reference to PulsarSprite transform
-    public Transform sprite;
     // Resting size
     public float baseScale = 0.5f;
     // Minimum spike

@@ -203,9 +203,9 @@ MonoBehaviour:
   moveSpeedX: 4
   deadZone: -9
   sprite: {fileID: 2750907822678285471}
-  baseScale: 2
-  minPulseScale: 2.5
-  maxPulseScale: 2.5
+  baseScale: 0.5
+  minPulseScale: 0.5
+  maxPulseScale: 1
   growSpeed: 10
   shrinkSpeed: 1.5
   holdDuration: 1
