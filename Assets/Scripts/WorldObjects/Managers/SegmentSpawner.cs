@@ -22,9 +22,11 @@ public class SegmentSpawner : MonoBehaviour
     public float obstacleSpawnX = 10f;
     public float obstacleMinY = -3f;
     public float obstacleMaxY = 3f;
+    public ObstacleType[] obstacleTypes;
 
     [Header("Checkpoint")]
     public float checkpointPipeGap = 3f;
+
 
     private void Start()
     {
@@ -65,7 +67,7 @@ public class SegmentSpawner : MonoBehaviour
 
         float randomY = Random.Range(lowestPoint, highestPoint);
 
-        GameObject pipeSet = pipePool.GetPipe();
+        GameObject pipeSet = pipePool.GetObject();
         pipeSet.transform.SetParent(pipeSetEnvironment);
         pipeSet.transform.SetPositionAndRotation
         (
@@ -77,18 +79,42 @@ public class SegmentSpawner : MonoBehaviour
     
     private void SpawnObstacle()
     {
-        // Bouncer
-        // GameObject bouncer = bouncerPool.GetBouncer();
-        // bouncer.transform.SetParent(obstacleEnvironment);
-        // bouncer.transform.position = new Vector3(obstacleSpawnX, 0f, 0f);
-        // bouncer.SetActive(true);
+        // Pick based on weight
+        ObstacleType type = PickRandomObstacleType();
 
-        // Pulsar
-        GameObject pulsar = pulsarPool.GetPulsar();
-        pulsar.transform.SetParent(obstacleEnvironment);
-        pulsar.transform.position = new Vector3(obstacleSpawnX, 0f, 0f);
-        pulsar.SetActive(true);
+        // Get object from its pool
+        GameObject obstacle = type.pool.GetObject();
 
+        // Parent it
+        obstacle.transform.SetParent(obstacleEnvironment);
+
+        // Spawn position (X controlled here, Y controlled by each obstacle internally)
+        obstacle.transform.position = new Vector3(obstacleSpawnX, 0f, 0f);
+
+        // Enable it (object pooling)
+        obstacle.SetActive(true);
+    }
+
+    private ObstacleType PickRandomObstacleType()
+    {
+        // 1. Calculate total weight
+        int totalWeight = 0;
+        foreach (var o in obstacleTypes)
+            totalWeight += o.weight;
         
+        // 2. Get random number
+        int random = Random.Range(0, totalWeight);
+
+        // 3. Walk through ranges until we match
+        int cumulative = 0;
+        foreach (var o in obstacleTypes)
+        {
+            cumulative += o.weight;
+            if (random < cumulative)
+                return o;
+        }
+
+        // 4. Fallback (should never happen)
+        return obstacleTypes[0];       
     }
 }
