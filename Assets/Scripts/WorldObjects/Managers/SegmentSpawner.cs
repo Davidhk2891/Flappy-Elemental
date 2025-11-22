@@ -1,24 +1,32 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.AI;
+using System.Collections.Generic;
 
 public class SegmentSpawner : MonoBehaviour
 {
     [Header("Pipe set Settings")]
     public PipePool pipePool;
     public Transform pipeSetEnvironment;
-    public float pipeSpawnX = 5f;
-    public float pipeHeightOffset = 1f;
+    public float pipeSpawnX = 10f;
+    public float pipeHeightOffset = 4f;
 
     [Header("Obstacle segment Settings")]
     public BouncerPool bouncerPool;
+    public PulsarPool pulsarPool;
     public Transform obstacleEnvironment;
     public int obstaclesPerSegment = 5;
-    public float delayBeforeObstacles = 1.5f;
-    public float intervalBetweenObstacles = 2.5f;
-    public float delayAfterObstacles = 1.0f;
-    public float obstacleSpawnX = 5f;
+    public float delayBeforeObstacles = 2.5f;
+    public float intervalBetweenObstacles = 3f;
+    public float delayAfterObstacles = 1f;
+    public float obstacleSpawnX = 10f;
     public float obstacleMinY = -3f;
     public float obstacleMaxY = 3f;
+    public ObstacleType[] obstacleTypes;
+
+    [Header("Checkpoint")]
+    public float checkpointPipeGap = 3f;
+
 
     private void Start()
     {
@@ -47,7 +55,7 @@ public class SegmentSpawner : MonoBehaviour
             SpawnPipeSet();
 
             // Delay before next segment (this will change)
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(checkpointPipeGap);
         }
     }
 
@@ -59,7 +67,7 @@ public class SegmentSpawner : MonoBehaviour
 
         float randomY = Random.Range(lowestPoint, highestPoint);
 
-        GameObject pipeSet = pipePool.GetPipe();
+        GameObject pipeSet = pipePool.GetObject();
         pipeSet.transform.SetParent(pipeSetEnvironment);
         pipeSet.transform.SetPositionAndRotation
         (
@@ -71,10 +79,42 @@ public class SegmentSpawner : MonoBehaviour
     
     private void SpawnObstacle()
     {
-        // Bouncer
-        GameObject bouncer = bouncerPool.GetBouncer();
-        bouncer.transform.SetParent(obstacleEnvironment);
-        bouncer.transform.position = new Vector3(obstacleSpawnX, 0f, 0f);
-        bouncer.SetActive(true);
+        // Pick based on weight
+        ObstacleType type = PickRandomObstacleType();
+
+        // Get object from its pool
+        GameObject obstacle = type.pool.GetObject();
+
+        // Parent it
+        obstacle.transform.SetParent(obstacleEnvironment);
+
+        // Spawn position (X controlled here, Y controlled by each obstacle internally)
+        obstacle.transform.position = new Vector3(obstacleSpawnX, 0f, 0f);
+
+        // Enable it (object pooling)
+        obstacle.SetActive(true);
+    }
+
+    private ObstacleType PickRandomObstacleType()
+    {
+        // 1. Calculate total weight
+        int totalWeight = 0;
+        foreach (var o in obstacleTypes)
+            totalWeight += o.weight;
+        
+        // 2. Get random number
+        int random = Random.Range(0, totalWeight);
+
+        // 3. Walk through ranges until we match
+        int cumulative = 0;
+        foreach (var o in obstacleTypes)
+        {
+            cumulative += o.weight;
+            if (random < cumulative)
+                return o;
+        }
+
+        // 4. Fallback (should never happen)
+        return obstacleTypes[0];       
     }
 }

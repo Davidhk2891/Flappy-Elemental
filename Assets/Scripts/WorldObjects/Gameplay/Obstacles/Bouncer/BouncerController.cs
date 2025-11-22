@@ -13,9 +13,9 @@ This will be the vase for all animated obstacles later
 public class BouncerController : BaseObjectController
 {
     [Header("Vertical Movement")]
-    public float topLimit = 3f;
-    public float bottomLimit = -4f;
-    public float moveSpeed = 2f;
+    public float topLimit = 8f;
+    public float bottomLimit = -10f;
+    public float moveSpeed = 8f;
     private bool movingUp = true;
 
     void Start()
