@@ -19,5 +19,15 @@ public class TurnerController : BaseObjectController
     protected override void Update()
     {
         base.Update();
+        RotateTurner();
+    }
+
+    private void RotateTurner()
+    {
+        // Move spirte to pivot offset
+        sprite.localPosition = pivotOffset;
+
+        // Rotate the parent (so rotation affects collider)    
+        transform.Rotate(0f, 0f, rotationSpeed * Time.deltaTime);
     }
 }

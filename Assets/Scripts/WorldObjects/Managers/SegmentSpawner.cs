@@ -1,7 +1,5 @@
 using UnityEngine;
 using System.Collections;
-using UnityEngine.AI;
-using System.Collections.Generic;
 
 public class SegmentSpawner : MonoBehaviour
 {
@@ -12,11 +10,9 @@ public class SegmentSpawner : MonoBehaviour
     public float pipeHeightOffset = 4f;
 
     [Header("Obstacle segment Settings")]
-    public BouncerPool bouncerPool;
-    public PulsarPool pulsarPool;
     public Transform obstacleEnvironment;
     public int obstaclesPerSegment = 5;
-    public float delayBeforeObstacles = 2.5f;
+    public float delayBeforeObstacles = 3.5f;
     public float intervalBetweenObstacles = 3f;
     public float delayAfterObstacles = 1f;
     public float obstacleSpawnX = 10f;
