@@ -578,7 +578,7 @@ MonoBehaviour:
   pipeSpawnX: 10
   pipeHeightOffset: 4
   obstacleEnvironment: {fileID: 1470979003}
-  obstaclesPerSegment: 5
+  obstaclesPerSegment: 10
   delayBeforeObstacles: 3.5
   intervalBetweenObstacles: 3
   delayAfterObstacles: 1

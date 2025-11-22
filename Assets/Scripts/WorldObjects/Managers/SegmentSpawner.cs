@@ -11,7 +11,7 @@ public class SegmentSpawner : MonoBehaviour
 
     [Header("Obstacle segment Settings")]
     public Transform obstacleEnvironment;
-    public int obstaclesPerSegment = 5;
+    public int obstaclesPerSegment = 10;
     public float delayBeforeObstacles = 3.5f;
     public float intervalBetweenObstacles = 3f;
     public float delayAfterObstacles = 1f;
