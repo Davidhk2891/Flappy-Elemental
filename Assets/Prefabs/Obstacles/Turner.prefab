@@ -129,6 +129,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TurnerController
   moveSpeedX: 4
   deadZone: -9
+  rotationSpeed: 180
+  pivotOffset: {x: 0.5, y: 0, z: 0}
 --- !u!1 &8637903884517227685
 GameObject:
   m_ObjectHideFlags: 0

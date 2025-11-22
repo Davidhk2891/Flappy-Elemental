@@ -18,11 +18,6 @@ public class BouncerController : BaseObjectController
     public float moveSpeed = 8f;
     private bool movingUp = true;
 
-    void Start()
-    {
-        
-    }
-
     protected override void Update()
     {
         // Leftward motion + off-screen kill check
