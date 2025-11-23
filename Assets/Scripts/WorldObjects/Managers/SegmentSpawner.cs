@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Linq;
 
 public class SegmentSpawner : MonoBehaviour
 {
@@ -93,9 +94,14 @@ public class SegmentSpawner : MonoBehaviour
 
     private ObstacleType PickRandomObstacleType()
     {
+        // Filter out disabled obstacles
+        var activeObstacles = obstacleTypes.Where(o => o.enabled).ToList();
+        if (activeObstacles.Count == 0)
+            return null;
+
         // 1. Calculate total weight
         int totalWeight = 0;
-        foreach (var o in obstacleTypes)
+        foreach (var o in activeObstacles)
             totalWeight += o.weight;
         
         // 2. Get random number
@@ -103,7 +109,7 @@ public class SegmentSpawner : MonoBehaviour
 
         // 3. Walk through ranges until we match
         int cumulative = 0;
-        foreach (var o in obstacleTypes)
+        foreach (var o in activeObstacles)
         {
             cumulative += o.weight;
             if (random < cumulative)
@@ -111,6 +117,6 @@ public class SegmentSpawner : MonoBehaviour
         }
 
         // 4. Fallback (should never happen)
-        return obstacleTypes[0];       
+        return activeObstacles[0];       
     }
 }

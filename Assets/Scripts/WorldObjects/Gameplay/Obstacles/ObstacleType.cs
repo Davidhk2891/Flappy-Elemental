@@ -7,4 +7,6 @@ public class ObstacleType
     public int weight = 1;
     // Which pool to pull from
     public BaseObjectPool pool;
+    // Dev tool: Toggle obstacle on/off
+    public bool enabled = true;
 }
