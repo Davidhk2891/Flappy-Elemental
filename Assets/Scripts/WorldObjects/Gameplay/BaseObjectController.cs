@@ -6,6 +6,11 @@ public class BaseObjectController : MonoBehaviour
     public float moveSpeedX = 4f;
     public float deadZone = -10f;
 
+    protected virtual void OnEnable()
+    {
+        // Nothing yet. Override
+    }
+
     protected virtual void Update()
     {
         MoveLeft();

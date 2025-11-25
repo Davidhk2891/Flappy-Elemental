@@ -196,7 +196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 481019925}
   m_Layer: 0
-  m_Name: Obstacles
+  m_Name: Enemies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -218,6 +218,7 @@ Transform:
   - {fileID: 792557759}
   - {fileID: 662921151}
   - {fileID: 959964210}
+  - {fileID: 1631487307}
   m_Father: {fileID: 463021812}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &511684578
@@ -577,24 +578,31 @@ MonoBehaviour:
   pipeSetEnvironment: {fileID: 2068439782}
   pipeSpawnX: 10
   pipeHeightOffset: 4
-  obstacleEnvironment: {fileID: 1470979003}
-  obstaclesPerSegment: 10
-  delayBeforeObstacles: 3.5
-  intervalBetweenObstacles: 3
-  delayAfterObstacles: 1
-  obstacleSpawnX: 10
-  obstacleMinY: -3
-  obstacleMaxY: 3
+  enemyEnvironment: {fileID: 0}
+  enemiesPerSegment: 10
+  delayBeforeEnemies: 3.5
+  intervalBetweenEnemies: 3
+  delayAfterEnemies: 1
+  enemySpawnX: 10
+  enemyMinY: -3
+  enemyMaxY: 3
   obstacleTypes:
   - name: Bouncer
     weight: 5
     pool: {fileID: 792557758}
+    enabled: 1
   - name: Pulsar
     weight: 5
     pool: {fileID: 662921152}
+    enabled: 1
   - name: Turner
     weight: 5
     pool: {fileID: 959964211}
+    enabled: 1
+  - name: Waller
+    weight: 8
+    pool: {fileID: 1631487306}
+    enabled: 1
   checkpointPipeGap: 3
 --- !u!1 &662921150
 GameObject:
@@ -1050,7 +1058,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1470979003}
   m_Layer: 0
-  m_Name: Obstacles
+  m_Name: Enemies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1070,6 +1078,52 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1992761699}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1631487305
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1631487307}
+  - component: {fileID: 1631487306}
+  m_Layer: 0
+  m_Name: WallerPool
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1631487306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631487305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c67a4d68e655a4854aebc66ff05c2de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::wallerPool
+  prefab: {fileID: 66703185157889117, guid: 1e6d6f4ddb2634ab986836cca5d41d8c, type: 3}
+  poolSize: 5
+--- !u!4 &1631487307
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631487305}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10, y: -2.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 481019925}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1649578837
 GameObject:
