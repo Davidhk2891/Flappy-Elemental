@@ -1,5 +1,5 @@
 [System.Serializable]
-public class ObstacleType
+public class EnemyType
 {
     // For inspector clarity
     public string name;

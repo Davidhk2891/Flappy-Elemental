@@ -196,7 +196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 481019925}
   m_Layer: 0
-  m_Name: Obstacles
+  m_Name: Enemies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -578,14 +578,14 @@ MonoBehaviour:
   pipeSetEnvironment: {fileID: 2068439782}
   pipeSpawnX: 10
   pipeHeightOffset: 4
-  obstacleEnvironment: {fileID: 1470979003}
-  obstaclesPerSegment: 10
-  delayBeforeObstacles: 3.5
-  intervalBetweenObstacles: 3
-  delayAfterObstacles: 1
-  obstacleSpawnX: 10
-  obstacleMinY: -3
-  obstacleMaxY: 3
+  enemyEnvironment: {fileID: 0}
+  enemiesPerSegment: 10
+  delayBeforeEnemies: 3.5
+  intervalBetweenEnemies: 3
+  delayAfterEnemies: 1
+  enemySpawnX: 10
+  enemyMinY: -3
+  enemyMaxY: 3
   obstacleTypes:
   - name: Bouncer
     weight: 5
@@ -1058,7 +1058,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1470979003}
   m_Layer: 0
-  m_Name: Obstacles
+  m_Name: Enemies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

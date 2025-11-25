@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Linq;
+using Unity.VisualScripting;
 
 public class SegmentSpawner : MonoBehaviour
 {
@@ -10,16 +11,16 @@ public class SegmentSpawner : MonoBehaviour
     public float pipeSpawnX = 10f;
     public float pipeHeightOffset = 4f;
 
-    [Header("Obstacle segment Settings")]
-    public Transform obstacleEnvironment;
-    public int obstaclesPerSegment = 10;
-    public float delayBeforeObstacles = 3.5f;
-    public float intervalBetweenObstacles = 3f;
-    public float delayAfterObstacles = 1f;
-    public float obstacleSpawnX = 10f;
-    public float obstacleMinY = -3f;
-    public float obstacleMaxY = 3f;
-    public ObstacleType[] obstacleTypes;
+    [Header("Enemy segment Settings")]
+    public Transform enemyEnvironment;
+    public int enemiesPerSegment = 10;
+    public float delayBeforeEnemies = 3.5f;
+    public float intervalBetweenEnemies = 3f;
+    public float delayAfterEnemies = 1f;
+    public float enemySpawnX = 10f;
+    public float enemyMinY = -3f;
+    public float enemyMaxY = 3f;
+    public EnemyType[] obstacleTypes;
 
     [Header("Checkpoint")]
     public float checkpointPipeGap = 3f;
@@ -38,17 +39,17 @@ public class SegmentSpawner : MonoBehaviour
             SpawnPipeSet();
 
             // Wait before spawning obstacles
-            yield return new WaitForSeconds(delayBeforeObstacles);
+            yield return new WaitForSeconds(delayBeforeEnemies);
 
             // Obstacles segment
-            for (int i = 0; i < obstaclesPerSegment; i++)
+            for (int i = 0; i < enemiesPerSegment; i++)
             {
                 SpawnObstacle();
-                yield return new WaitForSeconds(intervalBetweenObstacles);
+                yield return new WaitForSeconds(intervalBetweenEnemies);
             }
 
             // Exit pipe
-            yield return new WaitForSeconds(delayAfterObstacles);
+            yield return new WaitForSeconds(delayAfterEnemies);
             SpawnPipeSet();
 
             // Delay before next segment (this will change)
@@ -77,22 +78,25 @@ public class SegmentSpawner : MonoBehaviour
     private void SpawnObstacle()
     {
         // Pick based on weight
-        ObstacleType type = PickRandomObstacleType();
+        EnemyType type = PickRandomObstacleType();
 
         // Get object from its pool
-        GameObject obstacle = type.pool.GetObject();
+        GameObject enemy = type.pool.GetObject();
 
         // Parent it
-        obstacle.transform.SetParent(obstacleEnvironment);
+        enemy.transform.SetParent(enemyEnvironment);
+
+        // Get enemy current y
+        var enemyCurrentY = enemy.transform.position.y;
 
         // Spawn position (X controlled here, Y controlled by each obstacle internally)
-        obstacle.transform.position = new Vector3(obstacleSpawnX, 0f, 0f);
+        enemy.transform.position = new Vector3(enemySpawnX, enemyCurrentY, 0f);
 
         // Enable it (object pooling)
-        obstacle.SetActive(true);
+        enemy.SetActive(true);
     }
 
-    private ObstacleType PickRandomObstacleType()
+    private EnemyType PickRandomObstacleType()
     {
         // Filter out disabled obstacles
         var activeObstacles = obstacleTypes.Where(o => o.enabled).ToList();

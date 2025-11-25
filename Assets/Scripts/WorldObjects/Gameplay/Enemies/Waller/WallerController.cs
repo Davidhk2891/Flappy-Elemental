@@ -27,6 +27,6 @@ public class WallerController : BaseObjectController
         Vector3 pos = transform.position;
         pos.y = yPos;
         transform.position = pos;
-
+        Debug.Log($"Waller Y position is: {transform.position.y}");
     }
 }
