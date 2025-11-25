@@ -590,17 +590,17 @@ MonoBehaviour:
   - name: Bouncer
     weight: 5
     pool: {fileID: 792557758}
-    enabled: 0
+    enabled: 1
   - name: Pulsar
     weight: 5
     pool: {fileID: 662921152}
-    enabled: 0
+    enabled: 1
   - name: Turner
     weight: 5
     pool: {fileID: 959964211}
-    enabled: 0
+    enabled: 1
   - name: Waller
-    weight: 10
+    weight: 8
     pool: {fileID: 1631487306}
     enabled: 1
   checkpointPipeGap: 3
