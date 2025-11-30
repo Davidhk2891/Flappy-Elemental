@@ -23,9 +23,18 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        bool tap = false;
+
+        // Keyboard (for PC testing)
         if (Input.GetKeyDown(KeyCode.Space))
+            tap = true;
+
+        // Touch (for phone)
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+            tap = true;
+
+        if (tap)
         {
-            // Listens for space bar press. When pressed, y * flapStrength
             rb.linearVelocity = Vector2.up * flapStrength;
             StartCoroutine(FlapAnimation());
         }

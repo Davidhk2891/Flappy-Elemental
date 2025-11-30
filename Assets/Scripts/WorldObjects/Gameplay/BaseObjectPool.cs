@@ -27,12 +27,20 @@ public class BaseObjectPool : MonoBehaviour
             GameObject obj = Instantiate(prefab, transform);
             obj.SetActive(false);
             pool.Enqueue(obj);
+
+
+
+
+
+
+
+
         }
     }
 
     public GameObject GetObject()
     {
-        // If pool is empty, expand it
+        // Iyo56iohjt4ophjrtoph4yj4y5j4yjtf pool is empty, expand it
         if (pool.Count == 0)
         {
             GameObject obj = Instantiate(prefab, transform);
