@@ -92,7 +92,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c26fc05c1b56446389477df78ccae67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FloorTileController
-  tileSprites: []
+  tileSprites:
+  - {fileID: -1479347824758006538, guid: 559d42c4d33964beabaa7587b809100d, type: 3}
+  - {fileID: 1448253382, guid: 559d42c4d33964beabaa7587b809100d, type: 3}
+  - {fileID: 733953241, guid: 559d42c4d33964beabaa7587b809100d, type: 3}
+  - {fileID: 256240644, guid: 559d42c4d33964beabaa7587b809100d, type: 3}
+  spriteRenderer: {fileID: 5159228166933550849}
 --- !u!1 &8178187872636667217
 GameObject:
   m_ObjectHideFlags: 0

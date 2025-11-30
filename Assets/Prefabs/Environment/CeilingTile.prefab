@@ -100,6 +100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 219125127247517010}
   - component: {fileID: 223122483603420474}
+  - component: {fileID: 6442796925783327139}
   m_Layer: 0
   m_Name: CeilingTile
   m_TagString: Untagged
@@ -169,3 +170,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.5091579, y: 0.9729039}
   m_EdgeRadius: 0
+--- !u!114 &6442796925783327139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7642716670551264141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3d93b100c474c83b1c1fb38f5bf368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CeilingTileController
+  tileSprites:
+  - {fileID: -1479347824758006538, guid: 559d42c4d33964beabaa7587b809100d, type: 3}
+  - {fileID: 1448253382, guid: 559d42c4d33964beabaa7587b809100d, type: 3}
+  - {fileID: 733953241, guid: 559d42c4d33964beabaa7587b809100d, type: 3}
+  - {fileID: 256240644, guid: 559d42c4d33964beabaa7587b809100d, type: 3}
+  spriteRenderer: {fileID: 5990166094888054520}
