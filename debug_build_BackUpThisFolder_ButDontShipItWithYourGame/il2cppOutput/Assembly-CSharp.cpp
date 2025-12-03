@@ -1,0 +1,3594 @@
+﻿#include "pch-cpp.hpp"
+
+
+
+
+
+
+struct Func_2_t783226A19F7A615419A13469EDCE871408516CD8;
+struct Func_2_tE1F0D41563EE092E5E5540B061449FDE88F1DC00;
+struct IEnumerable_1_tA682416663DF2903DBADA87556499A80AB25BE51;
+struct IEnumerable_1_tF95C9E01A913DD50575531C8305932628663D9E9;
+struct List_1_t2DA676FBAF83090EDF93CA32CA4AF629DFEA51B9;
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D;
+struct Queue_1_t57484CF2A316F8471C210AA410F8270CCEFF92F4;
+struct Queue_1_tE9EF546915795972C3BFD68FBB8FA859D3BAF3B5;
+struct UnityEvent_1_t8ABE5544759145B8D7A09F1C54FFCB6907EDD56E;
+struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
+struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
+struct ContactPoint2DU5BU5D_t427621BF8902AE33C86E7BF384D9B2B5B781F949;
+struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
+struct EnemyTypeU5BU5D_t1C0AE542F1ACA1B8F4EEB7A049A9EBAD966245AC;
+struct GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF;
+struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
+struct SpriteU5BU5D_tCEE379E10CAD9DBFA770B331480592548ED0EA1B;
+struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
+struct BaseObjectController_t02A80F1A74CE3E86096548A5747C1168303B3A18;
+struct BaseObjectPool_tA91ECAF33869C8A8CFE682829C8247186F93EB20;
+struct BouncerController_t2958DFE0F7C8FA7C90931453B0135C068221E03F;
+struct BouncerPool_t1E260C3E1E5DA45940B11CBB7CB4EAF22CDFDA1D;
+struct CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B;
+struct CeilingTileController_t2D05763061831CA6F145B2051252571960EE46B1;
+struct Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52;
+struct Collision2D_t81E83212C969FDDE2AB84EBCA31502818EEAB85B;
+struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3;
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B;
+struct DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E;
+struct EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E;
+struct FloorTileController_t5A6773C0FB56F6FE626CB0AC0F48EB13137AB6EC;
+struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
+struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
+struct IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA;
+struct MethodInfo_t;
+struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71;
+struct NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A;
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
+struct PipeController_tA80E962A600804170C3CB9ADCCB15FF686AC25E8;
+struct PipePool_t603A70FC098401F2D2FF8C71EFAD7E4D880B12CB;
+struct PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95;
+struct PulsarController_t43D4C0B329567DACD2AAEB4C52B89AAE078FED93;
+struct PulsarPool_t023C8F0DE030A26CED438AA6BBE727C1B97E7BC7;
+struct Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F;
+struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
+struct SegmentSpawner_t2F9609B64D5EDFBAE74E7EAB91426F1CCCDB8A19;
+struct Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99;
+struct SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B;
+struct String_t;
+struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1;
+struct TurnerController_t29F4197B707D0D429F6C42E4F64CFEDD7A33501B;
+struct TurnerPool_t3273B50BAE7D75A429245078155471508B5D3112;
+struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tC95F24D0C6E6B77389433852BB389F39C692926E;
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
+struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3;
+struct WallerController_t5628D659C9DD1E3FA9965AFFBE18E8FD292D52F8;
+struct wallerPool_tCA13E96FCFB92D39554DA3901A5456D7D0C2F262;
+struct U3CFlapAnimationU3Ed__8_t50E4B10C5EEE9F84D48F1EFE9ACB51DF72BAE875;
+struct U3CU3Ec_t42A934D060B302D2D82AE49A7061E8B0D446D20A;
+struct U3CSpawnSegmentsU3Ed__15_t8B8C85160A8F3CD18D9568CA1E4FDBF1416E3836;
+
+IL2CPP_EXTERN_C RuntimeClass* ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Func_2_t783226A19F7A615419A13469EDCE871408516CD8_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Queue_1_t57484CF2A316F8471C210AA410F8270CCEFF92F4_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CFlapAnimationU3Ed__8_t50E4B10C5EEE9F84D48F1EFE9ACB51DF72BAE875_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CSpawnSegmentsU3Ed__15_t8B8C85160A8F3CD18D9568CA1E4FDBF1416E3836_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_t42A934D060B302D2D82AE49A7061E8B0D446D20A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____9B4B718C2BE0771A87EF0CC1AF737D5DBBD8AE3715AE36F94F6F1E1028A7B1E0_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____E6BA09EDF9896ECE8FAF7559428E753CD78AE225E076D077F24286840E03192D_FieldInfo_var;
+IL2CPP_EXTERN_C String_t* _stringLiteral654F59142E8866447E7C0C60F94C4A0765D840D8;
+IL2CPP_EXTERN_C String_t* _stringLiteralB5A6CF87DBA6CC9A26FF07266B5B2DD43CEB6D3D;
+IL2CPP_EXTERN_C String_t* _stringLiteralE2506E48E20814BDD1E4EFBEC22D09594559E97D;
+IL2CPP_EXTERN_C String_t* _stringLiteralE6A07367BAFA896EC0280C99A4789EF78DCD4001;
+IL2CPP_EXTERN_C String_t* _stringLiteralF586E73A97C8D1B370AADE1F08B0E657BD0EC9F2;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisRigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F_m0712B7A9DBBAE2C319B4B03394E7731B86FACBF2_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m6181F10C09FC1650DAE0EF2308D344A2F170AA45_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerable_ToList_TisEnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E_m60964FBD352CE6B5C799CCBA1840D81054E13140_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerable_Where_TisEnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E_m874A73771F31719FF2848D3913875EDE0091E124_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_m0903BF045171AD8CC0DAF6EAF2A74F738A2A6DD3_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m5C7E6AF11C3DECDBBECE51DE6A66820F035C30A9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_m9190CDBD18ABB7E855F3994F6E6A61B05BBAE1BD_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_m5B87A4013B633EFE3EDD6F5C1622289D8AF7DDA0_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m672D98D4062FD2B0A0974CB7207F3DE415D15439_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_mE91B20EFC4732DA519D88E267A6E299B6534748F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Queue_1_Dequeue_m11F75D84C5BAC39C7B433215A25DFC2818603B24_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Queue_1_Enqueue_m5A435FDDADE10BC9599E175F9B600C40ECFE3C1B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Queue_1__ctor_m6C30DC4D1D969EDB9CB65C30AD26D6263B66DB82_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Queue_1_get_Count_m63EB352CDC9F12E3141775BB74938A69685DE1D7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CFlapAnimationU3Ed__8_System_Collections_IEnumerator_Reset_m5B872F2FD1C38A97E7C4FE3AE86E9BFA9A8F2154_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CSpawnSegmentsU3Ed__15_System_Collections_IEnumerator_Reset_mC611394510F84D8476D1C7BB8F027E691C265ED0_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CPickRandomObstacleTypeU3Eb__18_0_m9F3598F3F3D421517E2D4D21477BD75D74228311_RuntimeMethod_var;
+struct ContactPoint2D_t16A7EE2DDFB4FA3A09C6554E11F30CEDAEBFA801;
+struct Delegate_t_marshaled_com;
+struct Delegate_t_marshaled_pinvoke;
+struct Exception_t_marshaled_com;
+struct Exception_t_marshaled_pinvoke;
+
+struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
+struct EnemyTypeU5BU5D_t1C0AE542F1ACA1B8F4EEB7A049A9EBAD966245AC;
+
+IL2CPP_EXTERN_C_BEGIN
+IL2CPP_EXTERN_C_END
+
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+struct U3CModuleU3E_tBB65183F1134474D09FF49B95625D25472B9BA8B 
+{
+};
+struct List_1_t2DA676FBAF83090EDF93CA32CA4AF629DFEA51B9  : public RuntimeObject
+{
+	EnemyTypeU5BU5D_t1C0AE542F1ACA1B8F4EEB7A049A9EBAD966245AC* ____items;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D  : public RuntimeObject
+{
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ____items;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct Queue_1_t57484CF2A316F8471C210AA410F8270CCEFF92F4  : public RuntimeObject
+{
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ____array;
+	int32_t ____head;
+	int32_t ____tail;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct Queue_1_tE9EF546915795972C3BFD68FBB8FA859D3BAF3B5  : public RuntimeObject
+{
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ____array;
+	int32_t ____head;
+	int32_t ____tail;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA  : public RuntimeObject
+{
+};
+struct CeilingTileController_t2D05763061831CA6F145B2051252571960EE46B1  : public RuntimeObject
+{
+	SpriteU5BU5D_tCEE379E10CAD9DBFA770B331480592548ED0EA1B* ___tileSprites;
+};
+struct EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E  : public RuntimeObject
+{
+	String_t* ___name;
+	int32_t ___weight;
+	BaseObjectPool_tA91ECAF33869C8A8CFE682829C8247186F93EB20* ___pool;
+	bool ___enabled;
+};
+struct String_t  : public RuntimeObject
+{
+	int32_t ____stringLength;
+	Il2CppChar ____firstChar;
+};
+struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tC95F24D0C6E6B77389433852BB389F39C692926E  : public RuntimeObject
+{
+};
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F  : public RuntimeObject
+{
+};
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_pinvoke
+{
+};
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
+{
+};
+struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D  : public RuntimeObject
+{
+};
+struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinvoke
+{
+};
+struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
+{
+};
+struct U3CFlapAnimationU3Ed__8_t50E4B10C5EEE9F84D48F1EFE9ACB51DF72BAE875  : public RuntimeObject
+{
+	int32_t ___U3CU3E1__state;
+	RuntimeObject* ___U3CU3E2__current;
+	PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95* ___U3CU3E4__this;
+};
+struct U3CU3Ec_t42A934D060B302D2D82AE49A7061E8B0D446D20A  : public RuntimeObject
+{
+};
+struct U3CSpawnSegmentsU3Ed__15_t8B8C85160A8F3CD18D9568CA1E4FDBF1416E3836  : public RuntimeObject
+{
+	int32_t ___U3CU3E1__state;
+	RuntimeObject* ___U3CU3E2__current;
+	SegmentSpawner_t2F9609B64D5EDFBAE74E7EAB91426F1CCCDB8A19* ___U3CU3E4__this;
+	int32_t ___U3CiU3E5__2;
+};
+struct Enumerator_tCBC3FDE03F5BAD71D6D3F974BF530FC5E80F28B6 
+{
+	List_1_t2DA676FBAF83090EDF93CA32CA4AF629DFEA51B9* ____list;
+	int32_t ____index;
+	int32_t ____version;
+	EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E* ____current;
+};
+struct Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A 
+{
+	List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ____list;
+	int32_t ____index;
+	int32_t ____version;
+	RuntimeObject* ____current;
+};
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22 
+{
+	bool ___m_value;
+};
+struct Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3 
+{
+	uint8_t ___m_value;
+};
+struct Double_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F 
+{
+	double ___m_value;
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2  : public ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F
+{
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_pinvoke
+{
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_com
+{
+};
+struct Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C 
+{
+	int32_t ___m_value;
+};
+struct IntPtr_t 
+{
+	void* ___m_value;
+};
+struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 
+{
+	float ___x;
+	float ___y;
+	float ___z;
+	float ___w;
+};
+struct Scene_tA1DC762B79745EB5140F054C884855B922318356 
+{
+	int32_t ___m_Handle;
+};
+struct Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C 
+{
+	float ___m_value;
+};
+struct Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 
+{
+	float ___x;
+	float ___y;
+};
+struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 
+{
+	float ___x;
+	float ___y;
+	float ___z;
+};
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915 
+{
+	union
+	{
+		struct
+		{
+		};
+		uint8_t Void_t4861ACF8F4594C3437BB48B6E56783494B843915__padding[1];
+	};
+};
+struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3  : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D
+{
+	float ___m_Seconds;
+};
+struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_marshaled_pinvoke : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinvoke
+{
+	float ___m_Seconds;
+};
+struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_marshaled_com : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
+{
+	float ___m_Seconds;
+};
+#pragma pack(push, tp, 1)
+struct __StaticArrayInitTypeSizeU3D1207_t915597AB72169769F4E96AFCB495DCE6B8DD6E5C 
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+			};
+		};
+		uint8_t __StaticArrayInitTypeSizeU3D1207_t915597AB72169769F4E96AFCB495DCE6B8DD6E5C__padding[1207];
+	};
+};
+#pragma pack(pop, tp)
+#pragma pack(push, tp, 1)
+struct __StaticArrayInitTypeSizeU3D343_t9156728E1F11787292FBC8D6CE70006623906442 
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+			};
+		};
+		uint8_t __StaticArrayInitTypeSizeU3D343_t9156728E1F11787292FBC8D6CE70006623906442__padding[343];
+	};
+};
+#pragma pack(pop, tp)
+struct MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E 
+{
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___FilePathsData;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___TypesData;
+	int32_t ___TotalTypes;
+	int32_t ___TotalFiles;
+	bool ___IsEditorOnly;
+};
+struct MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_marshaled_pinvoke
+{
+	Il2CppSafeArray* ___FilePathsData;
+	Il2CppSafeArray* ___TypesData;
+	int32_t ___TotalTypes;
+	int32_t ___TotalFiles;
+	int32_t ___IsEditorOnly;
+};
+struct MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_marshaled_com
+{
+	Il2CppSafeArray* ___FilePathsData;
+	Il2CppSafeArray* ___TypesData;
+	int32_t ___TotalTypes;
+	int32_t ___TotalFiles;
+	int32_t ___IsEditorOnly;
+};
+struct Collision2D_t81E83212C969FDDE2AB84EBCA31502818EEAB85B  : public RuntimeObject
+{
+	int32_t ___m_Collider;
+	int32_t ___m_OtherCollider;
+	int32_t ___m_Rigidbody;
+	int32_t ___m_OtherRigidbody;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_RelativeVelocity;
+	int32_t ___m_Enabled;
+	int32_t ___m_ContactCount;
+	ContactPoint2DU5BU5D_t427621BF8902AE33C86E7BF384D9B2B5B781F949* ___m_ReusedContacts;
+	ContactPoint2DU5BU5D_t427621BF8902AE33C86E7BF384D9B2B5B781F949* ___m_LegacyContacts;
+};
+struct Collision2D_t81E83212C969FDDE2AB84EBCA31502818EEAB85B_marshaled_pinvoke
+{
+	int32_t ___m_Collider;
+	int32_t ___m_OtherCollider;
+	int32_t ___m_Rigidbody;
+	int32_t ___m_OtherRigidbody;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_RelativeVelocity;
+	int32_t ___m_Enabled;
+	int32_t ___m_ContactCount;
+	ContactPoint2D_t16A7EE2DDFB4FA3A09C6554E11F30CEDAEBFA801* ___m_ReusedContacts;
+	ContactPoint2D_t16A7EE2DDFB4FA3A09C6554E11F30CEDAEBFA801* ___m_LegacyContacts;
+};
+struct Collision2D_t81E83212C969FDDE2AB84EBCA31502818EEAB85B_marshaled_com
+{
+	int32_t ___m_Collider;
+	int32_t ___m_OtherCollider;
+	int32_t ___m_Rigidbody;
+	int32_t ___m_OtherRigidbody;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_RelativeVelocity;
+	int32_t ___m_Enabled;
+	int32_t ___m_ContactCount;
+	ContactPoint2D_t16A7EE2DDFB4FA3A09C6554E11F30CEDAEBFA801* ___m_ReusedContacts;
+	ContactPoint2D_t16A7EE2DDFB4FA3A09C6554E11F30CEDAEBFA801* ___m_LegacyContacts;
+};
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B  : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D
+{
+	intptr_t ___m_Ptr;
+};
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B_marshaled_pinvoke : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinvoke
+{
+	intptr_t ___m_Ptr;
+};
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B_marshaled_com : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
+{
+	intptr_t ___m_Ptr;
+};
+struct Delegate_t  : public RuntimeObject
+{
+	intptr_t ___method_ptr;
+	intptr_t ___invoke_impl;
+	RuntimeObject* ___m_target;
+	intptr_t ___method;
+	intptr_t ___delegate_trampoline;
+	intptr_t ___extra_arg;
+	intptr_t ___method_code;
+	intptr_t ___interp_method;
+	intptr_t ___interp_invoke_impl;
+	MethodInfo_t* ___method_info;
+	MethodInfo_t* ___original_method_info;
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data;
+	bool ___method_is_virtual;
+};
+struct Delegate_t_marshaled_pinvoke
+{
+	intptr_t ___method_ptr;
+	intptr_t ___invoke_impl;
+	Il2CppIUnknown* ___m_target;
+	intptr_t ___method;
+	intptr_t ___delegate_trampoline;
+	intptr_t ___extra_arg;
+	intptr_t ___method_code;
+	intptr_t ___interp_method;
+	intptr_t ___interp_invoke_impl;
+	MethodInfo_t* ___method_info;
+	MethodInfo_t* ___original_method_info;
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data;
+	int32_t ___method_is_virtual;
+};
+struct Delegate_t_marshaled_com
+{
+	intptr_t ___method_ptr;
+	intptr_t ___invoke_impl;
+	Il2CppIUnknown* ___m_target;
+	intptr_t ___method;
+	intptr_t ___delegate_trampoline;
+	intptr_t ___extra_arg;
+	intptr_t ___method_code;
+	intptr_t ___interp_method;
+	intptr_t ___interp_invoke_impl;
+	MethodInfo_t* ___method_info;
+	MethodInfo_t* ___original_method_info;
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data;
+	int32_t ___method_is_virtual;
+};
+struct Exception_t  : public RuntimeObject
+{
+	String_t* ____className;
+	String_t* ____message;
+	RuntimeObject* ____data;
+	Exception_t* ____innerException;
+	String_t* ____helpURL;
+	RuntimeObject* ____stackTrace;
+	String_t* ____stackTraceString;
+	String_t* ____remoteStackTraceString;
+	int32_t ____remoteStackIndex;
+	RuntimeObject* ____dynamicMethods;
+	int32_t ____HResult;
+	String_t* ____source;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces;
+	IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832* ___native_trace_ips;
+	int32_t ___caught_in_unmanaged;
+};
+struct Exception_t_marshaled_pinvoke
+{
+	char* ____className;
+	char* ____message;
+	RuntimeObject* ____data;
+	Exception_t_marshaled_pinvoke* ____innerException;
+	char* ____helpURL;
+	Il2CppIUnknown* ____stackTrace;
+	char* ____stackTraceString;
+	char* ____remoteStackTraceString;
+	int32_t ____remoteStackIndex;
+	Il2CppIUnknown* ____dynamicMethods;
+	int32_t ____HResult;
+	char* ____source;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces;
+	Il2CppSafeArray* ___native_trace_ips;
+	int32_t ___caught_in_unmanaged;
+};
+struct Exception_t_marshaled_com
+{
+	Il2CppChar* ____className;
+	Il2CppChar* ____message;
+	RuntimeObject* ____data;
+	Exception_t_marshaled_com* ____innerException;
+	Il2CppChar* ____helpURL;
+	Il2CppIUnknown* ____stackTrace;
+	Il2CppChar* ____stackTraceString;
+	Il2CppChar* ____remoteStackTraceString;
+	int32_t ____remoteStackIndex;
+	Il2CppIUnknown* ____dynamicMethods;
+	int32_t ____HResult;
+	Il2CppChar* ____source;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces;
+	Il2CppSafeArray* ___native_trace_ips;
+	int32_t ___caught_in_unmanaged;
+};
+struct KeyCode_t75B9ECCC26D858F55040DDFF9523681E996D17E9 
+{
+	int32_t ___value__;
+};
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
+{
+	intptr_t ___m_CachedPtr;
+};
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_pinvoke
+{
+	intptr_t ___m_CachedPtr;
+};
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
+{
+	intptr_t ___m_CachedPtr;
+};
+struct RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 
+{
+	intptr_t ___value;
+};
+struct TouchPhase_t54E0A1AF80465997849420A72317B733E1D49A9E 
+{
+	int32_t ___value__;
+};
+struct TouchType_t84F82C73BC1A6012141735AD84DA67AA7F7AB43F 
+{
+	int32_t ___value__;
+};
+struct PulseState_t0FB2A6255BBF3C16798A1BE274B2279A0E4C0118 
+{
+	int32_t ___value__;
+};
+struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct MulticastDelegate_t  : public Delegate_t
+{
+	DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771* ___delegates;
+};
+struct MulticastDelegate_t_marshaled_pinvoke : public Delegate_t_marshaled_pinvoke
+{
+	Delegate_t_marshaled_pinvoke** ___delegates;
+};
+struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
+{
+	Delegate_t_marshaled_com** ___delegates;
+};
+struct Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295  : public Exception_t
+{
+};
+struct Touch_t03E51455ED508492B3F278903A0114FA0E87B417 
+{
+	int32_t ___m_FingerId;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_Position;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_RawPosition;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_PositionDelta;
+	float ___m_TimeDelta;
+	int32_t ___m_TapCount;
+	int32_t ___m_Phase;
+	int32_t ___m_Type;
+	float ___m_Pressure;
+	float ___m_maximumPossiblePressure;
+	float ___m_Radius;
+	float ___m_RadiusVariance;
+	float ___m_AltitudeAngle;
+	float ___m_AzimuthAngle;
+};
+struct Func_2_t783226A19F7A615419A13469EDCE871408516CD8  : public MulticastDelegate_t
+{
+};
+struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+struct NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
+{
+};
+struct Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+struct Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+struct Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
+{
+};
+struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
+{
+	CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B* ___m_CancellationTokenSource;
+};
+struct SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B  : public Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF
+{
+	UnityEvent_1_t8ABE5544759145B8D7A09F1C54FFCB6907EDD56E* ___m_SpriteChangeEvent;
+};
+struct BaseObjectController_t02A80F1A74CE3E86096548A5747C1168303B3A18  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	float ___moveSpeedX;
+	float ___deadZone;
+};
+struct BaseObjectPool_tA91ECAF33869C8A8CFE682829C8247186F93EB20  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___prefab;
+	int32_t ___poolSize;
+	Queue_1_t57484CF2A316F8471C210AA410F8270CCEFF92F4* ___pool;
+};
+struct FloorTileController_t5A6773C0FB56F6FE626CB0AC0F48EB13137AB6EC  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	SpriteU5BU5D_tCEE379E10CAD9DBFA770B331480592548ED0EA1B* ___tileSprites;
+};
+struct PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* ___rb;
+	SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* ___sr;
+	float ___flapStrength;
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___kirbyIdle;
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___kirbyFlap;
+	float ___flapDuration;
+};
+struct SegmentSpawner_t2F9609B64D5EDFBAE74E7EAB91426F1CCCDB8A19  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	PipePool_t603A70FC098401F2D2FF8C71EFAD7E4D880B12CB* ___pipePool;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___pipeSetEnvironment;
+	float ___pipeSpawnX;
+	float ___pipeHeightOffset;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___enemyEnvironment;
+	int32_t ___enemiesPerSegment;
+	float ___delayBeforeEnemies;
+	float ___intervalBetweenEnemies;
+	float ___delayAfterEnemies;
+	float ___enemySpawnX;
+	float ___enemyMinY;
+	float ___enemyMaxY;
+	EnemyTypeU5BU5D_t1C0AE542F1ACA1B8F4EEB7A049A9EBAD966245AC* ___obstacleTypes;
+	float ___checkpointPipeGap;
+};
+struct BouncerController_t2958DFE0F7C8FA7C90931453B0135C068221E03F  : public BaseObjectController_t02A80F1A74CE3E86096548A5747C1168303B3A18
+{
+	float ___topLimit;
+	float ___bottomLimit;
+	float ___moveSpeed;
+	bool ___movingUp;
+};
+struct BouncerPool_t1E260C3E1E5DA45940B11CBB7CB4EAF22CDFDA1D  : public BaseObjectPool_tA91ECAF33869C8A8CFE682829C8247186F93EB20
+{
+};
+struct PipeController_tA80E962A600804170C3CB9ADCCB15FF686AC25E8  : public BaseObjectController_t02A80F1A74CE3E86096548A5747C1168303B3A18
+{
+};
+struct PipePool_t603A70FC098401F2D2FF8C71EFAD7E4D880B12CB  : public BaseObjectPool_tA91ECAF33869C8A8CFE682829C8247186F93EB20
+{
+};
+struct PulsarController_t43D4C0B329567DACD2AAEB4C52B89AAE078FED93  : public BaseObjectController_t02A80F1A74CE3E86096548A5747C1168303B3A18
+{
+	float ___baseScale;
+	float ___minPulseScale;
+	float ___maxPulseScale;
+	float ___growSpeed;
+	float ___shrinkSpeed;
+	float ___holdDuration;
+	float ___targetScale;
+	float ___holdTimer;
+	int32_t ___state;
+};
+struct PulsarPool_t023C8F0DE030A26CED438AA6BBE727C1B97E7BC7  : public BaseObjectPool_tA91ECAF33869C8A8CFE682829C8247186F93EB20
+{
+};
+struct TurnerController_t29F4197B707D0D429F6C42E4F64CFEDD7A33501B  : public BaseObjectController_t02A80F1A74CE3E86096548A5747C1168303B3A18
+{
+	float ___rotationSpeed;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___pivotOffset;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___sprite;
+};
+struct TurnerPool_t3273B50BAE7D75A429245078155471508B5D3112  : public BaseObjectPool_tA91ECAF33869C8A8CFE682829C8247186F93EB20
+{
+};
+struct WallerController_t5628D659C9DD1E3FA9965AFFBE18E8FD292D52F8  : public BaseObjectController_t02A80F1A74CE3E86096548A5747C1168303B3A18
+{
+	float ___topY;
+	float ___bottomY;
+};
+struct wallerPool_tCA13E96FCFB92D39554DA3901A5456D7D0C2F262  : public BaseObjectPool_tA91ECAF33869C8A8CFE682829C8247186F93EB20
+{
+};
+struct List_1_t2DA676FBAF83090EDF93CA32CA4AF629DFEA51B9_StaticFields
+{
+	EnemyTypeU5BU5D_t1C0AE542F1ACA1B8F4EEB7A049A9EBAD966245AC* ___s_emptyArray;
+};
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_StaticFields
+{
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___s_emptyArray;
+};
+struct U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA_StaticFields
+{
+	__StaticArrayInitTypeSizeU3D343_t9156728E1F11787292FBC8D6CE70006623906442 ___9B4B718C2BE0771A87EF0CC1AF737D5DBBD8AE3715AE36F94F6F1E1028A7B1E0;
+	__StaticArrayInitTypeSizeU3D1207_t915597AB72169769F4E96AFCB495DCE6B8DD6E5C ___E6BA09EDF9896ECE8FAF7559428E753CD78AE225E076D077F24286840E03192D;
+};
+struct String_t_StaticFields
+{
+	String_t* ___Empty;
+};
+struct U3CU3Ec_t42A934D060B302D2D82AE49A7061E8B0D446D20A_StaticFields
+{
+	U3CU3Ec_t42A934D060B302D2D82AE49A7061E8B0D446D20A* ___U3CU3E9;
+	Func_2_t783226A19F7A615419A13469EDCE871408516CD8* ___U3CU3E9__18_0;
+};
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
+{
+	String_t* ___TrueString;
+	String_t* ___FalseString;
+};
+struct IntPtr_t_StaticFields
+{
+	intptr_t ___Zero;
+};
+struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_StaticFields
+{
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___identityQuaternion;
+};
+struct Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_StaticFields
+{
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___zeroVector;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___oneVector;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___upVector;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___downVector;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___leftVector;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___rightVector;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___positiveInfinityVector;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___negativeInfinityVector;
+};
+struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___zeroVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___oneVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___upVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___downVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___leftVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___rightVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forwardVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___backVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___positiveInfinityVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___negativeInfinityVector;
+};
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
+{
+	int32_t ___OffsetOfInstanceIDInCPlusPlusObject;
+};
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+struct EnemyTypeU5BU5D_t1C0AE542F1ACA1B8F4EEB7A049A9EBAD966245AC  : public RuntimeArray
+{
+	ALIGN_FIELD (8) EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E* m_Items[1];
+
+	inline EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031  : public RuntimeArray
+{
+	ALIGN_FIELD (8) uint8_t m_Items[1];
+
+	inline uint8_t GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline uint8_t* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, uint8_t value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline uint8_t GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline uint8_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, uint8_t value)
+	{
+		m_Items[index] = value;
+	}
+};
+
+
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Object_Instantiate_TisRuntimeObject_m75BF3B0A3747B60491845FA41612FE7F795F0A59_gshared (RuntimeObject* ___0_original, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___1_parent, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Queue_1_Enqueue_m5CB8CF3906F1289F92036F0973EC5BE3450402EF_gshared (Queue_1_tE9EF546915795972C3BFD68FBB8FA859D3BAF3B5* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Queue_1_get_Count_m1768ADA9855B7CDA14C9C42E098A287F1A39C3A2_gshared_inline (Queue_1_tE9EF546915795972C3BFD68FBB8FA859D3BAF3B5* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Queue_1_Dequeue_m86B243DF9EC238316EC3D27DF3E0AB8DB0987E84_gshared (Queue_1_tE9EF546915795972C3BFD68FBB8FA859D3BAF3B5* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Queue_1__ctor_m6E2A5A8173E0CC524496D5155C737DF8FD10D0EB_gshared (Queue_1_tE9EF546915795972C3BFD68FBB8FA859D3BAF3B5* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_2__ctor_m13C0A7F33154D861E2A041B52E88461832DA1697_gshared (Func_2_tE1F0D41563EE092E5E5540B061449FDE88F1DC00* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_Where_TisRuntimeObject_m5DAF16724887B42DDBBF391C7F375749E8AA4AD7_gshared (RuntimeObject* ___0_source, Func_2_tE1F0D41563EE092E5E5540B061449FDE88F1DC00* ___1_predicate, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* Enumerable_ToList_TisRuntimeObject_m6456D63764F29E6B5B2422C3DE25113577CF51EE_gshared (RuntimeObject* ___0_source, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A List_1_GetEnumerator_mD8294A7FA2BEB1929487127D476F8EC1CDC23BFC_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419_gshared (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___0_index, const RuntimeMethod* method) ;
+
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
+inline Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* Component_GetComponent_TisRigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F_m0712B7A9DBBAE2C319B4B03394E7731B86FACBF2 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+inline SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* Component_GetComponent_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m6181F10C09FC1650DAE0EF2308D344A2F170AA45 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpriteRenderer_set_sprite_m7B176E33955108C60CAE21DFC153A0FAC674CB53 (SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* __this, Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKeyDown_mB237DEA6244132670D38990BAB77D813FBB028D2 (int32_t ___0_key, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Input_get_touchCount_m057388BFC67A0F4CA53764B1022867ED81D01E39 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Touch_t03E51455ED508492B3F278903A0114FA0E87B417 Input_GetTouch_m75D99FE801A94279874FA8DC6B6ADAD35F5123B1 (int32_t ___0_index, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Touch_get_phase_mB82409FB2BE1C32ABDBA6A72E52A099D28AB70B0 (Touch_t03E51455ED508492B3F278903A0114FA0E87B417* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_get_up_m41067879408BB378593EF7406AF2525F176F0ABF_inline (const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Multiply_m2D984B613020089BF5165BA4CA10988E2DC771FE_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_a, float ___1_d, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody2D_set_linearVelocity_mD4C890DE3DF15ECAD0DC61675586C0D1998CC1BB (Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* PlayerController_FlapAnimation_mB2EFE095FF76D21114F6F1E6D2749AF02166B2EA (PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, RuntimeObject* ___0_routine, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFlapAnimationU3Ed__8__ctor_mEE79BF59B828F3654B59CD00E95F8919ED3826F5 (U3CFlapAnimationU3Ed__8_t50E4B10C5EEE9F84D48F1EFE9ACB51DF72BAE875* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Collision2D_get_gameObject_mE4B3D56F3477F7D2D6D7B217DF5488DA1D13204C (Collision2D_t81E83212C969FDDE2AB84EBCA31502818EEAB85B* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___0_str0, String_t* ___1_str1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerController_GameOver_mD882D9359CF176F373469C979D9ED9C300723315 (PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameObject_CompareTag_m6378BE50D009A93D46036F74CC3F7E2ECB0636E5 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, String_t* ___0_tag, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Scene_tA1DC762B79745EB5140F054C884855B922318356 SceneManager_GetActiveScene_m0B320EC4302F51A71495D1CCD1A0FF9C2ED1FDC8 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Scene_get_name_m3C818DFA663E159274DAD823B780C7616C5E2A8C (Scene_tA1DC762B79745EB5140F054C884855B922318356* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E (String_t* ___0_sceneName, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* __this, float ___0_seconds, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseObjectController_MoveLeft_mF3D3FD64C824FD82C1ADF3366CDF9DC0E5E23860 (BaseObjectController_t02A80F1A74CE3E86096548A5747C1168303B3A18* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_left_m8C1116485A9E689760AEE1142F5977852278B7E1_inline (const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865 (const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseObjectPool_InitializePool_m825405053834F14886D70E36BB8503B0B100EB75 (BaseObjectPool_tA91ECAF33869C8A8CFE682829C8247186F93EB20* __this, const RuntimeMethod* method) ;
+inline GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_original, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___1_parent, const RuntimeMethod* method)
+{
+	return ((  GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*, const RuntimeMethod*))Object_Instantiate_TisRuntimeObject_m75BF3B0A3747B60491845FA41612FE7F795F0A59_gshared)(___0_original, ___1_parent, method);
+}
+inline void Queue_1_Enqueue_m5A435FDDADE10BC9599E175F9B600C40ECFE3C1B (Queue_1_t57484CF2A316F8471C210AA410F8270CCEFF92F4* __this, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (Queue_1_t57484CF2A316F8471C210AA410F8270CCEFF92F4*, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))Queue_1_Enqueue_m5CB8CF3906F1289F92036F0973EC5BE3450402EF_gshared)(__this, ___0_item, method);
+}
+inline int32_t Queue_1_get_Count_m63EB352CDC9F12E3141775BB74938A69685DE1D7_inline (Queue_1_t57484CF2A316F8471C210AA410F8270CCEFF92F4* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (Queue_1_t57484CF2A316F8471C210AA410F8270CCEFF92F4*, const RuntimeMethod*))Queue_1_get_Count_m1768ADA9855B7CDA14C9C42E098A287F1A39C3A2_gshared_inline)(__this, method);
+}
+inline GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Queue_1_Dequeue_m11F75D84C5BAC39C7B433215A25DFC2818603B24 (Queue_1_t57484CF2A316F8471C210AA410F8270CCEFF92F4* __this, const RuntimeMethod* method)
+{
+	return ((  GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* (*) (Queue_1_t57484CF2A316F8471C210AA410F8270CCEFF92F4*, const RuntimeMethod*))Queue_1_Dequeue_m86B243DF9EC238316EC3D27DF3E0AB8DB0987E84_gshared)(__this, method);
+}
+inline void Queue_1__ctor_m6C30DC4D1D969EDB9CB65C30AD26D6263B66DB82 (Queue_1_t57484CF2A316F8471C210AA410F8270CCEFF92F4* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Queue_1_t57484CF2A316F8471C210AA410F8270CCEFF92F4*, const RuntimeMethod*))Queue_1__ctor_m6E2A5A8173E0CC524496D5155C737DF8FD10D0EB_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseObjectController_Update_mE2DE2E05DAF97F3B9A94F171A9E5E6FC00339B16 (BaseObjectController_t02A80F1A74CE3E86096548A5747C1168303B3A18* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseObjectController__ctor_m29DC3E1EA7AD5440E30771191102829487C0B0E8 (BaseObjectController_t02A80F1A74CE3E86096548A5747C1168303B3A18* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseObjectPool__ctor_m0B889CE7E2864CB4BC044DBC0754F88BEB0A73DF (BaseObjectPool_tA91ECAF33869C8A8CFE682829C8247186F93EB20* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BouncerController_VerticalMovement_mE91BFC2FA39760F69EDE603CA8A766DD7D097EB6 (BouncerController_t2958DFE0F7C8FA7C90931453B0135C068221E03F* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline (const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline (float ___0_d, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_a, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_down_mF62B2AE7C5AC31EAC9CB62797C7190C90A7A8599_inline (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PulsarController_chooseRandomPeak_m1F46E888166D37D3267E3297FB3DE3AA2EB753D8 (PulsarController_t43D4C0B329567DACD2AAEB4C52B89AAE078FED93* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PulsarController_Grow_mC9E1DD2A275876169B680AA89E5536FC147840A5 (PulsarController_t43D4C0B329567DACD2AAEB4C52B89AAE078FED93* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PulsarController_Hold_m459F845BB46C77E10D237E92FE377CF30C5C841E (PulsarController_t43D4C0B329567DACD2AAEB4C52B89AAE078FED93* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PulsarController_Shrink_m87C4520AB76CE6D34EF0230FAAB9CD18167C62B8 (PulsarController_t43D4C0B329567DACD2AAEB4C52B89AAE078FED93* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494 (float ___0_minInclusive, float ___1_maxInclusive, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_MoveTowards_m0363264647799F3173AC37F8E819F98298249B08_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_current, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_target, float ___2_maxDistanceDelta, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, int32_t ___0_index, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TurnerController_RotateTurner_mA7BA8612926CB831ABC2DB58FB9F67705401CBE0 (TurnerController_t29F4197B707D0D429F6C42E4F64CFEDD7A33501B* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_Rotate_m7EA47AD57F43D478CCB0523D179950EE49CDA3E2 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, float ___0_xAngle, float ___1_yAngle, float ___2_zAngle, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseObjectController_OnEnable_m5B963A15C2A53960C49D0AA1E7F27020285E0FEA (BaseObjectController_t02A80F1A74CE3E86096548A5747C1168303B3A18* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallerController_PositionWallerInY_m60334D0A7394424BDBE8C004745B947A9639F1C5 (WallerController_t5628D659C9DD1E3FA9965AFFBE18E8FD292D52F8* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68 (int32_t ___0_minInclusive, int32_t ___1_maxExclusive, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8 (String_t* ___0_format, RuntimeObject* ___1_arg0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* SegmentSpawner_SpawnSegments_mB6C45EBAA6CFAF52C56CD8DC43E80D7DECE1AD58 (SegmentSpawner_t2F9609B64D5EDFBAE74E7EAB91426F1CCCDB8A19* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSpawnSegmentsU3Ed__15__ctor_m74E5C64044B186DB9DB65BF6A0A973E7C65AE1BD (U3CSpawnSegmentsU3Ed__15_t8B8C85160A8F3CD18D9568CA1E4FDBF1416E3836* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* BaseObjectPool_GetObject_m2A3C1A77AA4D78089B04072C28B8DBF9CBCB2AFB (BaseObjectPool_tA91ECAF33869C8A8CFE682829C8247186F93EB20* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_SetParent_m6677538B60246D958DD91F931C50F969CCBB5250 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_p, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_SetPositionAndRotation_m418859BF59086EEAA084FFD6F258A43FAB408F5A (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_position, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___1_rotation, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E* SegmentSpawner_PickRandomObstacleType_m0C9FFD991D68964BCD3C72C39EE8F7195CF3B8BB (SegmentSpawner_t2F9609B64D5EDFBAE74E7EAB91426F1CCCDB8A19* __this, const RuntimeMethod* method) ;
+inline void Func_2__ctor_m3234C62E5663C620D36B01DB3E6E81937C47F257 (Func_2_t783226A19F7A615419A13469EDCE871408516CD8* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
+{
+	((  void (*) (Func_2_t783226A19F7A615419A13469EDCE871408516CD8*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_2__ctor_m13C0A7F33154D861E2A041B52E88461832DA1697_gshared)(__this, ___0_object, ___1_method, method);
+}
+inline RuntimeObject* Enumerable_Where_TisEnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E_m874A73771F31719FF2848D3913875EDE0091E124 (RuntimeObject* ___0_source, Func_2_t783226A19F7A615419A13469EDCE871408516CD8* ___1_predicate, const RuntimeMethod* method)
+{
+	return ((  RuntimeObject* (*) (RuntimeObject*, Func_2_t783226A19F7A615419A13469EDCE871408516CD8*, const RuntimeMethod*))Enumerable_Where_TisRuntimeObject_m5DAF16724887B42DDBBF391C7F375749E8AA4AD7_gshared)(___0_source, ___1_predicate, method);
+}
+inline List_1_t2DA676FBAF83090EDF93CA32CA4AF629DFEA51B9* Enumerable_ToList_TisEnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E_m60964FBD352CE6B5C799CCBA1840D81054E13140 (RuntimeObject* ___0_source, const RuntimeMethod* method)
+{
+	return ((  List_1_t2DA676FBAF83090EDF93CA32CA4AF629DFEA51B9* (*) (RuntimeObject*, const RuntimeMethod*))Enumerable_ToList_TisRuntimeObject_m6456D63764F29E6B5B2422C3DE25113577CF51EE_gshared)(___0_source, method);
+}
+inline int32_t List_1_get_Count_m672D98D4062FD2B0A0974CB7207F3DE415D15439_inline (List_1_t2DA676FBAF83090EDF93CA32CA4AF629DFEA51B9* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_t2DA676FBAF83090EDF93CA32CA4AF629DFEA51B9*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
+}
+inline Enumerator_tCBC3FDE03F5BAD71D6D3F974BF530FC5E80F28B6 List_1_GetEnumerator_m5B87A4013B633EFE3EDD6F5C1622289D8AF7DDA0 (List_1_t2DA676FBAF83090EDF93CA32CA4AF629DFEA51B9* __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_tCBC3FDE03F5BAD71D6D3F974BF530FC5E80F28B6 (*) (List_1_t2DA676FBAF83090EDF93CA32CA4AF629DFEA51B9*, const RuntimeMethod*))List_1_GetEnumerator_mD8294A7FA2BEB1929487127D476F8EC1CDC23BFC_gshared)(__this, method);
+}
+inline void Enumerator_Dispose_m0903BF045171AD8CC0DAF6EAF2A74F738A2A6DD3 (Enumerator_tCBC3FDE03F5BAD71D6D3F974BF530FC5E80F28B6* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_tCBC3FDE03F5BAD71D6D3F974BF530FC5E80F28B6*, const RuntimeMethod*))Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419_gshared)(__this, method);
+}
+inline EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E* Enumerator_get_Current_m9190CDBD18ABB7E855F3994F6E6A61B05BBAE1BD_inline (Enumerator_tCBC3FDE03F5BAD71D6D3F974BF530FC5E80F28B6* __this, const RuntimeMethod* method)
+{
+	return ((  EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E* (*) (Enumerator_tCBC3FDE03F5BAD71D6D3F974BF530FC5E80F28B6*, const RuntimeMethod*))Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline)(__this, method);
+}
+inline bool Enumerator_MoveNext_m5C7E6AF11C3DECDBBECE51DE6A66820F035C30A9 (Enumerator_tCBC3FDE03F5BAD71D6D3F974BF530FC5E80F28B6* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_tCBC3FDE03F5BAD71D6D3F974BF530FC5E80F28B6*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
+}
+inline EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E* List_1_get_Item_mE91B20EFC4732DA519D88E267A6E299B6534748F (List_1_t2DA676FBAF83090EDF93CA32CA4AF629DFEA51B9* __this, int32_t ___0_index, const RuntimeMethod* method)
+{
+	return ((  EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E* (*) (List_1_t2DA676FBAF83090EDF93CA32CA4AF629DFEA51B9*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___0_index, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_mD83C9C37D652B286F051FB35E28D6B4A024B1A5A (U3CU3Ec_t42A934D060B302D2D82AE49A7061E8B0D446D20A* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SegmentSpawner_SpawnPipeSet_m35CBA1F7F2E28BDFA8AE19DA4A9D4F2CA8C6011C (SegmentSpawner_t2F9609B64D5EDFBAE74E7EAB91426F1CCCDB8A19* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SegmentSpawner_SpawnObstacle_mFDDBBB2D8C377204F2D18122EB58CCB955E6A242 (SegmentSpawner_t2F9609B64D5EDFBAE74E7EAB91426F1CCCDB8A19* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B (RuntimeArray* ___0_array, RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 ___1_fldHandle, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) ;
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 54023
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CeilingTileController__ctor_m6304C3BD8A73B2942561B88E85A2932DA6FFD3DD (CeilingTileController_t2D05763061831CA6F145B2051252571960EE46B1* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 54024
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FloorTileController__ctor_m947AC10BF8E350B1285C49605ABC2B0BD84C2672 (FloorTileController_t5A6773C0FB56F6FE626CB0AC0F48EB13137AB6EC* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 54025
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerController_Start_m1D83076E8B136A71051F2F02545EE04947D3A8CF (PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisRigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F_m0712B7A9DBBAE2C319B4B03394E7731B86FACBF2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m6181F10C09FC1650DAE0EF2308D344A2F170AA45_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/Player/PlayerController.cs:19>
+		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_0;
+		L_0 = Component_GetComponent_TisRigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F_m0712B7A9DBBAE2C319B4B03394E7731B86FACBF2(__this, Component_GetComponent_TisRigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F_m0712B7A9DBBAE2C319B4B03394E7731B86FACBF2_RuntimeMethod_var);
+		__this->___rb = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___rb), (void*)L_0);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/Player/PlayerController.cs:20>
+		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_1;
+		L_1 = Component_GetComponent_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m6181F10C09FC1650DAE0EF2308D344A2F170AA45(__this, Component_GetComponent_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m6181F10C09FC1650DAE0EF2308D344A2F170AA45_RuntimeMethod_var);
+		__this->___sr = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___sr), (void*)L_1);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/Player/PlayerController.cs:21>
+		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_2 = __this->___sr;
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_3 = __this->___kirbyIdle;
+		NullCheck(L_2);
+		SpriteRenderer_set_sprite_m7B176E33955108C60CAE21DFC153A0FAC674CB53(L_2, L_3, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/Player/PlayerController.cs:22>
+		return;
+	}
+}
+// Method Definition Index: 54026
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerController_Update_m1F4051EB5BCBCCE5EEE2E3E49B7E278C3B14EC33 (PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95* __this, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	Touch_t03E51455ED508492B3F278903A0114FA0E87B417 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/Player/PlayerController.cs:26>
+		V_0 = (bool)0;
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/Player/PlayerController.cs:29>
+		bool L_0;
+		L_0 = Input_GetKeyDown_mB237DEA6244132670D38990BAB77D813FBB028D2(((int32_t)32), NULL);
+		if (!L_0)
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/Player/PlayerController.cs:30>
+		V_0 = (bool)1;
+	}
+
+IL_000d:
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/Player/PlayerController.cs:33>
+		int32_t L_1;
+		L_1 = Input_get_touchCount_m057388BFC67A0F4CA53764B1022867ED81D01E39(NULL);
+		if ((((int32_t)L_1) <= ((int32_t)0)))
+		{
+			goto IL_0027;
+		}
+	}
+	{
+		Touch_t03E51455ED508492B3F278903A0114FA0E87B417 L_2;
+		L_2 = Input_GetTouch_m75D99FE801A94279874FA8DC6B6ADAD35F5123B1(0, NULL);
+		V_1 = L_2;
+		int32_t L_3;
+		L_3 = Touch_get_phase_mB82409FB2BE1C32ABDBA6A72E52A099D28AB70B0((&V_1), NULL);
+		if (L_3)
+		{
+			goto IL_0027;
+		}
+	}
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/Player/PlayerController.cs:34>
+		V_0 = (bool)1;
+	}
+
+IL_0027:
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/Player/PlayerController.cs:36>
+		bool L_4 = V_0;
+		if (!L_4)
+		{
+			goto IL_0052;
+		}
+	}
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/Player/PlayerController.cs:38>
+		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_5 = __this->___rb;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_6;
+		L_6 = Vector2_get_up_m41067879408BB378593EF7406AF2525F176F0ABF_inline(NULL);
+		float L_7 = __this->___flapStrength;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_8;
+		L_8 = Vector2_op_Multiply_m2D984B613020089BF5165BA4CA10988E2DC771FE_inline(L_6, L_7, NULL);
+		NullCheck(L_5);
+		Rigidbody2D_set_linearVelocity_mD4C890DE3DF15ECAD0DC61675586C0D1998CC1BB(L_5, L_8, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/Player/PlayerController.cs:39>
+		RuntimeObject* L_9;
+		L_9 = PlayerController_FlapAnimation_mB2EFE095FF76D21114F6F1E6D2749AF02166B2EA(__this, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_10;
+		L_10 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_9, NULL);
+	}
+
+IL_0052:
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/Player/PlayerController.cs:41>
+		return;
+	}
+}
+// Method Definition Index: 54027
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* PlayerController_FlapAnimation_mB2EFE095FF76D21114F6F1E6D2749AF02166B2EA (PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CFlapAnimationU3Ed__8_t50E4B10C5EEE9F84D48F1EFE9ACB51DF72BAE875_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CFlapAnimationU3Ed__8_t50E4B10C5EEE9F84D48F1EFE9ACB51DF72BAE875* L_0 = (U3CFlapAnimationU3Ed__8_t50E4B10C5EEE9F84D48F1EFE9ACB51DF72BAE875*)il2cpp_codegen_object_new(U3CFlapAnimationU3Ed__8_t50E4B10C5EEE9F84D48F1EFE9ACB51DF72BAE875_il2cpp_TypeInfo_var);
+		U3CFlapAnimationU3Ed__8__ctor_mEE79BF59B828F3654B59CD00E95F8919ED3826F5(L_0, 0, NULL);
+		U3CFlapAnimationU3Ed__8_t50E4B10C5EEE9F84D48F1EFE9ACB51DF72BAE875* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this), (void*)__this);
+		return L_1;
+	}
+}
+// Method Definition Index: 54028
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerController_OnCollisionEnter2D_m28C67E4361403BA9990C1E6D9526F78362591667 (PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95* __this, Collision2D_t81E83212C969FDDE2AB84EBCA31502818EEAB85B* ___0_collision, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE2506E48E20814BDD1E4EFBEC22D09594559E97D);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/Player/PlayerController.cs:52>
+		Collision2D_t81E83212C969FDDE2AB84EBCA31502818EEAB85B* L_0 = ___0_collision;
+		NullCheck(L_0);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1;
+		L_1 = Collision2D_get_gameObject_mE4B3D56F3477F7D2D6D7B217DF5488DA1D13204C(L_0, NULL);
+		NullCheck(L_1);
+		String_t* L_2;
+		L_2 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_1, NULL);
+		String_t* L_3;
+		L_3 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralE2506E48E20814BDD1E4EFBEC22D09594559E97D, L_2, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_3, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/Player/PlayerController.cs:53>
+		PlayerController_GameOver_mD882D9359CF176F373469C979D9ED9C300723315(__this, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/Player/PlayerController.cs:54>
+		return;
+	}
+}
+// Method Definition Index: 54029
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerController_OnTriggerEnter2D_mB82BB8D400DC3E0E6B7117AE1A94E72E99CF53FB (PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95* __this, Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* ___0_other, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral654F59142E8866447E7C0C60F94C4A0765D840D8);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB5A6CF87DBA6CC9A26FF07266B5B2DD43CEB6D3D);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE6A07367BAFA896EC0280C99A4789EF78DCD4001);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/Player/PlayerController.cs:59>
+		Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* L_0 = ___0_other;
+		NullCheck(L_0);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1;
+		L_1 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_0, NULL);
+		NullCheck(L_1);
+		String_t* L_2;
+		L_2 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_1, NULL);
+		String_t* L_3;
+		L_3 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralB5A6CF87DBA6CC9A26FF07266B5B2DD43CEB6D3D, L_2, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_3, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/Player/PlayerController.cs:62>
+		Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* L_4 = ___0_other;
+		NullCheck(L_4);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5;
+		L_5 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_4, NULL);
+		NullCheck(L_5);
+		bool L_6;
+		L_6 = GameObject_CompareTag_m6378BE50D009A93D46036F74CC3F7E2ECB0636E5(L_5, _stringLiteralE6A07367BAFA896EC0280C99A4789EF78DCD4001, NULL);
+		if (!L_6)
+		{
+			goto IL_003c;
+		}
+	}
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/Player/PlayerController.cs:64>
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral654F59142E8866447E7C0C60F94C4A0765D840D8, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/Player/PlayerController.cs:65>
+		PlayerController_GameOver_mD882D9359CF176F373469C979D9ED9C300723315(__this, NULL);
+	}
+
+IL_003c:
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/Player/PlayerController.cs:67>
+		return;
+	}
+}
+// Method Definition Index: 54030
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerController_GameOver_mD882D9359CF176F373469C979D9ED9C300723315 (PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Scene_tA1DC762B79745EB5140F054C884855B922318356 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/Player/PlayerController.cs:71>
+		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		Scene_tA1DC762B79745EB5140F054C884855B922318356 L_0;
+		L_0 = SceneManager_GetActiveScene_m0B320EC4302F51A71495D1CCD1A0FF9C2ED1FDC8(NULL);
+		V_0 = L_0;
+		String_t* L_1;
+		L_1 = Scene_get_name_m3C818DFA663E159274DAD823B780C7616C5E2A8C((&V_0), NULL);
+		SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E(L_1, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/Player/PlayerController.cs:72>
+		return;
+	}
+}
+// Method Definition Index: 54031
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerController__ctor_mDDAB7C7D82E1A5B3E6C197B1AB9D653DFE554F33 (PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/Player/PlayerController.cs:9>
+		__this->___flapStrength = (10.0f);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/Player/PlayerController.cs:14>
+		__this->___flapDuration = (0.150000006f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 54032
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFlapAnimationU3Ed__8__ctor_mEE79BF59B828F3654B59CD00E95F8919ED3826F5 (U3CFlapAnimationU3Ed__8_t50E4B10C5EEE9F84D48F1EFE9ACB51DF72BAE875* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		int32_t L_0 = ___0_U3CU3E1__state;
+		__this->___U3CU3E1__state = L_0;
+		return;
+	}
+}
+// Method Definition Index: 54033
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFlapAnimationU3Ed__8_System_IDisposable_Dispose_mE83BF53203D35AFB1894F35865013ECC2287A4A5 (U3CFlapAnimationU3Ed__8_t50E4B10C5EEE9F84D48F1EFE9ACB51DF72BAE875* __this, const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
+// Method Definition Index: 54034
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CFlapAnimationU3Ed__8_MoveNext_m367CFE1C3EF7E65C19723CD13E03E654E8EA37AF (U3CFlapAnimationU3Ed__8_t50E4B10C5EEE9F84D48F1EFE9ACB51DF72BAE875* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95* V_1 = NULL;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state;
+		V_0 = L_0;
+		PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95* L_1 = __this->___U3CU3E4__this;
+		V_1 = L_1;
+		int32_t L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		int32_t L_3 = V_0;
+		if ((((int32_t)L_3) == ((int32_t)1)))
+		{
+			goto IL_0049;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_0017:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/Player/PlayerController.cs:45>
+		PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95* L_4 = V_1;
+		NullCheck(L_4);
+		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_5 = L_4->___sr;
+		PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95* L_6 = V_1;
+		NullCheck(L_6);
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_7 = L_6->___kirbyFlap;
+		NullCheck(L_5);
+		SpriteRenderer_set_sprite_m7B176E33955108C60CAE21DFC153A0FAC674CB53(L_5, L_7, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/Player/PlayerController.cs:46>
+		PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95* L_8 = V_1;
+		NullCheck(L_8);
+		float L_9 = L_8->___flapDuration;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_10 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_10, L_9, NULL);
+		__this->___U3CU3E2__current = L_10;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_10);
+		__this->___U3CU3E1__state = 1;
+		return (bool)1;
+	}
+
+IL_0049:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/Player/PlayerController.cs:47>
+		PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95* L_11 = V_1;
+		NullCheck(L_11);
+		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_12 = L_11->___sr;
+		PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95* L_13 = V_1;
+		NullCheck(L_13);
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_14 = L_13->___kirbyIdle;
+		NullCheck(L_12);
+		SpriteRenderer_set_sprite_m7B176E33955108C60CAE21DFC153A0FAC674CB53(L_12, L_14, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/Player/PlayerController.cs:48>
+		return (bool)0;
+	}
+}
+// Method Definition Index: 54035
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CFlapAnimationU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mF5FDC1C042535006AC83F755D6D01ACEAEDC4E4C (U3CFlapAnimationU3Ed__8_t50E4B10C5EEE9F84D48F1EFE9ACB51DF72BAE875* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+// Method Definition Index: 54036
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFlapAnimationU3Ed__8_System_Collections_IEnumerator_Reset_m5B872F2FD1C38A97E7C4FE3AE86E9BFA9A8F2154 (U3CFlapAnimationU3Ed__8_t50E4B10C5EEE9F84D48F1EFE9ACB51DF72BAE875* __this, const RuntimeMethod* method) 
+{
+	{
+		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CFlapAnimationU3Ed__8_System_Collections_IEnumerator_Reset_m5B872F2FD1C38A97E7C4FE3AE86E9BFA9A8F2154_RuntimeMethod_var)));
+	}
+}
+// Method Definition Index: 54037
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CFlapAnimationU3Ed__8_System_Collections_IEnumerator_get_Current_mF9BE0A6EAE2E7750293DE4259599C0E2AA0E4964 (U3CFlapAnimationU3Ed__8_t50E4B10C5EEE9F84D48F1EFE9ACB51DF72BAE875* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 54038
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseObjectController_OnEnable_m5B963A15C2A53960C49D0AA1E7F27020285E0FEA (BaseObjectController_t02A80F1A74CE3E86096548A5747C1168303B3A18* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectController.cs:12>
+		return;
+	}
+}
+// Method Definition Index: 54039
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseObjectController_Update_mE2DE2E05DAF97F3B9A94F171A9E5E6FC00339B16 (BaseObjectController_t02A80F1A74CE3E86096548A5747C1168303B3A18* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectController.cs:16>
+		BaseObjectController_MoveLeft_mF3D3FD64C824FD82C1ADF3366CDF9DC0E5E23860(__this, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectController.cs:17>
+		return;
+	}
+}
+// Method Definition Index: 54040
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseObjectController_MoveLeft_mF3D3FD64C824FD82C1ADF3366CDF9DC0E5E23860 (BaseObjectController_t02A80F1A74CE3E86096548A5747C1168303B3A18* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectController.cs:21>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
+		L_0 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1 = L_0;
+		NullCheck(L_1);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
+		L_2 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_1, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
+		L_3 = Vector3_get_left_m8C1116485A9E689760AEE1142F5977852278B7E1_inline(NULL);
+		float L_4 = __this->___moveSpeedX;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
+		L_5 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_3, L_4, NULL);
+		float L_6;
+		L_6 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
+		L_7 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_5, L_6, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+		L_8 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_2, L_7, NULL);
+		NullCheck(L_1);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_1, L_8, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectController.cs:23>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9;
+		L_9 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_9);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
+		L_10 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_9, NULL);
+		float L_11 = L_10.___x;
+		float L_12 = __this->___deadZone;
+		if ((!(((float)L_11) < ((float)L_12))))
+		{
+			goto IL_0054;
+		}
+	}
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectController.cs:25>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13;
+		L_13 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		NullCheck(L_13);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_13, (bool)0, NULL);
+	}
+
+IL_0054:
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectController.cs:27>
+		return;
+	}
+}
+// Method Definition Index: 54041
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseObjectController__ctor_m29DC3E1EA7AD5440E30771191102829487C0B0E8 (BaseObjectController_t02A80F1A74CE3E86096548A5747C1168303B3A18* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectController.cs:6>
+		__this->___moveSpeedX = (4.0f);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectController.cs:7>
+		__this->___deadZone = (-10.0f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 54042
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseObjectPool_Awake_m56A60640E00235323172F2A77474D825E55F7D4C (BaseObjectPool_tA91ECAF33869C8A8CFE682829C8247186F93EB20* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectPool.cs:20>
+		BaseObjectPool_InitializePool_m825405053834F14886D70E36BB8503B0B100EB75(__this, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectPool.cs:21>
+		return;
+	}
+}
+// Method Definition Index: 54043
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseObjectPool_InitializePool_m825405053834F14886D70E36BB8503B0B100EB75 (BaseObjectPool_tA91ECAF33869C8A8CFE682829C8247186F93EB20* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Queue_1_Enqueue_m5A435FDDADE10BC9599E175F9B600C40ECFE3C1B_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_1 = NULL;
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectPool.cs:25>
+		V_0 = 0;
+		goto IL_002d;
+	}
+
+IL_0004:
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectPool.cs:27>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___prefab;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
+		L_1 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
+		L_2 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811(L_0, L_1, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811_RuntimeMethod_var);
+		V_1 = L_2;
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectPool.cs:28>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = V_1;
+		NullCheck(L_3);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)0, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectPool.cs:29>
+		Queue_1_t57484CF2A316F8471C210AA410F8270CCEFF92F4* L_4 = __this->___pool;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = V_1;
+		NullCheck(L_4);
+		Queue_1_Enqueue_m5A435FDDADE10BC9599E175F9B600C40ECFE3C1B(L_4, L_5, Queue_1_Enqueue_m5A435FDDADE10BC9599E175F9B600C40ECFE3C1B_RuntimeMethod_var);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectPool.cs:25>
+		int32_t L_6 = V_0;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_6, 1));
+	}
+
+IL_002d:
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectPool.cs:25>
+		int32_t L_7 = V_0;
+		int32_t L_8 = __this->___poolSize;
+		if ((((int32_t)L_7) < ((int32_t)L_8)))
+		{
+			goto IL_0004;
+		}
+	}
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectPool.cs:31>
+		return;
+	}
+}
+// Method Definition Index: 54044
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* BaseObjectPool_GetObject_m2A3C1A77AA4D78089B04072C28B8DBF9CBCB2AFB (BaseObjectPool_tA91ECAF33869C8A8CFE682829C8247186F93EB20* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Queue_1_Dequeue_m11F75D84C5BAC39C7B433215A25DFC2818603B24_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Queue_1_get_Count_m63EB352CDC9F12E3141775BB74938A69685DE1D7_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectPool.cs:36>
+		Queue_1_t57484CF2A316F8471C210AA410F8270CCEFF92F4* L_0 = __this->___pool;
+		NullCheck(L_0);
+		int32_t L_1;
+		L_1 = Queue_1_get_Count_m63EB352CDC9F12E3141775BB74938A69685DE1D7_inline(L_0, Queue_1_get_Count_m63EB352CDC9F12E3141775BB74938A69685DE1D7_RuntimeMethod_var);
+		if (L_1)
+		{
+			goto IL_0026;
+		}
+	}
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectPool.cs:38>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___prefab;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
+		L_3 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4;
+		L_4 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811(L_2, L_3, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811_RuntimeMethod_var);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectPool.cs:39>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = L_4;
+		NullCheck(L_5);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)0, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectPool.cs:40>
+		return L_5;
+	}
+
+IL_0026:
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectPool.cs:44>
+		Queue_1_t57484CF2A316F8471C210AA410F8270CCEFF92F4* L_6 = __this->___pool;
+		NullCheck(L_6);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7;
+		L_7 = Queue_1_Dequeue_m11F75D84C5BAC39C7B433215A25DFC2818603B24(L_6, Queue_1_Dequeue_m11F75D84C5BAC39C7B433215A25DFC2818603B24_RuntimeMethod_var);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectPool.cs:45>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = L_7;
+		NullCheck(L_8);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_8, (bool)1, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectPool.cs:46>
+		return L_8;
+	}
+}
+// Method Definition Index: 54045
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseObjectPool_ReturnObject_m2CEFD956660C6F508E767038E7D28AF360FACF2E (BaseObjectPool_tA91ECAF33869C8A8CFE682829C8247186F93EB20* __this, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_obj, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Queue_1_Enqueue_m5A435FDDADE10BC9599E175F9B600C40ECFE3C1B_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectPool.cs:51>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = ___0_obj;
+		NullCheck(L_0);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)0, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectPool.cs:52>
+		Queue_1_t57484CF2A316F8471C210AA410F8270CCEFF92F4* L_1 = __this->___pool;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = ___0_obj;
+		NullCheck(L_1);
+		Queue_1_Enqueue_m5A435FDDADE10BC9599E175F9B600C40ECFE3C1B(L_1, L_2, Queue_1_Enqueue_m5A435FDDADE10BC9599E175F9B600C40ECFE3C1B_RuntimeMethod_var);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectPool.cs:53>
+		return;
+	}
+}
+// Method Definition Index: 54046
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseObjectPool__ctor_m0B889CE7E2864CB4BC044DBC0754F88BEB0A73DF (BaseObjectPool_tA91ECAF33869C8A8CFE682829C8247186F93EB20* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Queue_1__ctor_m6C30DC4D1D969EDB9CB65C30AD26D6263B66DB82_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Queue_1_t57484CF2A316F8471C210AA410F8270CCEFF92F4_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectPool.cs:14>
+		__this->___poolSize = 5;
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/BaseObjectPool.cs:16>
+		Queue_1_t57484CF2A316F8471C210AA410F8270CCEFF92F4* L_0 = (Queue_1_t57484CF2A316F8471C210AA410F8270CCEFF92F4*)il2cpp_codegen_object_new(Queue_1_t57484CF2A316F8471C210AA410F8270CCEFF92F4_il2cpp_TypeInfo_var);
+		Queue_1__ctor_m6C30DC4D1D969EDB9CB65C30AD26D6263B66DB82(L_0, Queue_1__ctor_m6C30DC4D1D969EDB9CB65C30AD26D6263B66DB82_RuntimeMethod_var);
+		__this->___pool = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___pool), (void*)L_0);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 54047
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PipeController_Update_m053F2AD13A3C136D4CCE909DB49FBB290AAEEB32 (PipeController_tA80E962A600804170C3CB9ADCCB15FF686AC25E8* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Checkpoints/PipeController.cs:7>
+		BaseObjectController_Update_mE2DE2E05DAF97F3B9A94F171A9E5E6FC00339B16(__this, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Checkpoints/PipeController.cs:8>
+		return;
+	}
+}
+// Method Definition Index: 54048
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PipeController__ctor_m7968AD9D85D54B7982ED531B72795D13CA3B7F99 (PipeController_tA80E962A600804170C3CB9ADCCB15FF686AC25E8* __this, const RuntimeMethod* method) 
+{
+	{
+		BaseObjectController__ctor_m29DC3E1EA7AD5440E30771191102829487C0B0E8(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 54049
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PipePool__ctor_m4613804E27F4090FF540BCBFE54AB63738C8477B (PipePool_t603A70FC098401F2D2FF8C71EFAD7E4D880B12CB* __this, const RuntimeMethod* method) 
+{
+	{
+		BaseObjectPool__ctor_m0B889CE7E2864CB4BC044DBC0754F88BEB0A73DF(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 54050
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BouncerController_Update_m8901E5D1E4D391C48E4CF345A961713B06372ED9 (BouncerController_t2958DFE0F7C8FA7C90931453B0135C068221E03F* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Bouncer/BouncerController.cs:24>
+		BaseObjectController_Update_mE2DE2E05DAF97F3B9A94F171A9E5E6FC00339B16(__this, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Bouncer/BouncerController.cs:26>
+		BouncerController_VerticalMovement_mE91BFC2FA39760F69EDE603CA8A766DD7D097EB6(__this, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Bouncer/BouncerController.cs:27>
+		return;
+	}
+}
+// Method Definition Index: 54051
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BouncerController_VerticalMovement_mE91BFC2FA39760F69EDE603CA8A766DD7D097EB6 (BouncerController_t2958DFE0F7C8FA7C90931453B0135C068221E03F* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Bouncer/BouncerController.cs:32>
+		bool L_0 = __this->___movingUp;
+		if (!L_0)
+		{
+			goto IL_0054;
+		}
+	}
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Bouncer/BouncerController.cs:34>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
+		L_1 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2 = L_1;
+		NullCheck(L_2);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
+		L_3 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_2, NULL);
+		float L_4 = __this->___moveSpeed;
+		float L_5;
+		L_5 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
+		L_6 = Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
+		L_7 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline(((float)il2cpp_codegen_multiply(L_4, L_5)), L_6, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+		L_8 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_3, L_7, NULL);
+		NullCheck(L_2);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_2, L_8, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Bouncer/BouncerController.cs:37>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9;
+		L_9 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_9);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
+		L_10 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_9, NULL);
+		float L_11 = L_10.___y;
+		float L_12 = __this->___topLimit;
+		if ((!(((float)L_11) >= ((float)L_12))))
+		{
+			goto IL_009f;
+		}
+	}
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Bouncer/BouncerController.cs:37>
+		__this->___movingUp = (bool)0;
+		return;
+	}
+
+IL_0054:
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Bouncer/BouncerController.cs:41>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_13;
+		L_13 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_14 = L_13;
+		NullCheck(L_14);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15;
+		L_15 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_14, NULL);
+		float L_16 = __this->___moveSpeed;
+		float L_17;
+		L_17 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18;
+		L_18 = Vector3_get_down_mF62B2AE7C5AC31EAC9CB62797C7190C90A7A8599_inline(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
+		L_19 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline(((float)il2cpp_codegen_multiply(L_16, L_17)), L_18, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20;
+		L_20 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_15, L_19, NULL);
+		NullCheck(L_14);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_14, L_20, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Bouncer/BouncerController.cs:42>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21;
+		L_21 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_21);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22;
+		L_22 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_21, NULL);
+		float L_23 = L_22.___y;
+		float L_24 = __this->___bottomLimit;
+		if ((!(((float)L_23) <= ((float)L_24))))
+		{
+			goto IL_009f;
+		}
+	}
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Bouncer/BouncerController.cs:42>
+		__this->___movingUp = (bool)1;
+	}
+
+IL_009f:
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Bouncer/BouncerController.cs:44>
+		return;
+	}
+}
+// Method Definition Index: 54052
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BouncerController__ctor_m782FBCED36B4C66A47F6CD26938D2CFD68304B9A (BouncerController_t2958DFE0F7C8FA7C90931453B0135C068221E03F* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Bouncer/BouncerController.cs:16>
+		__this->___topLimit = (8.0f);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Bouncer/BouncerController.cs:17>
+		__this->___bottomLimit = (-10.0f);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Bouncer/BouncerController.cs:18>
+		__this->___moveSpeed = (8.0f);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Bouncer/BouncerController.cs:19>
+		__this->___movingUp = (bool)1;
+		BaseObjectController__ctor_m29DC3E1EA7AD5440E30771191102829487C0B0E8(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 54053
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BouncerPool__ctor_mE39E3C4DB8C64E81DEE5732E03A3AF9C0ED90F74 (BouncerPool_t1E260C3E1E5DA45940B11CBB7CB4EAF22CDFDA1D* __this, const RuntimeMethod* method) 
+{
+	{
+		BaseObjectPool__ctor_m0B889CE7E2864CB4BC044DBC0754F88BEB0A73DF(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 54054
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnemyType__ctor_mAC3AF6A916A730ECE48BAE29CACB610F82FC31FF (EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/EnemyType.cs:7>
+		__this->___weight = 1;
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/EnemyType.cs:11>
+		__this->___enabled = (bool)1;
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 54055
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PulsarController_Start_m197C09605628DFB27F8E21B1AD0CACAC22C86483 (PulsarController_t43D4C0B329567DACD2AAEB4C52B89AAE078FED93* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:32>
+		PulsarController_chooseRandomPeak_m1F46E888166D37D3267E3297FB3DE3AA2EB753D8(__this, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:33>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
+		L_0 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
+		L_1 = Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline(NULL);
+		float L_2 = __this->___baseScale;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
+		L_3 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_1, L_2, NULL);
+		NullCheck(L_0);
+		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_0, L_3, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:34>
+		return;
+	}
+}
+// Method Definition Index: 54056
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PulsarController_Update_m92C93131BA32225BA7F7848BE2F4F0A819CFD1C4 (PulsarController_t43D4C0B329567DACD2AAEB4C52B89AAE078FED93* __this, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:39>
+		BaseObjectController_Update_mE2DE2E05DAF97F3B9A94F171A9E5E6FC00339B16(__this, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:41>
+		int32_t L_0 = __this->___state;
+		V_0 = L_0;
+		int32_t L_1 = V_0;
+		switch (L_1)
+		{
+			case 0:
+			{
+				goto IL_0020;
+			}
+			case 1:
+			{
+				goto IL_0027;
+			}
+			case 2:
+			{
+				goto IL_002e;
+			}
+		}
+	}
+	{
+		return;
+	}
+
+IL_0020:
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:44>
+		PulsarController_Grow_mC9E1DD2A275876169B680AA89E5536FC147840A5(__this, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:45>
+		return;
+	}
+
+IL_0027:
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:47>
+		PulsarController_Hold_m459F845BB46C77E10D237E92FE377CF30C5C841E(__this, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:48>
+		return;
+	}
+
+IL_002e:
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:50>
+		PulsarController_Shrink_m87C4520AB76CE6D34EF0230FAAB9CD18167C62B8(__this, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:53>
+		return;
+	}
+}
+// Method Definition Index: 54057
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PulsarController_chooseRandomPeak_m1F46E888166D37D3267E3297FB3DE3AA2EB753D8 (PulsarController_t43D4C0B329567DACD2AAEB4C52B89AAE078FED93* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:57>
+		float L_0 = __this->___minPulseScale;
+		float L_1 = __this->___maxPulseScale;
+		float L_2;
+		L_2 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494(L_0, L_1, NULL);
+		__this->___targetScale = L_2;
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:58>
+		return;
+	}
+}
+// Method Definition Index: 54058
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PulsarController_Grow_mC9E1DD2A275876169B680AA89E5536FC147840A5 (PulsarController_t43D4C0B329567DACD2AAEB4C52B89AAE078FED93* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:63>
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:64>
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:65>
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:66>
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:67>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
+		L_0 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
+		L_1 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_1);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
+		L_2 = Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F(L_1, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
+		L_3 = Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline(NULL);
+		float L_4 = __this->___targetScale;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
+		L_5 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_3, L_4, NULL);
+		float L_6 = __this->___growSpeed;
+		float L_7;
+		L_7 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+		L_8 = Vector3_MoveTowards_m0363264647799F3173AC37F8E819F98298249B08_inline(L_2, L_5, ((float)il2cpp_codegen_multiply(L_6, L_7)), NULL);
+		NullCheck(L_0);
+		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_0, L_8, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:69>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9;
+		L_9 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_9);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
+		L_10 = Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F(L_9, NULL);
+		float L_11 = L_10.___x;
+		float L_12 = __this->___targetScale;
+		if ((!(((double)((double)L_11)) >= ((double)((double)il2cpp_codegen_subtract(((double)L_12), (0.01)))))))
+		{
+			goto IL_006e;
+		}
+	}
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:70>
+		__this->___state = 1;
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:71>
+		float L_13 = __this->___holdDuration;
+		__this->___holdTimer = L_13;
+	}
+
+IL_006e:
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:73>
+		return;
+	}
+}
+// Method Definition Index: 54059
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PulsarController_Hold_m459F845BB46C77E10D237E92FE377CF30C5C841E (PulsarController_t43D4C0B329567DACD2AAEB4C52B89AAE078FED93* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:78>
+		float L_0 = __this->___holdTimer;
+		float L_1;
+		L_1 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		__this->___holdTimer = ((float)il2cpp_codegen_subtract(L_0, L_1));
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:79>
+		float L_2 = __this->___holdTimer;
+		if ((!(((float)L_2) <= ((float)(0.0f)))))
+		{
+			goto IL_0026;
+		}
+	}
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:81>
+		__this->___state = 2;
+	}
+
+IL_0026:
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:83>
+		return;
+	}
+}
+// Method Definition Index: 54060
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PulsarController_Shrink_m87C4520AB76CE6D34EF0230FAAB9CD18167C62B8 (PulsarController_t43D4C0B329567DACD2AAEB4C52B89AAE078FED93* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:88>
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:89>
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:90>
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:91>
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:92>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
+		L_0 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
+		L_1 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_1);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
+		L_2 = Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F(L_1, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
+		L_3 = Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline(NULL);
+		float L_4 = __this->___baseScale;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
+		L_5 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_3, L_4, NULL);
+		float L_6 = __this->___shrinkSpeed;
+		float L_7;
+		L_7 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+		L_8 = Vector3_MoveTowards_m0363264647799F3173AC37F8E819F98298249B08_inline(L_2, L_5, ((float)il2cpp_codegen_multiply(L_6, L_7)), NULL);
+		NullCheck(L_0);
+		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_0, L_8, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:94>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9;
+		L_9 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_9);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
+		L_10 = Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F(L_9, NULL);
+		float L_11 = L_10.___x;
+		float L_12 = __this->___baseScale;
+		if ((!(((float)L_11) <= ((float)((float)il2cpp_codegen_add(L_12, (0.00999999978f)))))))
+		{
+			goto IL_0062;
+		}
+	}
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:97>
+		PulsarController_chooseRandomPeak_m1F46E888166D37D3267E3297FB3DE3AA2EB753D8(__this, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:98>
+		__this->___state = 0;
+	}
+
+IL_0062:
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:100>
+		return;
+	}
+}
+// Method Definition Index: 54061
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PulsarController__ctor_m3F9AC179CB1B7F5DDFEB8A27E1E522758DB28018 (PulsarController_t43D4C0B329567DACD2AAEB4C52B89AAE078FED93* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:8>
+		__this->___baseScale = (0.5f);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:10>
+		__this->___minPulseScale = (0.5f);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:12>
+		__this->___maxPulseScale = (1.0f);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:14>
+		__this->___growSpeed = (10.0f);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:16>
+		__this->___shrinkSpeed = (1.5f);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Pulsar/PulsarController.cs:18>
+		__this->___holdDuration = (1.0f);
+		BaseObjectController__ctor_m29DC3E1EA7AD5440E30771191102829487C0B0E8(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 54062
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PulsarPool__ctor_m4A313C878498585F84E600412FC077D34C50DEE0 (PulsarPool_t023C8F0DE030A26CED438AA6BBE727C1B97E7BC7* __this, const RuntimeMethod* method) 
+{
+	{
+		BaseObjectPool__ctor_m0B889CE7E2864CB4BC044DBC0754F88BEB0A73DF(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 54063
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TurnerController_Awake_m4ED53B6B91ABAE63A3937E32C872FBC123E1C994 (TurnerController_t29F4197B707D0D429F6C42E4F64CFEDD7A33501B* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Turner/TurnerController.cs:16>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
+		L_0 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_0);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
+		L_1 = Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF(L_0, 0, NULL);
+		__this->___sprite = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___sprite), (void*)L_1);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Turner/TurnerController.cs:17>
+		return;
+	}
+}
+// Method Definition Index: 54064
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TurnerController_Update_mA46BC938FD57639DBA57CD8358DF4D787D01BFC9 (TurnerController_t29F4197B707D0D429F6C42E4F64CFEDD7A33501B* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Turner/TurnerController.cs:21>
+		BaseObjectController_Update_mE2DE2E05DAF97F3B9A94F171A9E5E6FC00339B16(__this, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Turner/TurnerController.cs:22>
+		TurnerController_RotateTurner_mA7BA8612926CB831ABC2DB58FB9F67705401CBE0(__this, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Turner/TurnerController.cs:23>
+		return;
+	}
+}
+// Method Definition Index: 54065
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TurnerController_RotateTurner_mA7BA8612926CB831ABC2DB58FB9F67705401CBE0 (TurnerController_t29F4197B707D0D429F6C42E4F64CFEDD7A33501B* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Turner/TurnerController.cs:28>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___sprite;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = __this->___pivotOffset;
+		NullCheck(L_0);
+		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_0, L_1, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Turner/TurnerController.cs:31>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+		L_2 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		float L_3 = __this->___rotationSpeed;
+		float L_4;
+		L_4 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		NullCheck(L_2);
+		Transform_Rotate_m7EA47AD57F43D478CCB0523D179950EE49CDA3E2(L_2, (0.0f), (0.0f), ((float)il2cpp_codegen_multiply(L_3, L_4)), NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Turner/TurnerController.cs:32>
+		return;
+	}
+}
+// Method Definition Index: 54066
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TurnerController__ctor_mA529133241022C17D2FE6FB079700C135847A074 (TurnerController_t29F4197B707D0D429F6C42E4F64CFEDD7A33501B* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Turner/TurnerController.cs:7>
+		__this->___rotationSpeed = (180.0f);
+		BaseObjectController__ctor_m29DC3E1EA7AD5440E30771191102829487C0B0E8(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 54067
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TurnerPool__ctor_m8FC3DD4C220D80D53BBBAB60B87B8201899D4BE4 (TurnerPool_t3273B50BAE7D75A429245078155471508B5D3112* __this, const RuntimeMethod* method) 
+{
+	{
+		BaseObjectPool__ctor_m0B889CE7E2864CB4BC044DBC0754F88BEB0A73DF(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 54068
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallerController_Update_mC4CEC23F6CF20157C7911468E98ECF4B0120A31E (WallerController_t5628D659C9DD1E3FA9965AFFBE18E8FD292D52F8* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Waller/WallerController.cs:9>
+		BaseObjectController_Update_mE2DE2E05DAF97F3B9A94F171A9E5E6FC00339B16(__this, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Waller/WallerController.cs:10>
+		return;
+	}
+}
+// Method Definition Index: 54069
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallerController_OnEnable_m7C7171C1DFE8E1743EB14AC1CC722659F5487445 (WallerController_t5628D659C9DD1E3FA9965AFFBE18E8FD292D52F8* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Waller/WallerController.cs:14>
+		BaseObjectController_OnEnable_m5B963A15C2A53960C49D0AA1E7F27020285E0FEA(__this, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Waller/WallerController.cs:15>
+		WallerController_PositionWallerInY_m60334D0A7394424BDBE8C004745B947A9639F1C5(__this, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Waller/WallerController.cs:16>
+		return;
+	}
+}
+// Method Definition Index: 54070
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallerController_PositionWallerInY_m60334D0A7394424BDBE8C004745B947A9639F1C5 (WallerController_t5628D659C9DD1E3FA9965AFFBE18E8FD292D52F8* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF586E73A97C8D1B370AADE1F08B0E657BD0EC9F2);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	float G_B3_0 = 0.0f;
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Waller/WallerController.cs:21>
+		int32_t L_0;
+		L_0 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(0, 2, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Waller/WallerController.cs:24>
+		if (!L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		float L_1 = __this->___bottomY;
+		G_B3_0 = L_1;
+		goto IL_0017;
+	}
+
+IL_0011:
+	{
+		float L_2 = __this->___topY;
+		G_B3_0 = L_2;
+	}
+
+IL_0017:
+	{
+		V_0 = G_B3_0;
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Waller/WallerController.cs:27>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
+		L_3 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_3);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
+		L_4 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_3, NULL);
+		V_1 = L_4;
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Waller/WallerController.cs:28>
+		float L_5 = V_0;
+		(&V_1)->___y = L_5;
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Waller/WallerController.cs:29>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
+		L_6 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7 = V_1;
+		NullCheck(L_6);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_6, L_7, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Waller/WallerController.cs:30>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8;
+		L_8 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_8);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
+		L_9 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_8, NULL);
+		float L_10 = L_9.___y;
+		float L_11 = L_10;
+		RuntimeObject* L_12 = Box(il2cpp_defaults.single_class, &L_11);
+		String_t* L_13;
+		L_13 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteralF586E73A97C8D1B370AADE1F08B0E657BD0EC9F2, L_12, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_13, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Waller/WallerController.cs:31>
+		return;
+	}
+}
+// Method Definition Index: 54071
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallerController__ctor_m8A683E05C15E05AB3C3B0099B4F3A6CE36B86014 (WallerController_t5628D659C9DD1E3FA9965AFFBE18E8FD292D52F8* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Waller/WallerController.cs:5>
+		__this->___topY = (6.5f);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Gameplay/Enemies/Waller/WallerController.cs:6>
+		__this->___bottomY = (-6.5f);
+		BaseObjectController__ctor_m29DC3E1EA7AD5440E30771191102829487C0B0E8(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 54072
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void wallerPool__ctor_m7CC147ACEBC9EC95461A455AD234CF269B9A4979 (wallerPool_tCA13E96FCFB92D39554DA3901A5456D7D0C2F262* __this, const RuntimeMethod* method) 
+{
+	{
+		BaseObjectPool__ctor_m0B889CE7E2864CB4BC044DBC0754F88BEB0A73DF(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 54073
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SegmentSpawner_Start_m4B6789B4E7D0E7F3174526E038A692BB26018C69 (SegmentSpawner_t2F9609B64D5EDFBAE74E7EAB91426F1CCCDB8A19* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:31>
+		RuntimeObject* L_0;
+		L_0 = SegmentSpawner_SpawnSegments_mB6C45EBAA6CFAF52C56CD8DC43E80D7DECE1AD58(__this, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_1;
+		L_1 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_0, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:32>
+		return;
+	}
+}
+// Method Definition Index: 54074
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* SegmentSpawner_SpawnSegments_mB6C45EBAA6CFAF52C56CD8DC43E80D7DECE1AD58 (SegmentSpawner_t2F9609B64D5EDFBAE74E7EAB91426F1CCCDB8A19* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CSpawnSegmentsU3Ed__15_t8B8C85160A8F3CD18D9568CA1E4FDBF1416E3836_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CSpawnSegmentsU3Ed__15_t8B8C85160A8F3CD18D9568CA1E4FDBF1416E3836* L_0 = (U3CSpawnSegmentsU3Ed__15_t8B8C85160A8F3CD18D9568CA1E4FDBF1416E3836*)il2cpp_codegen_object_new(U3CSpawnSegmentsU3Ed__15_t8B8C85160A8F3CD18D9568CA1E4FDBF1416E3836_il2cpp_TypeInfo_var);
+		U3CSpawnSegmentsU3Ed__15__ctor_m74E5C64044B186DB9DB65BF6A0A973E7C65AE1BD(L_0, 0, NULL);
+		U3CSpawnSegmentsU3Ed__15_t8B8C85160A8F3CD18D9568CA1E4FDBF1416E3836* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this), (void*)__this);
+		return L_1;
+	}
+}
+// Method Definition Index: 54075
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SegmentSpawner_SpawnPipeSet_m35CBA1F7F2E28BDFA8AE19DA4A9D4F2CA8C6011C (SegmentSpawner_t2F9609B64D5EDFBAE74E7EAB91426F1CCCDB8A19* __this, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:63>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
+		L_0 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_0);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
+		L_1 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_0, NULL);
+		float L_2 = L_1.___y;
+		float L_3 = __this->___pipeHeightOffset;
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:64>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
+		L_4 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_4);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
+		L_5 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_4, NULL);
+		float L_6 = L_5.___y;
+		float L_7 = __this->___pipeHeightOffset;
+		V_0 = ((float)il2cpp_codegen_add(L_6, L_7));
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:66>
+		float L_8 = V_0;
+		float L_9;
+		L_9 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494(((float)il2cpp_codegen_subtract(L_2, L_3)), L_8, NULL);
+		V_1 = L_9;
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:68>
+		PipePool_t603A70FC098401F2D2FF8C71EFAD7E4D880B12CB* L_10 = __this->___pipePool;
+		NullCheck(L_10);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11;
+		L_11 = BaseObjectPool_GetObject_m2A3C1A77AA4D78089B04072C28B8DBF9CBCB2AFB(L_10, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:69>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12 = L_11;
+		NullCheck(L_12);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_13;
+		L_13 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_12, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_14 = __this->___pipeSetEnvironment;
+		NullCheck(L_13);
+		Transform_SetParent_m6677538B60246D958DD91F931C50F969CCBB5250(L_13, L_14, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:70>
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:71>
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:72>
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:73>
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:74>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = L_12;
+		NullCheck(L_15);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_16;
+		L_16 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_15, NULL);
+		float L_17 = __this->___pipeSpawnX;
+		float L_18 = V_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
+		memset((&L_19), 0, sizeof(L_19));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_19), L_17, L_18, (0.0f), NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_20;
+		L_20 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_20);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_21;
+		L_21 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_20, NULL);
+		NullCheck(L_16);
+		Transform_SetPositionAndRotation_m418859BF59086EEAA084FFD6F258A43FAB408F5A(L_16, L_19, L_21, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:75>
+		NullCheck(L_15);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_15, (bool)1, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:76>
+		return;
+	}
+}
+// Method Definition Index: 54076
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SegmentSpawner_SpawnObstacle_mFDDBBB2D8C377204F2D18122EB58CCB955E6A242 (SegmentSpawner_t2F9609B64D5EDFBAE74E7EAB91426F1CCCDB8A19* __this, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:81>
+		EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E* L_0;
+		L_0 = SegmentSpawner_PickRandomObstacleType_m0C9FFD991D68964BCD3C72C39EE8F7195CF3B8BB(__this, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:84>
+		NullCheck(L_0);
+		BaseObjectPool_tA91ECAF33869C8A8CFE682829C8247186F93EB20* L_1 = L_0->___pool;
+		NullCheck(L_1);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
+		L_2 = BaseObjectPool_GetObject_m2A3C1A77AA4D78089B04072C28B8DBF9CBCB2AFB(L_1, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:87>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = L_2;
+		NullCheck(L_3);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
+		L_4 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_3, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = __this->___enemyEnvironment;
+		NullCheck(L_4);
+		Transform_SetParent_m6677538B60246D958DD91F931C50F969CCBB5250(L_4, L_5, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:90>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = L_3;
+		NullCheck(L_6);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
+		L_7 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_6, NULL);
+		NullCheck(L_7);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+		L_8 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_7, NULL);
+		float L_9 = L_8.___y;
+		V_0 = L_9;
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:93>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = L_6;
+		NullCheck(L_10);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11;
+		L_11 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_10, NULL);
+		float L_12 = __this->___enemySpawnX;
+		float L_13 = V_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
+		memset((&L_14), 0, sizeof(L_14));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_14), L_12, L_13, (0.0f), NULL);
+		NullCheck(L_11);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_11, L_14, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:96>
+		NullCheck(L_10);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_10, (bool)1, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:97>
+		return;
+	}
+}
+// Method Definition Index: 54077
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E* SegmentSpawner_PickRandomObstacleType_m0C9FFD991D68964BCD3C72C39EE8F7195CF3B8BB (SegmentSpawner_t2F9609B64D5EDFBAE74E7EAB91426F1CCCDB8A19* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerable_ToList_TisEnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E_m60964FBD352CE6B5C799CCBA1840D81054E13140_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerable_Where_TisEnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E_m874A73771F31719FF2848D3913875EDE0091E124_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m0903BF045171AD8CC0DAF6EAF2A74F738A2A6DD3_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m5C7E6AF11C3DECDBBECE51DE6A66820F035C30A9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m9190CDBD18ABB7E855F3994F6E6A61B05BBAE1BD_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Func_2_t783226A19F7A615419A13469EDCE871408516CD8_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m5B87A4013B633EFE3EDD6F5C1622289D8AF7DDA0_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m672D98D4062FD2B0A0974CB7207F3DE415D15439_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_mE91B20EFC4732DA519D88E267A6E299B6534748F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_U3CPickRandomObstacleTypeU3Eb__18_0_m9F3598F3F3D421517E2D4D21477BD75D74228311_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_t42A934D060B302D2D82AE49A7061E8B0D446D20A_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	List_1_t2DA676FBAF83090EDF93CA32CA4AF629DFEA51B9* V_0 = NULL;
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
+	int32_t V_3 = 0;
+	Enumerator_tCBC3FDE03F5BAD71D6D3F974BF530FC5E80F28B6 V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E* V_5 = NULL;
+	EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E* V_6 = NULL;
+	EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E* V_7 = NULL;
+	Func_2_t783226A19F7A615419A13469EDCE871408516CD8* G_B2_0 = NULL;
+	EnemyTypeU5BU5D_t1C0AE542F1ACA1B8F4EEB7A049A9EBAD966245AC* G_B2_1 = NULL;
+	Func_2_t783226A19F7A615419A13469EDCE871408516CD8* G_B1_0 = NULL;
+	EnemyTypeU5BU5D_t1C0AE542F1ACA1B8F4EEB7A049A9EBAD966245AC* G_B1_1 = NULL;
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:102>
+		EnemyTypeU5BU5D_t1C0AE542F1ACA1B8F4EEB7A049A9EBAD966245AC* L_0 = __this->___obstacleTypes;
+		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t42A934D060B302D2D82AE49A7061E8B0D446D20A_il2cpp_TypeInfo_var);
+		Func_2_t783226A19F7A615419A13469EDCE871408516CD8* L_1 = ((U3CU3Ec_t42A934D060B302D2D82AE49A7061E8B0D446D20A_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t42A934D060B302D2D82AE49A7061E8B0D446D20A_il2cpp_TypeInfo_var))->___U3CU3E9__18_0;
+		Func_2_t783226A19F7A615419A13469EDCE871408516CD8* L_2 = L_1;
+		if (L_2)
+		{
+			G_B2_0 = L_2;
+			G_B2_1 = L_0;
+			goto IL_0025;
+		}
+		G_B1_0 = L_2;
+		G_B1_1 = L_0;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t42A934D060B302D2D82AE49A7061E8B0D446D20A_il2cpp_TypeInfo_var);
+		U3CU3Ec_t42A934D060B302D2D82AE49A7061E8B0D446D20A* L_3 = ((U3CU3Ec_t42A934D060B302D2D82AE49A7061E8B0D446D20A_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t42A934D060B302D2D82AE49A7061E8B0D446D20A_il2cpp_TypeInfo_var))->___U3CU3E9;
+		Func_2_t783226A19F7A615419A13469EDCE871408516CD8* L_4 = (Func_2_t783226A19F7A615419A13469EDCE871408516CD8*)il2cpp_codegen_object_new(Func_2_t783226A19F7A615419A13469EDCE871408516CD8_il2cpp_TypeInfo_var);
+		Func_2__ctor_m3234C62E5663C620D36B01DB3E6E81937C47F257(L_4, L_3, (intptr_t)((void*)U3CU3Ec_U3CPickRandomObstacleTypeU3Eb__18_0_m9F3598F3F3D421517E2D4D21477BD75D74228311_RuntimeMethod_var), NULL);
+		Func_2_t783226A19F7A615419A13469EDCE871408516CD8* L_5 = L_4;
+		((U3CU3Ec_t42A934D060B302D2D82AE49A7061E8B0D446D20A_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t42A934D060B302D2D82AE49A7061E8B0D446D20A_il2cpp_TypeInfo_var))->___U3CU3E9__18_0 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_t42A934D060B302D2D82AE49A7061E8B0D446D20A_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t42A934D060B302D2D82AE49A7061E8B0D446D20A_il2cpp_TypeInfo_var))->___U3CU3E9__18_0), (void*)L_5);
+		G_B2_0 = L_5;
+		G_B2_1 = G_B1_1;
+	}
+
+IL_0025:
+	{
+		RuntimeObject* L_6;
+		L_6 = Enumerable_Where_TisEnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E_m874A73771F31719FF2848D3913875EDE0091E124((RuntimeObject*)G_B2_1, G_B2_0, Enumerable_Where_TisEnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E_m874A73771F31719FF2848D3913875EDE0091E124_RuntimeMethod_var);
+		List_1_t2DA676FBAF83090EDF93CA32CA4AF629DFEA51B9* L_7;
+		L_7 = Enumerable_ToList_TisEnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E_m60964FBD352CE6B5C799CCBA1840D81054E13140(L_6, Enumerable_ToList_TisEnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E_m60964FBD352CE6B5C799CCBA1840D81054E13140_RuntimeMethod_var);
+		V_0 = L_7;
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:103>
+		List_1_t2DA676FBAF83090EDF93CA32CA4AF629DFEA51B9* L_8 = V_0;
+		NullCheck(L_8);
+		int32_t L_9;
+		L_9 = List_1_get_Count_m672D98D4062FD2B0A0974CB7207F3DE415D15439_inline(L_8, List_1_get_Count_m672D98D4062FD2B0A0974CB7207F3DE415D15439_RuntimeMethod_var);
+		if (L_9)
+		{
+			goto IL_003a;
+		}
+	}
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:104>
+		return (EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E*)NULL;
+	}
+
+IL_003a:
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:107>
+		V_1 = 0;
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:108>
+		List_1_t2DA676FBAF83090EDF93CA32CA4AF629DFEA51B9* L_10 = V_0;
+		NullCheck(L_10);
+		Enumerator_tCBC3FDE03F5BAD71D6D3F974BF530FC5E80F28B6 L_11;
+		L_11 = List_1_GetEnumerator_m5B87A4013B633EFE3EDD6F5C1622289D8AF7DDA0(L_10, List_1_GetEnumerator_m5B87A4013B633EFE3EDD6F5C1622289D8AF7DDA0_RuntimeMethod_var);
+		V_4 = L_11;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0064:
+			{
+				Enumerator_Dispose_m0903BF045171AD8CC0DAF6EAF2A74F738A2A6DD3((&V_4), Enumerator_Dispose_m0903BF045171AD8CC0DAF6EAF2A74F738A2A6DD3_RuntimeMethod_var);
+				return;
+			}
+		});
+		try
+		{
+			{
+				goto IL_0059_1;
+			}
+
+IL_0046_1:
+			{
+				//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:108>
+				EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E* L_12;
+				L_12 = Enumerator_get_Current_m9190CDBD18ABB7E855F3994F6E6A61B05BBAE1BD_inline((&V_4), Enumerator_get_Current_m9190CDBD18ABB7E855F3994F6E6A61B05BBAE1BD_RuntimeMethod_var);
+				V_5 = L_12;
+				//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:109>
+				int32_t L_13 = V_1;
+				EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E* L_14 = V_5;
+				NullCheck(L_14);
+				int32_t L_15 = L_14->___weight;
+				V_1 = ((int32_t)il2cpp_codegen_add(L_13, L_15));
+			}
+
+IL_0059_1:
+			{
+				//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:108>
+				bool L_16;
+				L_16 = Enumerator_MoveNext_m5C7E6AF11C3DECDBBECE51DE6A66820F035C30A9((&V_4), Enumerator_MoveNext_m5C7E6AF11C3DECDBBECE51DE6A66820F035C30A9_RuntimeMethod_var);
+				if (L_16)
+				{
+					goto IL_0046_1;
+				}
+			}
+			{
+				goto IL_0072;
+			}
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0072:
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:112>
+		int32_t L_17 = V_1;
+		int32_t L_18;
+		L_18 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(0, L_17, NULL);
+		V_2 = L_18;
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:115>
+		V_3 = 0;
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:116>
+		List_1_t2DA676FBAF83090EDF93CA32CA4AF629DFEA51B9* L_19 = V_0;
+		NullCheck(L_19);
+		Enumerator_tCBC3FDE03F5BAD71D6D3F974BF530FC5E80F28B6 L_20;
+		L_20 = List_1_GetEnumerator_m5B87A4013B633EFE3EDD6F5C1622289D8AF7DDA0(L_19, List_1_GetEnumerator_m5B87A4013B633EFE3EDD6F5C1622289D8AF7DDA0_RuntimeMethod_var);
+		V_4 = L_20;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_00ae:
+			{
+				Enumerator_Dispose_m0903BF045171AD8CC0DAF6EAF2A74F738A2A6DD3((&V_4), Enumerator_Dispose_m0903BF045171AD8CC0DAF6EAF2A74F738A2A6DD3_RuntimeMethod_var);
+				return;
+			}
+		});
+		try
+		{
+			{
+				goto IL_00a3_1;
+			}
+
+IL_0086_1:
+			{
+				//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:116>
+				EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E* L_21;
+				L_21 = Enumerator_get_Current_m9190CDBD18ABB7E855F3994F6E6A61B05BBAE1BD_inline((&V_4), Enumerator_get_Current_m9190CDBD18ABB7E855F3994F6E6A61B05BBAE1BD_RuntimeMethod_var);
+				V_6 = L_21;
+				//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:118>
+				int32_t L_22 = V_3;
+				EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E* L_23 = V_6;
+				NullCheck(L_23);
+				int32_t L_24 = L_23->___weight;
+				V_3 = ((int32_t)il2cpp_codegen_add(L_22, L_24));
+				//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:119>
+				int32_t L_25 = V_2;
+				int32_t L_26 = V_3;
+				if ((((int32_t)L_25) >= ((int32_t)L_26)))
+				{
+					goto IL_00a3_1;
+				}
+			}
+			{
+				//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:120>
+				EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E* L_27 = V_6;
+				V_7 = L_27;
+				goto IL_00c4;
+			}
+
+IL_00a3_1:
+			{
+				//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:116>
+				bool L_28;
+				L_28 = Enumerator_MoveNext_m5C7E6AF11C3DECDBBECE51DE6A66820F035C30A9((&V_4), Enumerator_MoveNext_m5C7E6AF11C3DECDBBECE51DE6A66820F035C30A9_RuntimeMethod_var);
+				if (L_28)
+				{
+					goto IL_0086_1;
+				}
+			}
+			{
+				goto IL_00bc;
+			}
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_00bc:
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:124>
+		List_1_t2DA676FBAF83090EDF93CA32CA4AF629DFEA51B9* L_29 = V_0;
+		NullCheck(L_29);
+		EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E* L_30;
+		L_30 = List_1_get_Item_mE91B20EFC4732DA519D88E267A6E299B6534748F(L_29, 0, List_1_get_Item_mE91B20EFC4732DA519D88E267A6E299B6534748F_RuntimeMethod_var);
+		return L_30;
+	}
+
+IL_00c4:
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:125>
+		EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E* L_31 = V_7;
+		return L_31;
+	}
+}
+// Method Definition Index: 54078
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SegmentSpawner__ctor_mD07D89D1D95093773422E52A6E21673D8D65CAD0 (SegmentSpawner_t2F9609B64D5EDFBAE74E7EAB91426F1CCCDB8A19* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:11>
+		__this->___pipeSpawnX = (10.0f);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:12>
+		__this->___pipeHeightOffset = (4.0f);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:16>
+		__this->___enemiesPerSegment = ((int32_t)10);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:17>
+		__this->___delayBeforeEnemies = (3.5f);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:18>
+		__this->___intervalBetweenEnemies = (3.0f);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:19>
+		__this->___delayAfterEnemies = (1.0f);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:20>
+		__this->___enemySpawnX = (10.0f);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:21>
+		__this->___enemyMinY = (-3.0f);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:22>
+		__this->___enemyMaxY = (3.0f);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:26>
+		__this->___checkpointPipeGap = (3.0f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 54079
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_m744C8DD9470A658EEB97D476F21D5F5AA54D7A58 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_t42A934D060B302D2D82AE49A7061E8B0D446D20A_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CU3Ec_t42A934D060B302D2D82AE49A7061E8B0D446D20A* L_0 = (U3CU3Ec_t42A934D060B302D2D82AE49A7061E8B0D446D20A*)il2cpp_codegen_object_new(U3CU3Ec_t42A934D060B302D2D82AE49A7061E8B0D446D20A_il2cpp_TypeInfo_var);
+		U3CU3Ec__ctor_mD83C9C37D652B286F051FB35E28D6B4A024B1A5A(L_0, NULL);
+		((U3CU3Ec_t42A934D060B302D2D82AE49A7061E8B0D446D20A_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t42A934D060B302D2D82AE49A7061E8B0D446D20A_il2cpp_TypeInfo_var))->___U3CU3E9 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_t42A934D060B302D2D82AE49A7061E8B0D446D20A_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t42A934D060B302D2D82AE49A7061E8B0D446D20A_il2cpp_TypeInfo_var))->___U3CU3E9), (void*)L_0);
+		return;
+	}
+}
+// Method Definition Index: 54080
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_mD83C9C37D652B286F051FB35E28D6B4A024B1A5A (U3CU3Ec_t42A934D060B302D2D82AE49A7061E8B0D446D20A* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// Method Definition Index: 54081
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CPickRandomObstacleTypeU3Eb__18_0_m9F3598F3F3D421517E2D4D21477BD75D74228311 (U3CU3Ec_t42A934D060B302D2D82AE49A7061E8B0D446D20A* __this, EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E* ___0_o, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:102>
+		EnemyType_t03DA94B0DF10A2D83B2BF1A4A8B59E2C86AAE48E* L_0 = ___0_o;
+		NullCheck(L_0);
+		bool L_1 = L_0->___enabled;
+		return L_1;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 54082
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSpawnSegmentsU3Ed__15__ctor_m74E5C64044B186DB9DB65BF6A0A973E7C65AE1BD (U3CSpawnSegmentsU3Ed__15_t8B8C85160A8F3CD18D9568CA1E4FDBF1416E3836* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		int32_t L_0 = ___0_U3CU3E1__state;
+		__this->___U3CU3E1__state = L_0;
+		return;
+	}
+}
+// Method Definition Index: 54083
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSpawnSegmentsU3Ed__15_System_IDisposable_Dispose_m543734C5E31152992309DEEC5E0D1DF75AE5D9FD (U3CSpawnSegmentsU3Ed__15_t8B8C85160A8F3CD18D9568CA1E4FDBF1416E3836* __this, const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
+// Method Definition Index: 54084
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CSpawnSegmentsU3Ed__15_MoveNext_m94297D3E63B5A7CBCBE9F093EDBB4854BBCF8EEE (U3CSpawnSegmentsU3Ed__15_t8B8C85160A8F3CD18D9568CA1E4FDBF1416E3836* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	SegmentSpawner_t2F9609B64D5EDFBAE74E7EAB91426F1CCCDB8A19* V_1 = NULL;
+	int32_t V_2 = 0;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state;
+		V_0 = L_0;
+		SegmentSpawner_t2F9609B64D5EDFBAE74E7EAB91426F1CCCDB8A19* L_1 = __this->___U3CU3E4__this;
+		V_1 = L_1;
+		int32_t L_2 = V_0;
+		switch (L_2)
+		{
+			case 0:
+			{
+				goto IL_002a;
+			}
+			case 1:
+			{
+				goto IL_0051;
+			}
+			case 2:
+			{
+				goto IL_0081;
+			}
+			case 3:
+			{
+				goto IL_00c0;
+			}
+			case 4:
+			{
+				goto IL_00e7;
+			}
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_002a:
+	{
+		__this->___U3CU3E1__state = (-1);
+	}
+
+IL_0031:
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:39>
+		SegmentSpawner_t2F9609B64D5EDFBAE74E7EAB91426F1CCCDB8A19* L_3 = V_1;
+		NullCheck(L_3);
+		SegmentSpawner_SpawnPipeSet_m35CBA1F7F2E28BDFA8AE19DA4A9D4F2CA8C6011C(L_3, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:42>
+		SegmentSpawner_t2F9609B64D5EDFBAE74E7EAB91426F1CCCDB8A19* L_4 = V_1;
+		NullCheck(L_4);
+		float L_5 = L_4->___delayBeforeEnemies;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_6 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_6, L_5, NULL);
+		__this->___U3CU3E2__current = L_6;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_6);
+		__this->___U3CU3E1__state = 1;
+		return (bool)1;
+	}
+
+IL_0051:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:45>
+		__this->___U3CiU3E5__2 = 0;
+		goto IL_0098;
+	}
+
+IL_0061:
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:47>
+		SegmentSpawner_t2F9609B64D5EDFBAE74E7EAB91426F1CCCDB8A19* L_7 = V_1;
+		NullCheck(L_7);
+		SegmentSpawner_SpawnObstacle_mFDDBBB2D8C377204F2D18122EB58CCB955E6A242(L_7, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:48>
+		SegmentSpawner_t2F9609B64D5EDFBAE74E7EAB91426F1CCCDB8A19* L_8 = V_1;
+		NullCheck(L_8);
+		float L_9 = L_8->___intervalBetweenEnemies;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_10 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_10, L_9, NULL);
+		__this->___U3CU3E2__current = L_10;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_10);
+		__this->___U3CU3E1__state = 2;
+		return (bool)1;
+	}
+
+IL_0081:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:45>
+		int32_t L_11 = __this->___U3CiU3E5__2;
+		V_2 = L_11;
+		int32_t L_12 = V_2;
+		__this->___U3CiU3E5__2 = ((int32_t)il2cpp_codegen_add(L_12, 1));
+	}
+
+IL_0098:
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:45>
+		int32_t L_13 = __this->___U3CiU3E5__2;
+		SegmentSpawner_t2F9609B64D5EDFBAE74E7EAB91426F1CCCDB8A19* L_14 = V_1;
+		NullCheck(L_14);
+		int32_t L_15 = L_14->___enemiesPerSegment;
+		if ((((int32_t)L_13) < ((int32_t)L_15)))
+		{
+			goto IL_0061;
+		}
+	}
+	{
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:52>
+		SegmentSpawner_t2F9609B64D5EDFBAE74E7EAB91426F1CCCDB8A19* L_16 = V_1;
+		NullCheck(L_16);
+		float L_17 = L_16->___delayAfterEnemies;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_18 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_18, L_17, NULL);
+		__this->___U3CU3E2__current = L_18;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_18);
+		__this->___U3CU3E1__state = 3;
+		return (bool)1;
+	}
+
+IL_00c0:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:53>
+		SegmentSpawner_t2F9609B64D5EDFBAE74E7EAB91426F1CCCDB8A19* L_19 = V_1;
+		NullCheck(L_19);
+		SegmentSpawner_SpawnPipeSet_m35CBA1F7F2E28BDFA8AE19DA4A9D4F2CA8C6011C(L_19, NULL);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:56>
+		SegmentSpawner_t2F9609B64D5EDFBAE74E7EAB91426F1CCCDB8A19* L_20 = V_1;
+		NullCheck(L_20);
+		float L_21 = L_20->___checkpointPipeGap;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_22 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_22, L_21, NULL);
+		__this->___U3CU3E2__current = L_22;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_22);
+		__this->___U3CU3E1__state = 4;
+		return (bool)1;
+	}
+
+IL_00e7:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:/Users/davidrajchenberg/Desktop/Vamoaua Games/Games/Flappy Elemental/Assets/Scripts/WorldObjects/Managers/SegmentSpawner.cs:36>
+		goto IL_0031;
+	}
+}
+// Method Definition Index: 54085
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CSpawnSegmentsU3Ed__15_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2401BC4729C303CAA4117031F7FFC894628951AA (U3CSpawnSegmentsU3Ed__15_t8B8C85160A8F3CD18D9568CA1E4FDBF1416E3836* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+// Method Definition Index: 54086
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSpawnSegmentsU3Ed__15_System_Collections_IEnumerator_Reset_mC611394510F84D8476D1C7BB8F027E691C265ED0 (U3CSpawnSegmentsU3Ed__15_t8B8C85160A8F3CD18D9568CA1E4FDBF1416E3836* __this, const RuntimeMethod* method) 
+{
+	{
+		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CSpawnSegmentsU3Ed__15_System_Collections_IEnumerator_Reset_mC611394510F84D8476D1C7BB8F027E691C265ED0_RuntimeMethod_var)));
+	}
+}
+// Method Definition Index: 54087
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CSpawnSegmentsU3Ed__15_System_Collections_IEnumerator_get_Current_m86C7A053EE7DEF81F5297520DD231B8AC5D527CA (U3CSpawnSegmentsU3Ed__15_t8B8C85160A8F3CD18D9568CA1E4FDBF1416E3836* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 54088
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____9B4B718C2BE0771A87EF0CC1AF737D5DBBD8AE3715AE36F94F6F1E1028A7B1E0_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____E6BA09EDF9896ECE8FAF7559428E753CD78AE225E076D077F24286840E03192D_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)1207));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = L_0;
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____E6BA09EDF9896ECE8FAF7559428E753CD78AE225E076D077F24286840E03192D_FieldInfo_var) };
+		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_1, L_2, NULL);
+		(&V_0)->___FilePathsData = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___FilePathsData), (void*)L_1);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)343));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = L_3;
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____9B4B718C2BE0771A87EF0CC1AF737D5DBBD8AE3715AE36F94F6F1E1028A7B1E0_FieldInfo_var) };
+		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_4, L_5, NULL);
+		(&V_0)->___TypesData = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___TypesData), (void*)L_4);
+		(&V_0)->___TotalFiles = ((int32_t)17);
+		(&V_0)->___TotalTypes = ((int32_t)17);
+		(&V_0)->___IsEditorOnly = (bool)0;
+		MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E L_6 = V_0;
+		return L_6;
+	}
+}
+// Method Definition Index: 54089
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tC95F24D0C6E6B77389433852BB389F39C692926E* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C void MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_marshal_pinvoke(const MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E& unmarshaled, MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_marshaled_pinvoke& marshaled)
+{
+	marshaled.___FilePathsData = il2cpp_codegen_com_marshal_safe_array(IL2CPP_VT_I1, unmarshaled.___FilePathsData);
+	marshaled.___TypesData = il2cpp_codegen_com_marshal_safe_array(IL2CPP_VT_I1, unmarshaled.___TypesData);
+	marshaled.___TotalTypes = unmarshaled.___TotalTypes;
+	marshaled.___TotalFiles = unmarshaled.___TotalFiles;
+	marshaled.___IsEditorOnly = static_cast<int32_t>(unmarshaled.___IsEditorOnly);
+}
+IL2CPP_EXTERN_C void MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_marshal_pinvoke_back(const MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_marshaled_pinvoke& marshaled, MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E& unmarshaled)
+{
+	unmarshaled.___FilePathsData = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, il2cpp_defaults.byte_class, marshaled.___FilePathsData);
+	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___FilePathsData), (void*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, il2cpp_defaults.byte_class, marshaled.___FilePathsData));
+	unmarshaled.___TypesData = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, il2cpp_defaults.byte_class, marshaled.___TypesData);
+	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___TypesData), (void*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, il2cpp_defaults.byte_class, marshaled.___TypesData));
+	int32_t unmarshaledTotalTypes_temp_2 = 0;
+	unmarshaledTotalTypes_temp_2 = marshaled.___TotalTypes;
+	unmarshaled.___TotalTypes = unmarshaledTotalTypes_temp_2;
+	int32_t unmarshaledTotalFiles_temp_3 = 0;
+	unmarshaledTotalFiles_temp_3 = marshaled.___TotalFiles;
+	unmarshaled.___TotalFiles = unmarshaledTotalFiles_temp_3;
+	bool unmarshaledIsEditorOnly_temp_4 = false;
+	unmarshaledIsEditorOnly_temp_4 = static_cast<bool>(marshaled.___IsEditorOnly);
+	unmarshaled.___IsEditorOnly = unmarshaledIsEditorOnly_temp_4;
+}
+IL2CPP_EXTERN_C void MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_marshal_pinvoke_cleanup(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_marshaled_pinvoke& marshaled)
+{
+	il2cpp_codegen_com_destroy_safe_array(marshaled.___FilePathsData);
+	marshaled.___FilePathsData = NULL;
+	il2cpp_codegen_com_destroy_safe_array(marshaled.___TypesData);
+	marshaled.___TypesData = NULL;
+}
+IL2CPP_EXTERN_C void MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_marshal_com(const MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E& unmarshaled, MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_marshaled_com& marshaled)
+{
+	marshaled.___FilePathsData = il2cpp_codegen_com_marshal_safe_array(IL2CPP_VT_I1, unmarshaled.___FilePathsData);
+	marshaled.___TypesData = il2cpp_codegen_com_marshal_safe_array(IL2CPP_VT_I1, unmarshaled.___TypesData);
+	marshaled.___TotalTypes = unmarshaled.___TotalTypes;
+	marshaled.___TotalFiles = unmarshaled.___TotalFiles;
+	marshaled.___IsEditorOnly = static_cast<int32_t>(unmarshaled.___IsEditorOnly);
+}
+IL2CPP_EXTERN_C void MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_marshal_com_back(const MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_marshaled_com& marshaled, MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E& unmarshaled)
+{
+	unmarshaled.___FilePathsData = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, il2cpp_defaults.byte_class, marshaled.___FilePathsData);
+	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___FilePathsData), (void*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, il2cpp_defaults.byte_class, marshaled.___FilePathsData));
+	unmarshaled.___TypesData = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, il2cpp_defaults.byte_class, marshaled.___TypesData);
+	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___TypesData), (void*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)il2cpp_codegen_com_marshal_safe_array_result(IL2CPP_VT_I1, il2cpp_defaults.byte_class, marshaled.___TypesData));
+	int32_t unmarshaledTotalTypes_temp_2 = 0;
+	unmarshaledTotalTypes_temp_2 = marshaled.___TotalTypes;
+	unmarshaled.___TotalTypes = unmarshaledTotalTypes_temp_2;
+	int32_t unmarshaledTotalFiles_temp_3 = 0;
+	unmarshaledTotalFiles_temp_3 = marshaled.___TotalFiles;
+	unmarshaled.___TotalFiles = unmarshaledTotalFiles_temp_3;
+	bool unmarshaledIsEditorOnly_temp_4 = false;
+	unmarshaledIsEditorOnly_temp_4 = static_cast<bool>(marshaled.___IsEditorOnly);
+	unmarshaled.___IsEditorOnly = unmarshaledIsEditorOnly_temp_4;
+}
+IL2CPP_EXTERN_C void MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_marshal_com_cleanup(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_marshaled_com& marshaled)
+{
+	il2cpp_codegen_com_destroy_safe_array(marshaled.___FilePathsData);
+	marshaled.___FilePathsData = NULL;
+	il2cpp_codegen_com_destroy_safe_array(marshaled.___TypesData);
+	marshaled.___TypesData = NULL;
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+// Method Definition Index: 41155
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_get_up_m41067879408BB378593EF7406AF2525F176F0ABF_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ((Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_StaticFields*)il2cpp_codegen_static_fields_for(Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var))->___upVector;
+		V_0 = L_0;
+		goto IL_0009;
+	}
+
+IL_0009:
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1 = V_0;
+		return L_1;
+	}
+}
+// Method Definition Index: 41146
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Multiply_m2D984B613020089BF5165BA4CA10988E2DC771FE_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_a, float ___1_d, const RuntimeMethod* method) 
+{
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___0_a;
+		float L_1 = L_0.___x;
+		float L_2 = ___1_d;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_3 = ___0_a;
+		float L_4 = L_3.___y;
+		float L_5 = ___1_d;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_6;
+		memset((&L_6), 0, sizeof(L_6));
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_6), ((float)il2cpp_codegen_multiply(L_1, L_2)), ((float)il2cpp_codegen_multiply(L_4, L_5)), NULL);
+		V_0 = L_6;
+		goto IL_0019;
+	}
+
+IL_0019:
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_7 = V_0;
+		return L_7;
+	}
+}
+// Method Definition Index: 41039
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_left_m8C1116485A9E689760AEE1142F5977852278B7E1_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var))->___leftVector;
+		V_0 = L_0;
+		goto IL_0009;
+	}
+
+IL_0009:
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = V_0;
+		return L_1;
+	}
+}
+// Method Definition Index: 41044
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_a;
+		float L_1 = L_0.___x;
+		float L_2 = ___1_d;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___0_a;
+		float L_4 = L_3.___y;
+		float L_5 = ___1_d;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___0_a;
+		float L_7 = L_6.___z;
+		float L_8 = ___1_d;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
+		memset((&L_9), 0, sizeof(L_9));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_9), ((float)il2cpp_codegen_multiply(L_1, L_2)), ((float)il2cpp_codegen_multiply(L_4, L_5)), ((float)il2cpp_codegen_multiply(L_7, L_8)), NULL);
+		V_0 = L_9;
+		goto IL_0021;
+	}
+
+IL_0021:
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = V_0;
+		return L_10;
+	}
+}
+// Method Definition Index: 41041
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_a;
+		float L_1 = L_0.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___1_b;
+		float L_3 = L_2.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___0_a;
+		float L_5 = L_4.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___1_b;
+		float L_7 = L_6.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___0_a;
+		float L_9 = L_8.___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___1_b;
+		float L_11 = L_10.___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
+		memset((&L_12), 0, sizeof(L_12));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_12), ((float)il2cpp_codegen_add(L_1, L_3)), ((float)il2cpp_codegen_add(L_5, L_7)), ((float)il2cpp_codegen_add(L_9, L_11)), NULL);
+		V_0 = L_12;
+		goto IL_0030;
+	}
+
+IL_0030:
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = V_0;
+		return L_13;
+	}
+}
+// Method Definition Index: 41037
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var))->___upVector;
+		V_0 = L_0;
+		goto IL_0009;
+	}
+
+IL_0009:
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = V_0;
+		return L_1;
+	}
+}
+// Method Definition Index: 41045
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline (float ___0_d, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_a, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___1_a;
+		float L_1 = L_0.___x;
+		float L_2 = ___0_d;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___1_a;
+		float L_4 = L_3.___y;
+		float L_5 = ___0_d;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___1_a;
+		float L_7 = L_6.___z;
+		float L_8 = ___0_d;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
+		memset((&L_9), 0, sizeof(L_9));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_9), ((float)il2cpp_codegen_multiply(L_1, L_2)), ((float)il2cpp_codegen_multiply(L_4, L_5)), ((float)il2cpp_codegen_multiply(L_7, L_8)), NULL);
+		V_0 = L_9;
+		goto IL_0021;
+	}
+
+IL_0021:
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = V_0;
+		return L_10;
+	}
+}
+// Method Definition Index: 41038
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_down_mF62B2AE7C5AC31EAC9CB62797C7190C90A7A8599_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var))->___downVector;
+		V_0 = L_0;
+		goto IL_0009;
+	}
+
+IL_0009:
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = V_0;
+		return L_1;
+	}
+}
+// Method Definition Index: 41034
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var))->___oneVector;
+		V_0 = L_0;
+		goto IL_0009;
+	}
+
+IL_0009:
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = V_0;
+		return L_1;
+	}
+}
+// Method Definition Index: 41015
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_MoveTowards_m0363264647799F3173AC37F8E819F98298249B08_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_current, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_target, float ___2_maxDistanceDelta, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	float V_2 = 0.0f;
+	float V_3 = 0.0f;
+	float V_4 = 0.0f;
+	bool V_5 = false;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_6;
+	memset((&V_6), 0, sizeof(V_6));
+	int32_t G_B4_0 = 0;
+	int32_t G_B6_0 = 0;
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___1_target;
+		float L_1 = L_0.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___0_current;
+		float L_3 = L_2.___x;
+		V_0 = ((float)il2cpp_codegen_subtract(L_1, L_3));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___1_target;
+		float L_5 = L_4.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___0_current;
+		float L_7 = L_6.___y;
+		V_1 = ((float)il2cpp_codegen_subtract(L_5, L_7));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___1_target;
+		float L_9 = L_8.___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___0_current;
+		float L_11 = L_10.___z;
+		V_2 = ((float)il2cpp_codegen_subtract(L_9, L_11));
+		float L_12 = V_0;
+		float L_13 = V_0;
+		float L_14 = V_1;
+		float L_15 = V_1;
+		float L_16 = V_2;
+		float L_17 = V_2;
+		V_3 = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_12, L_13)), ((float)il2cpp_codegen_multiply(L_14, L_15)))), ((float)il2cpp_codegen_multiply(L_16, L_17))));
+		float L_18 = V_3;
+		if ((((float)L_18) == ((float)(0.0f))))
+		{
+			goto IL_0055;
+		}
+	}
+	{
+		float L_19 = ___2_maxDistanceDelta;
+		if ((!(((float)L_19) >= ((float)(0.0f)))))
+		{
+			goto IL_0052;
+		}
+	}
+	{
+		float L_20 = V_3;
+		float L_21 = ___2_maxDistanceDelta;
+		float L_22 = ___2_maxDistanceDelta;
+		G_B4_0 = ((((int32_t)((!(((float)L_20) <= ((float)((float)il2cpp_codegen_multiply(L_21, L_22)))))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		goto IL_0053;
+	}
+
+IL_0052:
+	{
+		G_B4_0 = 0;
+	}
+
+IL_0053:
+	{
+		G_B6_0 = G_B4_0;
+		goto IL_0056;
+	}
+
+IL_0055:
+	{
+		G_B6_0 = 1;
+	}
+
+IL_0056:
+	{
+		V_5 = (bool)G_B6_0;
+		bool L_23 = V_5;
+		if (!L_23)
+		{
+			goto IL_0061;
+		}
+	}
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24 = ___1_target;
+		V_6 = L_24;
+		goto IL_009b;
+	}
+
+IL_0061:
+	{
+		float L_25 = V_3;
+		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		double L_26;
+		L_26 = sqrt(((double)L_25));
+		V_4 = ((float)L_26);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27 = ___0_current;
+		float L_28 = L_27.___x;
+		float L_29 = V_0;
+		float L_30 = V_4;
+		float L_31 = ___2_maxDistanceDelta;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32 = ___0_current;
+		float L_33 = L_32.___y;
+		float L_34 = V_1;
+		float L_35 = V_4;
+		float L_36 = ___2_maxDistanceDelta;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_37 = ___0_current;
+		float L_38 = L_37.___z;
+		float L_39 = V_2;
+		float L_40 = V_4;
+		float L_41 = ___2_maxDistanceDelta;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_42;
+		memset((&L_42), 0, sizeof(L_42));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_42), ((float)il2cpp_codegen_add(L_28, ((float)il2cpp_codegen_multiply(((float)(L_29/L_30)), L_31)))), ((float)il2cpp_codegen_add(L_33, ((float)il2cpp_codegen_multiply(((float)(L_34/L_35)), L_36)))), ((float)il2cpp_codegen_add(L_38, ((float)il2cpp_codegen_multiply(((float)(L_39/L_40)), L_41)))), NULL);
+		V_6 = L_42;
+		goto IL_009b;
+	}
+
+IL_009b:
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_43 = V_6;
+		return L_43;
+	}
+}
+// Method Definition Index: 41018
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___0_x;
+		__this->___x = L_0;
+		float L_1 = ___1_y;
+		__this->___y = L_1;
+		float L_2 = ___2_z;
+		__this->___z = L_2;
+		return;
+	}
+}
+// Method Definition Index: 8947
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Queue_1_get_Count_m1768ADA9855B7CDA14C9C42E098A287F1A39C3A2_gshared_inline (Queue_1_tE9EF546915795972C3BFD68FBB8FA859D3BAF3B5* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->____size;
+		return L_0;
+	}
+}
+// Method Definition Index: 8864
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->____size;
+		return L_0;
+	}
+}
+// Method Definition Index: 8921
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->____current;
+		return L_0;
+	}
+}
+// Method Definition Index: 41124
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___0_x;
+		__this->___x = L_0;
+		float L_1 = ___1_y;
+		__this->___y = L_1;
+		return;
+	}
+}
