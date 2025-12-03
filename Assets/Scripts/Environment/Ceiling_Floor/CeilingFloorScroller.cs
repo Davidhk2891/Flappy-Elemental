@@ -1,6 +1,7 @@
+using System;
 using UnityEngine;
 
-public class TileScroller : MonoBehaviour
+public class CeilingFloorScroller : MonoBehaviour
 {
     [Header("Tile prefabs")]
     [SerializeField] private GameObject floorTilePrefab;
@@ -9,7 +10,7 @@ public class TileScroller : MonoBehaviour
     [Header("Scrolling settings")]
     [SerializeField] private int tilesOnScreen = 12;
     [SerializeField] private float scrollSpeed = 4f;
-    [SerializeField] private float positionFromCenter = 11.5f;
+    [SerializeField] private float yPositionFromCenter = 11.5f;
     [SerializeField] private float tileRecycleOffset = -10f;
 
     [Header("Parents")]
@@ -26,8 +27,13 @@ public class TileScroller : MonoBehaviour
         var sr = floorTilePrefab.GetComponentInChildren<SpriteRenderer>();
         tileWidth = sr.bounds.size.x;
 
+        // Calculate left edge of camera
+        Camera cam = Camera.main;
+        float halfWidth = cam.orthographicSize * cam.aspect;
+        float leftEdgeX = cam.transform.position.x - halfWidth;
+
         // Build row of tiles
-        SpawnInitialTiles();
+        SpawnInitialTiles(leftEdgeX);
     }
 
 
@@ -37,7 +43,7 @@ public class TileScroller : MonoBehaviour
         ScrollTiles(ceilingTiles);
     }
 
-    private void SpawnInitialTiles()
+    private void SpawnInitialTiles(float leftEdgeX)
     {
         floorTiles = new GameObject[tilesOnScreen];
         ceilingTiles = new GameObject[tilesOnScreen];
@@ -47,7 +53,7 @@ public class TileScroller : MonoBehaviour
             // Floor
             floorTiles[i] = Instantiate(
                 floorTilePrefab,
-                new Vector3(i * tileWidth, -positionFromCenter, 0f),
+                new Vector3(leftEdgeX + i * tileWidth, -yPositionFromCenter, 0f),
                 Quaternion.identity,
                 floorParent
             );
@@ -55,7 +61,7 @@ public class TileScroller : MonoBehaviour
             // Ceiling
             ceilingTiles[i] = Instantiate(
                 ceilingTilePrefab,
-                new Vector3(i * tileWidth, positionFromCenter, 0),
+                new Vector3(leftEdgeX + i * tileWidth, yPositionFromCenter, 0),
                 Quaternion.identity,
                 ceilingParent
             );
