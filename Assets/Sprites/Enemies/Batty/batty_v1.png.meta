@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Copy of BB-2 Frames_0
+      name: batty_v1_up
       rect:
         serializedVersion: 2
         x: 5
@@ -124,7 +124,7 @@ TextureImporter:
         width: 59
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -138,7 +138,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Copy of BB-2 Frames_1
+      name: batty_v1_down
       rect:
         serializedVersion: 2
         x: 76
@@ -146,7 +146,7 @@ TextureImporter:
         width: 48
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -163,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4fdf717a255534bdfb08b18ea54452f2
     internalID: 0
     vertices: []
     indices: 
@@ -173,8 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Copy of BB-2 Frames_0: -3860213245612464597
-      Copy of BB-2 Frames_1: 8657447241213122959
+      batty_v1_down: 8657447241213122959
+      batty_v1_up: -3860213245612464597
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
