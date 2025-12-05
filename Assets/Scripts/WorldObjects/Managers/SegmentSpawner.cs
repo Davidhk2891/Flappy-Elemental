@@ -1,7 +1,6 @@
 using UnityEngine;
 using System.Collections;
 using System.Linq;
-using Unity.VisualScripting;
 
 public class SegmentSpawner : MonoBehaviour
 {
@@ -13,9 +12,10 @@ public class SegmentSpawner : MonoBehaviour
 
     [Header("Enemy segment Settings")]
     public Transform enemyEnvironment;
-    public int enemiesPerSegment = 10;
+    public SpawnBounds spawnBounds;
+    public int enemiesPerSegment = 20;
     public float delayBeforeEnemies = 3.5f;
-    public float intervalBetweenEnemies = 3f;
+    public float intervalBetweenEnemies = 1.5f;
     public float delayAfterEnemies = 1f;
     public float enemySpawnX = 10f;
     public float enemyMinY = -3f;
@@ -91,6 +91,10 @@ public class SegmentSpawner : MonoBehaviour
 
         // Spawn position (X controlled here, Y controlled by each obstacle internally)
         enemy.transform.position = new Vector3(enemySpawnX, enemyCurrentY, 0f);
+
+        // Inject spawn bounds into the enemy
+        var enemyLogic = enemy.GetComponent<IEnemy>();
+        enemyLogic?.onSpawn(spawnBounds);
 
         // Enable it (object pooling)
         enemy.SetActive(true);

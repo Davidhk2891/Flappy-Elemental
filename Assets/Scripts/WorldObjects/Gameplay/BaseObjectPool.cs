@@ -11,9 +11,9 @@ public class BaseObjectPool : MonoBehaviour
 {
     [Header("Pooling settings")]
     public GameObject prefab;
-    public int poolSize = 5;
+    public int PoolSize {get; set;} = 5;
 
-    private Queue<GameObject> pool = new Queue<GameObject>();
+    private readonly Queue<GameObject> pool = new();
 
     protected virtual void Awake()
     {
@@ -22,25 +22,17 @@ public class BaseObjectPool : MonoBehaviour
 
     private void InitializePool()
     {
-        for (int i = 0; i < poolSize; i++)
+        for (int i = 0; i < PoolSize; i++)
         {
             GameObject obj = Instantiate(prefab, transform);
             obj.SetActive(false);
             pool.Enqueue(obj);
-
-
-
-
-
-
-
-
         }
     }
 
     public GameObject GetObject()
     {
-        // Iyo56iohjt4ophjrtoph4yj4y5j4yjtf pool is empty, expand it
+        // If pool is empty, expand it
         if (pool.Count == 0)
         {
             GameObject obj = Instantiate(prefab, transform);

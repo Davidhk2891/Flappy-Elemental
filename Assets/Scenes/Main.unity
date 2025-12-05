@@ -181,6 +181,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 374920994}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &305768539
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 305768541}
+  - component: {fileID: 305768540}
+  m_Layer: 0
+  m_Name: BattyPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &305768540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305768539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f84e2684051d4871824b071ada751a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BattyPool
+  prefab: {fileID: 7059393570678129159, guid: 005af6ac855d04b1f959cd71445c0a1b, type: 3}
+--- !u!4 &305768541
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305768539}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 481019925}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &374920993
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,6 +329,7 @@ Transform:
   - {fileID: 662921151}
   - {fileID: 959964210}
   - {fileID: 1631487307}
+  - {fileID: 305768541}
   m_Father: {fileID: 463021812}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &511684578
@@ -380,7 +426,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8426472227066048371, guid: 119891e04215a4bc49e01e24f06dd599, type: 3}
+  m_Sprite: {fileID: -9135458498172086210, guid: e66d1ab36a5a641cd9c1eabcdb9b50f0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -419,9 +465,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   flapStrength: 8
-  kirbyIdle: {fileID: -8426472227066048371, guid: 119891e04215a4bc49e01e24f06dd599, type: 3}
-  kirbyFlap: {fileID: -7206686379513113105, guid: 119891e04215a4bc49e01e24f06dd599, type: 3}
   flapDuration: 0.15
+  slimeAnimation:
+  - {fileID: -9135458498172086210, guid: e66d1ab36a5a641cd9c1eabcdb9b50f0, type: 3}
+  - {fileID: -2739917139674407424, guid: e66d1ab36a5a641cd9c1eabcdb9b50f0, type: 3}
+  - {fileID: -5600046689067832659, guid: e66d1ab36a5a641cd9c1eabcdb9b50f0, type: 3}
+  - {fileID: -1966078366743908531, guid: e66d1ab36a5a641cd9c1eabcdb9b50f0, type: 3}
 --- !u!60 &511684584
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -460,7 +509,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.25, y: 1.25}
+    oldSize: {x: 1.03125, y: 1.0625}
     newSize: {x: 1.25, y: 1.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -468,40 +517,26 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.11723374, y: 0.640566}
-      - {x: -0.12018682, y: 0.63886255}
-      - {x: -0.23363781, y: 0.6002662}
-      - {x: -0.31689072, y: 0.5392003}
-      - {x: -0.5155662, y: 0.348702}
-      - {x: -0.5783018, y: 0.21532981}
-      - {x: -0.57043326, y: -0.039485097}
-      - {x: -0.57081157, y: -0.061688967}
-      - {x: -0.5637518, y: -0.0709344}
-      - {x: -0.54282373, y: -0.07173468}
-      - {x: -0.5444463, y: -0.12680192}
-      - {x: -0.53046, y: -0.13069531}
-      - {x: -0.50372344, y: -0.13005143}
-      - {x: -0.50317097, y: -0.18884842}
-      - {x: -0.5009555, y: -0.23647946}
-      - {x: -0.48043376, y: -0.23586825}
-      - {x: -0.48357958, y: -0.41220686}
-      - {x: -0.38487753, y: -0.5675203}
-      - {x: -0.30633643, y: -0.56848216}
-      - {x: -0.18748176, y: -0.5680567}
-      - {x: 0.09641076, y: -0.5691166}
-      - {x: 0.2911299, y: -0.44081533}
-      - {x: 0.50719184, y: -0.22256115}
-      - {x: 0.57249385, y: -0.06623535}
-      - {x: 0.5705887, y: 0.21858957}
-      - {x: 0.5449759, y: 0.21892136}
-      - {x: 0.53793347, y: 0.2831972}
-      - {x: 0.5040995, y: 0.34765002}
-      - {x: 0.28520325, y: 0.56539226}
-      - {x: 0.21879375, y: 0.5964762}
-      - {x: 0.12867856, y: 0.6286349}
-      - {x: 0.12508678, y: 0.63102245}
-      - {x: 0.12107733, y: 0.6332243}
-      - {x: 0.11806838, y: 0.63738364}
+    - - {x: 0.28014702, y: 0.41776162}
+      - {x: 0.09453867, y: 0.50563896}
+      - {x: -0.10952458, y: 0.5057138}
+      - {x: -0.22194418, y: 0.4756564}
+      - {x: -0.3552828, y: 0.35280406}
+      - {x: -0.4693737, y: 0.22512656}
+      - {x: -0.515625, y: 0.109980375}
+      - {x: -0.5195961, y: -0.09858522}
+      - {x: -0.48311424, y: -0.20222515}
+      - {x: -0.43482336, y: -0.27710772}
+      - {x: -0.31805483, y: -0.40131137}
+      - {x: -0.11965371, y: -0.5088208}
+      - {x: 0.03950117, y: -0.50932366}
+      - {x: 0.14597797, y: -0.4915403}
+      - {x: 0.2795448, y: -0.37595895}
+      - {x: 0.39616644, y: -0.27110085}
+      - {x: 0.49179918, y: -0.08615452}
+      - {x: 0.4892735, y: 0.09337365}
+      - {x: 0.46797326, y: 0.1904354}
+      - {x: 0.41445065, y: 0.2850497}
   m_UseDelaunayMesh: 0
 --- !u!1 &519420028
 GameObject:
@@ -643,10 +678,11 @@ MonoBehaviour:
   pipeSetEnvironment: {fileID: 2068439782}
   pipeSpawnX: 10
   pipeHeightOffset: 4
-  enemyEnvironment: {fileID: 0}
-  enemiesPerSegment: 10
+  enemyEnvironment: {fileID: 1470979003}
+  spawnBounds: {fileID: 1941206077}
+  enemiesPerSegment: 20
   delayBeforeEnemies: 3.5
-  intervalBetweenEnemies: 3
+  intervalBetweenEnemies: 0.5
   delayAfterEnemies: 1
   enemySpawnX: 10
   enemyMinY: -3
@@ -663,11 +699,15 @@ MonoBehaviour:
   - name: Turner
     weight: 5
     pool: {fileID: 959964211}
-    enabled: 1
-  - name: Waller
-    weight: 8
-    pool: {fileID: 1631487306}
     enabled: 0
+  - name: Waller
+    weight: 2
+    pool: {fileID: 1631487306}
+    enabled: 1
+  - name: Batty
+    weight: 8
+    pool: {fileID: 305768540}
+    enabled: 1
   checkpointPipeGap: 3
 --- !u!1 &662921150
 GameObject:
@@ -714,7 +754,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PulsarPool
   prefab: {fileID: 6504362639607998642, guid: adc908b6675bb41d1add3edc7dfc624b, type: 3}
-  poolSize: 5
 --- !u!1 &792557757
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,7 +784,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BouncerPool
   prefab: {fileID: 2077412637863011173, guid: 510acf0285f154c17a2044f682dd7dd9, type: 3}
-  poolSize: 5
 --- !u!4 &792557759
 Transform:
   m_ObjectHideFlags: 0
@@ -837,7 +875,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TurnerPool
   prefab: {fileID: 3865800209537039897, guid: c358abc76173845248151120a232b733, type: 3}
-  poolSize: 5
 --- !u!1 &1217191217
 GameObject:
   m_ObjectHideFlags: 0
@@ -979,7 +1016,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::wallerPool
   prefab: {fileID: 66703185157889117, guid: 1e6d6f4ddb2634ab986836cca5d41d8c, type: 3}
-  poolSize: 5
 --- !u!4 &1631487307
 Transform:
   m_ObjectHideFlags: 0
@@ -1027,6 +1063,85 @@ Transform:
   - {fileID: 2088792556}
   m_Father: {fileID: 463021812}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1920733469
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1920733470}
+  m_Layer: 0
+  m_Name: Utilities
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1920733470
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920733469}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.5336, y: 0.4135, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1941206076}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1941206075
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1941206076}
+  - component: {fileID: 1941206077}
+  m_Layer: 0
+  m_Name: SpawnBounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1941206076
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941206075}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -13, y: 9, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1920733470}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1941206077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941206075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f88195e12c3b54dbfb9b26d139fb75f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnBounds
+  floorCollider: {fileID: 849628063518642710, guid: 301f671e93293492481f139c95c49ab2, type: 3}
+  ceilingCollider: {fileID: 223122483603420474, guid: 533eb4b6141a542a3a9204b80e921a66, type: 3}
+  buffer: 0.3
 --- !u!1 &1970395489
 GameObject:
   m_ObjectHideFlags: 0
@@ -1174,7 +1289,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PipePool
   prefab: {fileID: 4195814315756285814, guid: 90a36b4104320429e99e37b982d17300, type: 3}
-  poolSize: 5
 --- !u!4 &2088792556
 Transform:
   m_ObjectHideFlags: 0
@@ -1198,3 +1312,4 @@ SceneRoots:
   - {fileID: 463021812}
   - {fileID: 1411039524}
   - {fileID: 1992761699}
+  - {fileID: 1920733470}

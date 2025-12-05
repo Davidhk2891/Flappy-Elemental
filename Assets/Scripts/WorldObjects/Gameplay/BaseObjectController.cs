@@ -18,7 +18,7 @@ public class BaseObjectController : MonoBehaviour
     
     protected void MoveLeft()
     {
-        transform.position += Vector3.left * moveSpeedX * Time.deltaTime;
+        transform.position += moveSpeedX * Time.deltaTime * Vector3.left;
 
         if (transform.position.x < deadZone)
         {
