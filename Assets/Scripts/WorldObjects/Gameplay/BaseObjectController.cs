@@ -3,7 +3,7 @@ using UnityEngine;
 public class BaseObjectController : MonoBehaviour
 {
     [Header("Common Movement")]
-    public float moveSpeedX = 4f;
+    public float moveSpeedX = 10f;
     public float deadZone = -10f;
 
     protected virtual void OnEnable()
@@ -13,6 +13,7 @@ public class BaseObjectController : MonoBehaviour
 
     protected virtual void Update()
     {
+        Debug.Log($"{gameObject.name} speed: {moveSpeedX}");
         MoveLeft();
     }
     

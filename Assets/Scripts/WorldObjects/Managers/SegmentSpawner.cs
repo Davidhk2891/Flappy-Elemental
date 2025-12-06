@@ -18,8 +18,6 @@ public class SegmentSpawner : MonoBehaviour
     public float intervalBetweenEnemies = 1.5f;
     public float delayAfterEnemies = 1f;
     public float enemySpawnX = 10f;
-    public float enemyMinY = -3f;
-    public float enemyMaxY = 3f;
     public EnemyType[] obstacleTypes;
 
     [Header("Checkpoint")]

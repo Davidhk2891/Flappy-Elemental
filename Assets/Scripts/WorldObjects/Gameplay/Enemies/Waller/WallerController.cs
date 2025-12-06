@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class WallerController : BaseObjectController, IEnemy
 {
@@ -34,12 +35,14 @@ public class WallerController : BaseObjectController, IEnemy
 
     public void onSpawn(SpawnBounds bounds)
     {
+        // Random Y spawning
         spawnBounds = bounds;
-
         randomY = Random.Range(spawnBounds.BottomLimit, spawnBounds.TopLimit);
-
         var spawnPosition = new Vector3(transform.position.x, randomY, 0f);
-
         transform.position = spawnPosition;
+
+        // Random angle
+        float randomAngle = Random.Range(0f, 360f);
+        transform.rotation = Quaternion.Euler(0f, 0f, randomAngle);
     }
 }

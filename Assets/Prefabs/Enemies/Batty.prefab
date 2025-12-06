@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f1869f771c6e47a78a5e20435cc4960, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BattyController
-  moveSpeedX: 4
+  moveSpeedX: 10
   deadZone: -10
   packNumberMin: 1
   packNumberMax: 5
