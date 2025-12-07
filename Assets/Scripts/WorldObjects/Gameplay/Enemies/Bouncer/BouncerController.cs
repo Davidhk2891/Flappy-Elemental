@@ -11,10 +11,6 @@ This will be the vase for all animated obstacles later
 */
 public class BouncerController : BaseObjectController
 {
-    [Header("Vertical Movement")]
-    public float topLimit = 8f;
-    public float bottomLimit = -10f;
-    public float moveSpeed = 8f;
     private bool movingUp = true;
 
     protected override void Update()
@@ -30,15 +26,15 @@ public class BouncerController : BaseObjectController
     {
         if (movingUp)
         {
-            transform.position += moveSpeed * Time.deltaTime * Vector3.up;
+            transform.position += balancer.bouncerVerticalSpeed * Time.deltaTime * Vector3.up;
 
             // Check if we reached the top
-            if (transform.position.y >= topLimit) movingUp = false;
+            if (transform.position.y >= balancer.bouncerTopLimit) movingUp = false;
         }
         else
         {
-            transform.position += moveSpeed * Time.deltaTime * Vector3.down;
-            if (transform.position.y <= bottomLimit) movingUp = true;
+            transform.position += balancer.bouncerVerticalSpeed * Time.deltaTime * Vector3.down;
+            if (transform.position.y <= balancer.bouncerBottomLimit) movingUp = true;
         }
     }
 }

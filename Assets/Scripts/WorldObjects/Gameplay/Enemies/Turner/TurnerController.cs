@@ -2,12 +2,6 @@ using UnityEngine;
 
 public class TurnerController : BaseObjectController
 {
-    [Header("Turner settings")]
-    // Degrees per second
-    public float rotationSpeed = 180f;
-    // Offset from center
-    public Vector3 pivotOffset;
-
     //Child sprite transform
     private Transform sprite;
 
@@ -25,9 +19,9 @@ public class TurnerController : BaseObjectController
     private void RotateTurner()
     {
         // Move spirte to pivot offset
-        sprite.localPosition = pivotOffset;
+        sprite.localPosition = balancer.turnerPivotOffset;
 
         // Rotate the parent (so rotation affects collider)    
-        transform.Rotate(0f, 0f, rotationSpeed * Time.deltaTime);
+        transform.Rotate(0f, 0f, balancer.turnerRotationSpeed * Time.deltaTime);
     }
 }
