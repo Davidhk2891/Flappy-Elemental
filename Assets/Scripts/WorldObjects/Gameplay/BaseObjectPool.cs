@@ -15,7 +15,7 @@ public class BaseObjectPool : MonoBehaviour
 
     private readonly Queue<GameObject> pool = new();
 
-    protected virtual void Awake()
+    protected virtual void Start()
     {
         InitializePool();
     }

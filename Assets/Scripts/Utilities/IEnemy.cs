@@ -1,4 +1,4 @@
 public interface IEnemy
 {
-    void onSpawn(SpawnBounds bounds);
+    void OnSpawn(SpawnBounds bounds);
 }

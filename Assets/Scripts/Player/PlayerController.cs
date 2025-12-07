@@ -4,25 +4,37 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
-    private Rigidbody2D rb;
-    private SpriteRenderer sr;
-    [Header("Flap settings")]
-    public float flapStrength = 10f;
-    public float flapDuration = 0.15f;
     [Header("Slime Sprites")]
     public Sprite[] slimeAnimation = new Sprite[4];
+    private Rigidbody2D rb;
+    private SpriteRenderer sr;
     private bool isAnimating = false;
+    private GameBalancer balancer;
+
+    void Awake()
+    {
+        // Cache references
+        rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
+    }
+
+    void OnEnable()
+    {
+        // Apply dynamic values (like gravity)
+        rb.gravityScale = balancer.playerGravity;
+        sr.sprite = slimeAnimation[0];
+        Debug.Log("OnEnable fired");
+    }
 
     void Start()
     {
-        // Get the Rigidbody 2D component attached to this GameObject
-        rb = GetComponent<Rigidbody2D>();
-        sr = GetComponent<SpriteRenderer>();
-        sr.sprite = slimeAnimation[0];
+        // Since PlayerController relies on balancer. Load balancer last
+        balancer = GameSettingsManager.Instance.balancer;
     }
 
     void Update()
     {
+        Debug.Log("Update running. Player enabled = " + gameObject.activeSelf);
         bool tap = false;
 
         // Keyboard (for PC testing)
@@ -35,7 +47,7 @@ public class PlayerController : MonoBehaviour
 
         if (tap && !isAnimating)
         {
-            rb.linearVelocity = Vector2.up * flapStrength;
+            rb.linearVelocity = Vector2.up * balancer.playerJumpForce;
             StartCoroutine(FlapAnimation());
         }
     }
@@ -44,7 +56,7 @@ public class PlayerController : MonoBehaviour
     {
         isAnimating = true;
 
-        float frameTime = flapDuration / slimeAnimation.Length;
+        float frameTime = balancer.playerSpriteJumpDuration / slimeAnimation.Length;
 
         for (int i = 1; i < slimeAnimation.Length; i++)
         {

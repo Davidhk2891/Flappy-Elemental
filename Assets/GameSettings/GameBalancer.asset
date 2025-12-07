@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6a5f1bda7a30410382c99f3b93b8442, type: 3}
+  m_Name: GameBalancer
+  m_EditorClassIdentifier: Assembly-CSharp::GameBalancer
+  globalWorldSpeed: 4
+  globalObjectsDeadZone: -10
+  pipeSetGap: 3.5
+  pipeSpawnInterval: 2
+  globalEnemySpawnInterval: 1
+  battyFlapDuration: 1
+  battySpeedMultiplier: 1.5
+  wallerStartingAngle: 0
+  wallerEndingAngle: 360
+  jumpForce: 12
+  gravityScale: 2
+  difficultyMultiplier: 1
