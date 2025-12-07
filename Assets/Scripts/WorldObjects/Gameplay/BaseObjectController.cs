@@ -2,13 +2,12 @@ using UnityEngine;
 
 public class BaseObjectController : MonoBehaviour
 {
-    [Header("Common Movement")]
-    public float moveSpeedX = 4f;
-    public float deadZone = -10f;
+    protected GameBalancer balancer;
 
     protected virtual void OnEnable()
     {
-        // Nothing yet. Override
+        // Base behavior to be added when needed.
+        balancer = GameSettingsManager.Instance.balancer;
     }
 
     protected virtual void Update()
@@ -18,9 +17,16 @@ public class BaseObjectController : MonoBehaviour
     
     protected void MoveLeft()
     {
-        transform.position += moveSpeedX * Time.deltaTime * Vector3.left;
+        float globalMoveSpeed = balancer.globalWorldSpeed;
+        transform.position += globalMoveSpeed * Time.deltaTime * Vector3.left;
 
-        if (transform.position.x < deadZone)
+        HandleDeadZone();
+    }
+
+    protected void HandleDeadZone()
+    {
+        float globalObjectsDeadZone = balancer.globalObjectsDeadZone;
+        if (transform.position.x < globalObjectsDeadZone)
         {
             gameObject.SetActive(false);
         }

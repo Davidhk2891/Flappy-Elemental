@@ -4,17 +4,15 @@ using UnityEngine;
 public class BattyController : BaseObjectController, IEnemy
 {
     [Header("Batty settings")]
-    [SerializeField] private int packNumberMin = 1;
-    [SerializeField] private int packNumberMax = 5;
     [SerializeField] private SpawnBounds spawnBounds;
-    [SerializeField] private float flapDuration = 1f;
     public Sprite[] battyAnimation = new Sprite[2];
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private float randomY;
+    private float battySpeedMultiplier;
     private Coroutine battyAnimCoroutine;
 
-    public void onSpawn(SpawnBounds bounds)
+    public void OnSpawn(SpawnBounds bounds)
     {
         spawnBounds = bounds;
 
@@ -28,6 +26,8 @@ public class BattyController : BaseObjectController, IEnemy
     protected override void OnEnable()
     {
         base.OnEnable();
+
+        battySpeedMultiplier = balancer.battySpeedMultiplier;
 
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponentInChildren<SpriteRenderer>();
@@ -48,18 +48,18 @@ public class BattyController : BaseObjectController, IEnemy
         }
     }
 
-    private void Start()
-    {
-    
-    }
-
     protected override void Update()
     {
-        base.Update();
+        // Override global speed
+        float battySpeed = balancer.globalWorldSpeed * battySpeedMultiplier;
+        transform.position += Vector3.left * battySpeed * Time.deltaTime;
+
+        HandleDeadZone();
     }
 
     private IEnumerator BattyMovementAnimation()
     {
+        float flapDuration = balancer.battyFlapDuration;
         float frameTime = flapDuration / battyAnimation.Length;
 
         for (int i = 1; i < battyAnimation.Length; i++)
@@ -76,10 +76,5 @@ public class BattyController : BaseObjectController, IEnemy
             sr.sprite = battyAnimation[1];
             yield return new WaitForSeconds(frameTime);
         }
-    }
-
-    private void spawnBatchOfBats()
-    {
-        int batch = Random.Range(packNumberMin, packNumberMax);
     }
 }

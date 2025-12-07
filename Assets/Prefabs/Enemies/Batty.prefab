@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -3860213245612464597, guid: aa66d4439cbb547fd94f86cf916bcf86, type: 3}
-  m_Color: {r: 0.6323559, g: 0.26717696, b: 0.7169812, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f1869f771c6e47a78a5e20435cc4960, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BattyController
-  moveSpeedX: 4
+  moveSpeedX: 10
   deadZone: -10
   packNumberMin: 1
   packNumberMax: 5

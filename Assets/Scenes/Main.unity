@@ -292,6 +292,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1215367271}
   - {fileID: 1649578838}
   - {fileID: 481019925}
   m_Father: {fileID: 0}
@@ -682,30 +683,28 @@ MonoBehaviour:
   spawnBounds: {fileID: 1941206077}
   enemiesPerSegment: 20
   delayBeforeEnemies: 3.5
-  intervalBetweenEnemies: 0.5
+  intervalBetweenEnemies: 1
   delayAfterEnemies: 1
   enemySpawnX: 10
-  enemyMinY: -3
-  enemyMaxY: 3
   obstacleTypes:
   - name: Bouncer
-    weight: 5
+    weight: 2
     pool: {fileID: 792557758}
-    enabled: 0
+    enabled: 1
   - name: Pulsar
     weight: 5
     pool: {fileID: 662921152}
     enabled: 0
   - name: Turner
-    weight: 5
+    weight: 3
     pool: {fileID: 959964211}
-    enabled: 0
+    enabled: 1
   - name: Waller
-    weight: 2
+    weight: 5
     pool: {fileID: 1631487306}
     enabled: 1
   - name: Batty
-    weight: 8
+    weight: 10
     pool: {fileID: 305768540}
     enabled: 1
   checkpointPipeGap: 3
@@ -875,6 +874,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TurnerPool
   prefab: {fileID: 3865800209537039897, guid: c358abc76173845248151120a232b733, type: 3}
+--- !u!1 &1215367270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1215367271}
+  - component: {fileID: 1215367272}
+  m_Layer: 0
+  m_Name: GameSettingsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1215367271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215367270}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 10, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 463021812}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1215367272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215367270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e48a27be5d94a479a9662e8e31f17217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSettingsManager
+  balancer: {fileID: 11400000, guid: 46f20545446a44201984facb68f314ce, type: 2}
 --- !u!1 &1217191217
 GameObject:
   m_ObjectHideFlags: 0
@@ -1141,7 +1185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpawnBounds
   floorCollider: {fileID: 849628063518642710, guid: 301f671e93293492481f139c95c49ab2, type: 3}
   ceilingCollider: {fileID: 223122483603420474, guid: 533eb4b6141a542a3a9204b80e921a66, type: 3}
-  buffer: 0.3
+  buffer: 1
 --- !u!1 &1970395489
 GameObject:
   m_ObjectHideFlags: 0

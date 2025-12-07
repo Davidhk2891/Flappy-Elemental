@@ -7,27 +7,26 @@ public class SegmentSpawner : MonoBehaviour
     [Header("Pipe set Settings")]
     public PipePool pipePool;
     public Transform pipeSetEnvironment;
-    public float pipeSpawnX = 10f;
-    public float pipeHeightOffset = 4f;
 
     [Header("Enemy segment Settings")]
     public Transform enemyEnvironment;
     public SpawnBounds spawnBounds;
-    public int enemiesPerSegment = 20;
-    public float delayBeforeEnemies = 3.5f;
-    public float intervalBetweenEnemies = 1.5f;
-    public float delayAfterEnemies = 1f;
-    public float enemySpawnX = 10f;
-    public float enemyMinY = -3f;
-    public float enemyMaxY = 3f;
     public EnemyType[] obstacleTypes;
 
-    [Header("Checkpoint")]
-    public float checkpointPipeGap = 3f;
+    private GameBalancer balancer;
 
+    [System.Serializable]
+    public class EnemyPoolBinding
+    {
+        public string enemyName;
+        public BaseObjectPool pool;
+    }
+
+    [SerializeField] private EnemyPoolBinding[] enemyPools;
 
     private void Start()
     {
+        balancer = GameSettingsManager.Instance.balancer;
         StartCoroutine(SpawnSegments());
     }
 
@@ -39,29 +38,29 @@ public class SegmentSpawner : MonoBehaviour
             SpawnPipeSet();
 
             // Wait before spawning obstacles
-            yield return new WaitForSeconds(delayBeforeEnemies);
+            yield return new WaitForSeconds(balancer.globalDelayBeforeEnemies);
 
             // Obstacles segment
-            for (int i = 0; i < enemiesPerSegment; i++)
+            for (int i = 0; i < balancer.globalEnemiesPerSegment; i++)
             {
                 SpawnObstacle();
-                yield return new WaitForSeconds(intervalBetweenEnemies);
+                yield return new WaitForSeconds(balancer.globalEnemySpawnInterval);
             }
 
             // Exit pipe
-            yield return new WaitForSeconds(delayAfterEnemies);
+            yield return new WaitForSeconds(balancer.globalDelayAfterEnemies);
             SpawnPipeSet();
 
             // Delay before next segment (this will change)
-            yield return new WaitForSeconds(checkpointPipeGap);
+            yield return new WaitForSeconds(balancer.checkpointGap);
         }
     }
 
     private void SpawnPipeSet()
     {
         // Pipe set
-        float lowestPoint = transform.position.y - pipeHeightOffset;
-        float highestPoint = transform.position.y + pipeHeightOffset;
+        float lowestPoint = transform.position.y - balancer.pipeHeightOffset;
+        float highestPoint = transform.position.y + balancer.pipeHeightOffset;
 
         float randomY = Random.Range(lowestPoint, highestPoint);
 
@@ -69,7 +68,7 @@ public class SegmentSpawner : MonoBehaviour
         pipeSet.transform.SetParent(pipeSetEnvironment);
         pipeSet.transform.SetPositionAndRotation
         (
-            new Vector3(pipeSpawnX, randomY, 0f),
+            new Vector3(balancer.globalObjectSpawnZone, randomY, 0f),
             transform.rotation
         );
         pipeSet.SetActive(true);
@@ -90,11 +89,11 @@ public class SegmentSpawner : MonoBehaviour
         var enemyCurrentY = enemy.transform.position.y;
 
         // Spawn position (X controlled here, Y controlled by each obstacle internally)
-        enemy.transform.position = new Vector3(enemySpawnX, enemyCurrentY, 0f);
+        enemy.transform.position = new Vector3(balancer.globalObjectSpawnZone, enemyCurrentY, 0f);
 
         // Inject spawn bounds into the enemy
         var enemyLogic = enemy.GetComponent<IEnemy>();
-        enemyLogic?.onSpawn(spawnBounds);
+        enemyLogic?.OnSpawn(spawnBounds);
 
         // Enable it (object pooling)
         enemy.SetActive(true);

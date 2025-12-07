@@ -2,20 +2,6 @@ using UnityEngine;
 
 public class PulsarController : BaseObjectController
 {
-
-    [Header("Pulse Settings")]
-    // Resting size
-    public float baseScale = 0.5f;
-    // Minimum spike
-    public float minPulseScale = 0.5f;
-    // Maximum spike
-    public float maxPulseScale = 1f;
-    // Fast expansion
-    public float growSpeed = 10f;
-    // Slow contraction
-    public float shrinkSpeed = 1.5f;
-    // Time it stays big
-    public float holdDuration = 1f;
     private float targetScale;
     private float holdTimer;
     private enum PulseState
@@ -30,7 +16,7 @@ public class PulsarController : BaseObjectController
     {
         // Pick first random pulse size
         chooseRandomPeak();
-        transform.localScale = Vector3.one * baseScale;
+        transform.localScale = Vector3.one * balancer.pulsarBaseScale;
     }
 
     protected override void Update()
@@ -54,7 +40,7 @@ public class PulsarController : BaseObjectController
 
     private void chooseRandomPeak()
     {
-        targetScale = Random.Range(minPulseScale, maxPulseScale);
+        targetScale = Random.Range(balancer.pulsarMinPulseScale, balancer.pulsarMaxPulseScale);
     }
 
     private void Grow()
@@ -63,12 +49,12 @@ public class PulsarController : BaseObjectController
         transform.localScale = Vector3.MoveTowards(
             transform.localScale,
             Vector3.one * targetScale,
-            growSpeed * Time.deltaTime
+            balancer.pulsarGrowSpeed * Time.deltaTime
         );
 
         if (transform.localScale.x >= targetScale - 0.01){
             state = PulseState.Holding;
-            holdTimer = holdDuration;
+            holdTimer = balancer.pulsarHoldDuration;
         }
     }
 
@@ -87,11 +73,11 @@ public class PulsarController : BaseObjectController
         // Shrink slowly toward base scale
         transform.localScale = Vector3.MoveTowards(
             transform.localScale,
-            Vector3.one * baseScale,
-            shrinkSpeed * Time.deltaTime
+            Vector3.one * balancer.pulsarBaseScale,
+            balancer.pulsarShrinkSpeed * Time.deltaTime
         );
 
-        if (transform.localScale.x <= baseScale + 0.01f)
+        if (transform.localScale.x <= balancer.pulsarBaseScale + 0.01f)
         {
             // Next heartbeat -> pick new random peak
             chooseRandomPeak();

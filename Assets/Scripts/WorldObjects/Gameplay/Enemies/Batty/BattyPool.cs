@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class BattyPool : BaseObjectPool
 {
-    private void Start()
+    protected override void Start()
     {
+        base.Start();
         PoolSize = 15;
     }
 }
