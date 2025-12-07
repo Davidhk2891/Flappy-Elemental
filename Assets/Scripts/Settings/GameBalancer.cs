@@ -24,24 +24,34 @@ public class GameBalancer : ScriptableObject
     public float globalEnemySpawnInterval = 1f; //---------------------> IN PLACE
     public float globalDelayAfterEnemies = 1f; //----------------------> IN PLACE
 
-    [Header("- Batty")]
+    [System.Serializable]
+    public class EnemySpawnConfig
+    {
+        public string enemyName;
+        public bool enabled = true;
+        public int weight = 1;
+    }
+    
+    public EnemySpawnConfig[] enemySpawnTable; //----------------------> IN PLACE
+
+    [Header("- Batty settings")]
     public float battyFlapDuration = 1f; //----------------------------> IN PLACE
     public float battySpeedMultiplier = 1.5f; //-----------------------> IN PLACE
 
-    [Header("- Waller")]
+    [Header("- Waller settings")]
     public float wallerStartingAngle = 0f; //--------------------------> IN PLACE
     public float wallerEndingAngle = 360f; //--------------------------> IN PLACE
 
-    [Header("- Bouncer")]
+    [Header("- Bouncer settings")]
     public float bouncerTopLimit = 8f; //------------------------------> IN PLACE
     public float bouncerBottomLimit = -10f; //-------------------------> IN PLACE
     public float bouncerVerticalSpeed = 8f; //-------------------------> IN PLACE
 
-    [Header("- Turner")]
+    [Header("- Turner settings")]
     public float turnerRotationSpeed = 180f; //------------------------> IN PLACE
     public Vector3 turnerPivotOffset; //-------------------------------> IN PLACE
 
-    [Header("- Pulsar")]
+    [Header("- Pulsar settings")]
     public float pulsarBaseScale = 0.5f; //----------------------------> IN PLACE
     public float pulsarMinPulseScale = 0.5f; //------------------------> IN PLACE
     public float pulsarMaxPulseScale = 1f; //--------------------------> IN PLACE

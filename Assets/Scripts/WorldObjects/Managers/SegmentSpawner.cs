@@ -15,6 +15,15 @@ public class SegmentSpawner : MonoBehaviour
 
     private GameBalancer balancer;
 
+    [System.Serializable]
+    public class EnemyPoolBinding
+    {
+        public string enemyName;
+        public BaseObjectPool pool;
+    }
+
+    [SerializeField] private EnemyPoolBinding[] enemyPools;
+
     private void Start()
     {
         balancer = GameSettingsManager.Instance.balancer;
