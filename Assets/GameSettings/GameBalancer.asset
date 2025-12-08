@@ -13,14 +13,46 @@ MonoBehaviour:
   m_Name: GameBalancer
   m_EditorClassIdentifier: Assembly-CSharp::GameBalancer
   globalWorldSpeed: 4
+  globalObjectSpawnZone: 10
   globalObjectsDeadZone: -10
-  pipeSetGap: 3.5
-  pipeSpawnInterval: 2
+  playerJumpForce: 8
+  playerGravity: 3
+  playerSpriteJumpDuration: 0.15
+  pipeHeightOffset: 3.5
+  checkpointGap: 3
+  globalEnemiesPerSegment: 30
+  globalDelayBeforeEnemies: 2.5
   globalEnemySpawnInterval: 1
+  globalDelayAfterEnemies: 1
+  enemySpawnTable:
+  - enemyName: Batty
+    enabled: 1
+    weight: 5
+  - enemyName: Waller
+    enabled: 0
+    weight: 5
+  - enemyName: Bouncer
+    enabled: 0
+    weight: 5
+  - enemyName: Turner
+    enabled: 0
+    weight: 5
+  - enemyName: Pulsar
+    enabled: 0
+    weight: 5
   battyFlapDuration: 1
   battySpeedMultiplier: 1.5
   wallerStartingAngle: 0
   wallerEndingAngle: 360
-  jumpForce: 12
-  gravityScale: 2
+  bouncerTopLimit: 8
+  bouncerBottomLimit: -10
+  bouncerVerticalSpeed: 8
+  turnerRotationSpeed: 180
+  turnerPivotOffset: {x: 0, y: 0, z: 0}
+  pulsarBaseScale: 0.5
+  pulsarMinPulseScale: 0.5
+  pulsarMaxPulseScale: 1
+  pulsarGrowSpeed: 10
+  pulsarShrinkSpeed: 1.5
+  pulsarHoldDuration: 1
   difficultyMultiplier: 1

@@ -465,8 +465,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 854c6939ea17c4ef0bcb99827f5e47e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  flapStrength: 8
-  flapDuration: 0.15
   slimeAnimation:
   - {fileID: -9135458498172086210, guid: e66d1ab36a5a641cd9c1eabcdb9b50f0, type: 3}
   - {fileID: -2739917139674407424, guid: e66d1ab36a5a641cd9c1eabcdb9b50f0, type: 3}
@@ -677,37 +675,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SegmentSpawner
   pipePool: {fileID: 2088792555}
   pipeSetEnvironment: {fileID: 2068439782}
-  pipeSpawnX: 10
-  pipeHeightOffset: 4
   enemyEnvironment: {fileID: 1470979003}
   spawnBounds: {fileID: 1941206077}
-  enemiesPerSegment: 20
-  delayBeforeEnemies: 3.5
-  intervalBetweenEnemies: 1
-  delayAfterEnemies: 1
-  enemySpawnX: 10
-  obstacleTypes:
-  - name: Bouncer
-    weight: 2
-    pool: {fileID: 792557758}
-    enabled: 1
-  - name: Pulsar
-    weight: 5
-    pool: {fileID: 662921152}
-    enabled: 0
-  - name: Turner
-    weight: 3
-    pool: {fileID: 959964211}
-    enabled: 1
-  - name: Waller
-    weight: 5
-    pool: {fileID: 1631487306}
-    enabled: 1
-  - name: Batty
-    weight: 10
+  enemyPools:
+  - enemyName: Batty
     pool: {fileID: 305768540}
-    enabled: 1
-  checkpointPipeGap: 3
+  - enemyName: Waller
+    pool: {fileID: 1631487306}
+  - enemyName: Bouncer
+    pool: {fileID: 792557758}
+  - enemyName: Turner
+    pool: {fileID: 959964211}
+  - enemyName: Pulsar
+    pool: {fileID: 662921152}
 --- !u!1 &662921150
 GameObject:
   m_ObjectHideFlags: 0
