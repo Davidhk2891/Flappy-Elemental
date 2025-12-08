@@ -11,8 +11,6 @@ public class SegmentSpawner : MonoBehaviour
     [Header("Enemy segment Settings")]
     public Transform enemyEnvironment;
     public SpawnBounds spawnBounds;
-    public EnemyType[] obstacleTypes;
-
     private GameBalancer balancer;
 
     [System.Serializable]
@@ -77,10 +75,17 @@ public class SegmentSpawner : MonoBehaviour
     private void SpawnObstacle()
     {
         // Pick based on weight
-        EnemyType type = PickRandomObstacleType();
+        GameBalancer.EnemySpawnConfig config = RollEnemy();
+
+        BaseObjectPool pool = FindPool(config.enemyName);
+        if (pool == null)
+        {
+            Debug.Log("No pool found for enemy: " + config.enemyName);
+            return;
+        }
 
         // Get object from its pool
-        GameObject enemy = type.pool.GetObject();
+        GameObject enemy = pool.GetObject();
 
         // Parent it
         enemy.transform.SetParent(enemyEnvironment);
@@ -99,31 +104,39 @@ public class SegmentSpawner : MonoBehaviour
         enemy.SetActive(true);
     }
 
-    private EnemyType PickRandomObstacleType()
+    private BaseObjectPool FindPool(string name)
     {
-        // Filter out disabled obstacles
-        var activeObstacles = obstacleTypes.Where(o => o.enabled).ToList();
-        if (activeObstacles.Count == 0)
-            return null;
+        foreach (var binding in enemyPools)
+        {
+            if (binding.enemyName == name)
+                return binding.pool;
+        }
+        return null;
+    }
 
-        // 1. Calculate total weight
-        int totalWeight = 0;
-        foreach (var o in activeObstacles)
-            totalWeight += o.weight;
+    private GameBalancer.EnemySpawnConfig RollEnemy()
+    {
+        var table = balancer.enemySpawnTable;
+        var active = table.Where(e => e.enabled).ToList();
+        if (active.Count == 0)
+            return null;
         
+        // 1. Calculate total weight
+        int total = active.Sum(e => e.weight);
+
         // 2. Get random number
-        int random = Random.Range(0, totalWeight);
+        int roll = Random.Range(0, total);
 
         // 3. Walk through ranges until we match
         int cumulative = 0;
-        foreach (var o in activeObstacles)
+        foreach (var e in active)
         {
-            cumulative += o.weight;
-            if (random < cumulative)
-                return o;
+            cumulative += e.weight;
+            if (roll < cumulative)
+                return e;
         }
 
         // 4. Fallback (should never happen)
-        return activeObstacles[0];       
+        return active[0];
     }
 }
