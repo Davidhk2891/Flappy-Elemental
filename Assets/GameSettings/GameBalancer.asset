@@ -40,7 +40,7 @@ MonoBehaviour:
   - enemyName: Pulsar
     enabled: 0
     weight: 5
-  battyFlapDuration: 1
+  battyFlapDuration: 0.5
   battySpeedMultiplier: 1.5
   wallerStartingAngle: 0
   wallerEndingAngle: 360

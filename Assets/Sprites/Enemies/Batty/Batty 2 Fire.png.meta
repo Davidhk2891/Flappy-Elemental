@@ -1,13 +1,28 @@
 fileFormatVersion: 2
-guid: aa66d4439cbb547fd94f86cf916bcf86
+guid: a6af4ce2c511d904f9918517251dc0fc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3860213245612464597
-    second: Copy of BB-2 Frames_0
+      213: -2245147428724174158
+    second: Batty 2 Fire_0
   - first:
-      213: 8657447241213122959
-    second: Copy of BB-2 Frames_1
+      213: -797308848576728112
+    second: Batty 2 Fire_1
+  - first:
+      213: -4315169572815528967
+    second: Batty 2 Fire_2
+  - first:
+      213: -8508718938643165582
+    second: Batty 2 Fire_3
+  - first:
+      213: -1053378163569685294
+    second: Batty 2 Fire_4
+  - first:
+      213: 2749002646419501574
+    second: Batty 2 Fire_5
+  - first:
+      213: -8808767652293510009
+    second: Batty 2 Fire_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -78,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -99,30 +114,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: batty_v1_up
+      name: Batty 2 Fire_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 9
-        width: 59
-        height: 48
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b26e2026184cd6ac0800000000000000
-      internalID: -3860213245612464597
+      spriteID: 2b293821f42a7d0e0800000000000000
+      internalID: -2245147428724174158
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: batty_v1_down
+      name: Batty 2 Fire_1
       rect:
         serializedVersion: 2
-        x: 76
-        y: 1
-        width: 48
-        height: 32
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +155,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f899132956e652870800000000000000
-      internalID: 8657447241213122959
+      spriteID: 0d3fe4893d36fe4f0800000000000000
+      internalID: -797308848576728112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batty 2 Fire_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fb91c2e2207d14c0800000000000000
+      internalID: -4315169572815528967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Batty 2 Fire_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27e0988d435fae980800000000000000
+      internalID: -8508718938643165582
       vertices: []
       indices: 
       edges: []
@@ -163,7 +209,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4fdf717a255534bdfb08b18ea54452f2
+    spriteID: f4b8126b71006144093674c51f360776
     internalID: 0
     vertices: []
     indices: 
@@ -171,10 +217,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      batty_v1_down: 8657447241213122959
-      batty_v1_up: -3860213245612464597
+      Batty 2 Fire_0: -2245147428724174158
+      Batty 2 Fire_1: -797308848576728112
+      Batty 2 Fire_2: -4315169572815528967
+      Batty 2 Fire_3: -8508718938643165582
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

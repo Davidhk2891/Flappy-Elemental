@@ -5,7 +5,7 @@ public class BattyController : BaseObjectController, IEnemy
 {
     [Header("Batty settings")]
     [SerializeField] private SpawnBounds spawnBounds;
-    public Sprite[] battyAnimation = new Sprite[2];
+    public Sprite[] battyAnimation = new Sprite[4];
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private float randomY;
@@ -74,6 +74,12 @@ public class BattyController : BaseObjectController, IEnemy
             yield return new WaitForSeconds(frameTime);
 
             sr.sprite = battyAnimation[1];
+            yield return new WaitForSeconds(frameTime);
+
+            sr.sprite = battyAnimation[2];
+            yield return new WaitForSeconds(frameTime);
+
+            sr.sprite = battyAnimation[3];
             yield return new WaitForSeconds(frameTime);
         }
     }
