@@ -66,7 +66,7 @@ public class SegmentSpawner : MonoBehaviour
         pipeSet.transform.SetParent(pipeSetEnvironment);
         pipeSet.transform.SetPositionAndRotation
         (
-            new Vector3(balancer.globalObjectSpawnZone, randomY, 0f),
+            new Vector3(balancer.globalObjectSpawnZone, randomY, -1f),
             transform.rotation
         );
         pipeSet.SetActive(true);
