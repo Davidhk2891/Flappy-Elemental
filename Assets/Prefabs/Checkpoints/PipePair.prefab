@@ -77,8 +77,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1889482203
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c85f19315d203490d9bc1b29b2c5fb2d, type: 3}
   m_Color: {r: 0.5176471, g: 0.29411766, b: 0.17254902, a: 1}
@@ -183,8 +183,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dea020074f4454ca78d1a92caabc1de4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PipeMovement
-  moveSpeedX: 3
-  deadZone: -9
 --- !u!1 &7231449688651400170
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,8 +260,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1889482203
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c85f19315d203490d9bc1b29b2c5fb2d, type: 3}
   m_Color: {r: 0.5176471, g: 0.29411766, b: 0.17254902, a: 1}

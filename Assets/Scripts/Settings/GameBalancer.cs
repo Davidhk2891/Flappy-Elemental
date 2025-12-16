@@ -6,8 +6,14 @@ public class GameBalancer : ScriptableObject
     [Header("World movement")]
     [Tooltip("Values can be overriden by enemie's individual speed")]
     public float globalWorldSpeed = 4f; //-----------------------------> IN PLACE
+    public float enemySpawnDistance = 6f;
+    public float pipeSpawnDistance = 12f;
     public float globalObjectSpawnZone = 10f; //-----------------------> IN PLACE
     public float globalObjectsDeadZone = -10f; //----------------------> IN PLACE
+
+    [Header("Floor & Ceiling (FC)")]
+    public int fcTilesOnScreen = 12; //--------------------------------> IN PLACE
+    public float fcYPositionFromCenter = 11.5f; //---------------------> IN PLACE
 
     [Header("Player Settings")]
     public float playerJumpForce = 10f; //-----------------------------> IN PLACE

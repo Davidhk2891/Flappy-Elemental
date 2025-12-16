@@ -11,6 +11,15 @@ public class SegmentSpawner : MonoBehaviour
     [Header("Enemy segment Settings")]
     public Transform enemyEnvironment;
     public SpawnBounds spawnBounds;
+
+    // Distance-based spawning
+    private float distanceSinceLastEnemy = 0f;
+
+    // Enemies spawned in segment
+    private int enemiesSpawnedInSegment = 0;
+
+    // Cached last x position to measure distance moved
+    private float lastXPosition;
     private GameBalancer balancer;
 
     [System.Serializable]
@@ -24,6 +33,8 @@ public class SegmentSpawner : MonoBehaviour
 
     private void Start()
     {
+        lastXPosition = transform.position.x;
+
         balancer = GameSettingsManager.Instance.balancer;
         StartCoroutine(SpawnSegments());
     }
@@ -32,25 +43,7 @@ public class SegmentSpawner : MonoBehaviour
     {
         while (true)
         {
-            // Entry pipe
-            SpawnPipeSet();
-
-            // Wait before spawning obstacles
-            yield return new WaitForSeconds(balancer.globalDelayBeforeEnemies);
-
-            // Obstacles segment
-            for (int i = 0; i < balancer.globalEnemiesPerSegment; i++)
-            {
-                SpawnObstacle();
-                yield return new WaitForSeconds(balancer.globalEnemySpawnInterval);
-            }
-
-            // Exit pipe
-            yield return new WaitForSeconds(balancer.globalDelayAfterEnemies);
-            SpawnPipeSet();
-
-            // Delay before next segment (this will change)
-            yield return new WaitForSeconds(balancer.checkpointGap);
+            yield return null;
         }
     }
 

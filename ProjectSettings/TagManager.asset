@@ -45,5 +45,20 @@ TagManager:
   - name: Background
     uniqueID: 1920931829
     locked: 0
+  - name: Walls
+    uniqueID: 2405485093
+    locked: 0
+  - name: Floor & Ceiling
+    uniqueID: 3529085359
+    locked: 0
+  - name: Enemies
+    uniqueID: 3365978173
+    locked: 0
+  - name: Player
+    uniqueID: 4153960261
+    locked: 0
+  - name: UI
+    uniqueID: 1596408441
+    locked: 0
   m_RenderingLayers:
   - Default
