@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections;
 using System.Linq;
 
 public class SegmentSpawner : MonoBehaviour
@@ -9,8 +8,8 @@ public class SegmentSpawner : MonoBehaviour
     public Transform pipeSetEnvironment;
 
     [Header("Enemy segment Settings")]
-    public Transform enemyEnvironment;
     public SpawnBounds spawnBounds;
+    public Transform enemyEnvironment;
 
     // Distance-based spawning
     private float distanceSinceLastEnemy = 0f;
@@ -36,15 +35,33 @@ public class SegmentSpawner : MonoBehaviour
         lastXPosition = transform.position.x;
 
         balancer = GameSettingsManager.Instance.balancer;
-        StartCoroutine(SpawnSegments());
     }
 
-    private IEnumerator SpawnSegments()
+    private void Update()
     {
-        while (true)
+        // Accumulate distance traveled
+        float worldSpeed = balancer.globalWorldSpeed;
+        distanceSinceLastEnemy += worldSpeed * Time.deltaTime;
+
+        // If enough distance passed, spawn enemy
+        if (distanceSinceLastEnemy >= balancer.enemySpawnDistance)
         {
-            yield return null;
-        }
+            distanceSinceLastEnemy = 0f;
+
+            if (enemiesSpawnedInSegment == 0)
+                SpawnPipeSet();
+
+            SpawnEnemy();
+
+            enemiesSpawnedInSegment++;
+
+            // Check if segment is completed
+            if (enemiesSpawnedInSegment == balancer.globalEnemiesPerSegment)
+            {
+                SpawnPipeSet();
+                enemiesSpawnedInSegment = 0;
+            }
+        }   
     }
 
     private void SpawnPipeSet()
@@ -65,7 +82,7 @@ public class SegmentSpawner : MonoBehaviour
         pipeSet.SetActive(true);
     }
     
-    private void SpawnObstacle()
+    private void SpawnEnemy()
     {
         // Pick based on weight
         GameBalancer.EnemySpawnConfig config = RollEnemy();
@@ -107,6 +124,7 @@ public class SegmentSpawner : MonoBehaviour
         return null;
     }
 
+    // Algorithm for deciding what enemy to spawn based on weighted table
     private GameBalancer.EnemySpawnConfig RollEnemy()
     {
         var table = balancer.enemySpawnTable;
