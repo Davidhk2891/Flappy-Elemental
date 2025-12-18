@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Linq;
+using System.Collections;
 
 public class SegmentSpawner : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class SegmentSpawner : MonoBehaviour
 
     // Distance-based spawning
     private float distanceSinceLastEnemy = 0f;
+
+    private float distanceSinceLastPipeSet = 0f;
 
     // Enemies spawned in segment
     private int enemiesSpawnedInSegment = 0;
@@ -43,25 +46,47 @@ public class SegmentSpawner : MonoBehaviour
         float worldSpeed = balancer.globalWorldSpeed;
         distanceSinceLastEnemy += worldSpeed * Time.deltaTime;
 
-        // If enough distance passed, spawn enemy
-        if (distanceSinceLastEnemy >= balancer.enemySpawnDistance)
+        // First check for enemies counted
+        if (enemiesSpawnedInSegment <= balancer.globalEnemiesPerSegment)
         {
-            distanceSinceLastEnemy = 0f;
-
-            if (enemiesSpawnedInSegment == 0)
-                SpawnPipeSet();
-
-            SpawnEnemy();
-
-            enemiesSpawnedInSegment++;
-
-            // Check if segment is completed
-            if (enemiesSpawnedInSegment == balancer.globalEnemiesPerSegment)
+            // If enough distance passed. Spawn enemy
+            if (distanceSinceLastEnemy >= balancer.globalEnemySpawnDistance)
             {
-                SpawnPipeSet();
-                enemiesSpawnedInSegment = 0;
+                distanceSinceLastEnemy = 0f;
+                SpawnEnemy();
+                enemiesSpawnedInSegment++;  
             }
+        }
+        else
+        {
+            /*
+            Figure out a way to:
+                - Give buffer time between last enemy and first pipeset of checkpoint
+                - Give buffer time between first pipeset of checkpoint and first enemy of new segment
+            */
+
+            enemiesSpawnedInSegment = 0;
+            StartCoroutine(SpawnCheckpointRoutine());
         }   
+    }
+
+    private IEnumerator SpawnCheckpointRoutine()
+    {
+        // Spawn first pipe set
+        SpawnPipeSet();
+
+        // Reset distance tracker
+        distanceSinceLastPipeSet = 0f;
+
+        // Wait until the world travels the distance set in balancer
+        while (distanceSinceLastPipeSet < balancer.pipeSetSpawnDistance)
+        {
+            distanceSinceLastPipeSet += balancer.globalWorldSpeed * Time.deltaTime;
+            yield return null;
+        }
+
+        // Spawn second pipe set
+        SpawnPipeSet();
     }
 
     private void SpawnPipeSet()

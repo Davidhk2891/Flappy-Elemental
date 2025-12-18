@@ -6,14 +6,12 @@ public class GameBalancer : ScriptableObject
     [Header("World movement")]
     [Tooltip("Values can be overriden by enemie's individual speed")]
     public float globalWorldSpeed = 4f; //-----------------------------> IN PLACE
-    public float enemySpawnDistance = 6f;
-    public float pipeSpawnDistance = 12f;
     public float globalObjectSpawnZone = 10f; //-----------------------> IN PLACE
     public float globalObjectsDeadZone = -10f; //----------------------> IN PLACE
 
     [Header("Floor & Ceiling (FC)")]
     public int fcTilesOnScreen = 12; //--------------------------------> IN PLACE
-    public float fcYPositionFromCenter = 11.5f; //---------------------> IN PLACE
+    public float fcYPositionFromCenter = 11.3f; //---------------------> IN PLACE
 
     [Header("Player Settings")]
     public float playerJumpForce = 10f; //-----------------------------> IN PLACE
@@ -21,13 +19,14 @@ public class GameBalancer : ScriptableObject
     public float playerSpriteJumpDuration = 0.15f; //------------------> IN PLACE
 
     [Header("Checkpoint settings")]
+    public float pipeSetSpawnDistance = 3f; //-------------------------> IN PLACE
     public float pipeHeightOffset = 3.5f; //---------------------------> IN PLACE
     public float checkpointGap = 3f; //--------------------------------> IN PLACE
 
     [Header("Global Enemy settings")]
     public int globalEnemiesPerSegment = 20; //------------------------> IN PLACE 
+    public float globalEnemySpawnDistance = 6f; //---------------------> IN PLACE
     public float globalDelayBeforeEnemies = 3.5f; //-------------------> IN PLACE
-    public float globalEnemySpawnInterval = 1f; //---------------------> IN PLACE
     public float globalDelayAfterEnemies = 1f; //----------------------> IN PLACE
 
     [System.Serializable]

@@ -12,19 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6a5f1bda7a30410382c99f3b93b8442, type: 3}
   m_Name: GameBalancer
   m_EditorClassIdentifier: Assembly-CSharp::GameBalancer
-  globalWorldSpeed: 10
+  globalWorldSpeed: 4
   globalObjectSpawnZone: 10
   globalObjectsDeadZone: -10
   fcTilesOnScreen: 12
-  fcYPositionFromCenter: 11.5
+  fcYPositionFromCenter: 11
   playerJumpForce: 8
   playerGravity: 3
   playerSpriteJumpDuration: 0.15
+  pipeSetSpawnDistance: 3
   pipeHeightOffset: 3.5
   checkpointGap: 3
   globalEnemiesPerSegment: 20
+  globalEnemySpawnDistance: 6
   globalDelayBeforeEnemies: 3.5
-  globalEnemySpawnInterval: 1
   globalDelayAfterEnemies: 1
   enemySpawnTable:
   - enemyName: Batty
