@@ -7,7 +7,7 @@ public class SpawnBounds : MonoBehaviour
 
     [SerializeField] private Collider2D floorCollider;
     [SerializeField] private Collider2D ceilingCollider;
-    [SerializeField] private float buffer = 1.5f;
+    [SerializeField] private float buffer = 2f;
 
     private void Awake()
     {

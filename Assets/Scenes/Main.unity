@@ -424,8 +424,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -141007035
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -9135458498172086210, guid: e66d1ab36a5a641cd9c1eabcdb9b50f0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -675,8 +675,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SegmentSpawner
   pipePool: {fileID: 2088792555}
   pipeSetEnvironment: {fileID: 2068439782}
-  enemyEnvironment: {fileID: 1470979003}
   spawnBounds: {fileID: 1941206077}
+  enemyEnvironment: {fileID: 1470979003}
   enemyPools:
   - enemyName: Batty
     pool: {fileID: 305768540}
@@ -1165,7 +1165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpawnBounds
   floorCollider: {fileID: 849628063518642710, guid: 301f671e93293492481f139c95c49ab2, type: 3}
   ceilingCollider: {fileID: 223122483603420474, guid: 533eb4b6141a542a3a9204b80e921a66, type: 3}
-  buffer: 1
+  buffer: 2
 --- !u!1 &1970395489
 GameObject:
   m_ObjectHideFlags: 0
@@ -1212,10 +1212,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TileScroller
   floorTilePrefab: {fileID: 1378819500058089719, guid: 301f671e93293492481f139c95c49ab2, type: 3}
   ceilingTilePrefab: {fileID: 7642716670551264141, guid: 533eb4b6141a542a3a9204b80e921a66, type: 3}
-  tilesOnScreen: 12
-  scrollSpeed: 4
-  yPositionFromCenter: 11.5
-  tileRecycleOffset: -10
   floorParent: {fileID: 94300123}
   ceilingParent: {fileID: 949478176}
 --- !u!1 &1992761698

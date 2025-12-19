@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class CeilingFloorScroller : MonoBehaviour
@@ -7,12 +6,6 @@ public class CeilingFloorScroller : MonoBehaviour
     [SerializeField] private GameObject floorTilePrefab;
     [SerializeField] private GameObject ceilingTilePrefab;
 
-    [Header("Scrolling settings")]
-    [SerializeField] private int tilesOnScreen = 12;
-    [SerializeField] private float scrollSpeed = 4f;
-    [SerializeField] private float yPositionFromCenter = 11.5f;
-    [SerializeField] private float tileRecycleOffset = -10f;
-
     [Header("Parents")]
     [SerializeField] private Transform floorParent;
     [SerializeField] private Transform ceilingParent;
@@ -20,6 +13,12 @@ public class CeilingFloorScroller : MonoBehaviour
     private float tileWidth;
     private GameObject[] floorTiles;
     private GameObject[] ceilingTiles;
+    private GameBalancer balancer;
+
+    private void OnEnable()
+    {
+        balancer = GameSettingsManager.Instance.balancer;
+    }
 
     private void Start()
     {
@@ -45,15 +44,15 @@ public class CeilingFloorScroller : MonoBehaviour
 
     private void SpawnInitialTiles(float leftEdgeX)
     {
-        floorTiles = new GameObject[tilesOnScreen];
-        ceilingTiles = new GameObject[tilesOnScreen];
+        floorTiles = new GameObject[balancer.fcTilesOnScreen];
+        ceilingTiles = new GameObject[balancer.fcTilesOnScreen];
 
-        for (int i = 0; i < tilesOnScreen; i++)
+        for (int i = 0; i < balancer.fcTilesOnScreen; i++)
         {
             // Floor
             floorTiles[i] = Instantiate(
                 floorTilePrefab,
-                new Vector3(leftEdgeX + i * tileWidth, -yPositionFromCenter, 0f),
+                new Vector3(leftEdgeX + i * tileWidth, -balancer.fcYPositionFromCenter, 0f),
                 Quaternion.identity,
                 floorParent
             );
@@ -61,7 +60,7 @@ public class CeilingFloorScroller : MonoBehaviour
             // Ceiling
             ceilingTiles[i] = Instantiate(
                 ceilingTilePrefab,
-                new Vector3(leftEdgeX + i * tileWidth, yPositionFromCenter, 0),
+                new Vector3(leftEdgeX + i * tileWidth, balancer.fcYPositionFromCenter, 0),
                 Quaternion.identity,
                 ceilingParent
             );
@@ -72,10 +71,10 @@ public class CeilingFloorScroller : MonoBehaviour
     {
         for (int i = 0; i < tiles.Length; i++)
         {
-            tiles[i].transform.Translate(Vector3.left * scrollSpeed * Time.deltaTime);
+            tiles[i].transform.Translate(Vector3.left * balancer.globalWorldSpeed * Time.deltaTime);
 
             // If tile moved fully off-screen to the left
-            if (tiles[i].transform.position.x < tileRecycleOffset)
+            if (tiles[i].transform.position.x < balancer.globalObjectsDeadZone)
             {
                 float rightMostX = GetRightmostTileX(tiles);
                 tiles[i].transform.position = new Vector3(rightMostX + tileWidth, tiles[i].transform.position.y, 0);   

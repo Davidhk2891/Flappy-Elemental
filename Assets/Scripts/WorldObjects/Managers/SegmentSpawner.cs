@@ -1,6 +1,6 @@
 using UnityEngine;
-using System.Collections;
 using System.Linq;
+using System.Collections;
 
 public class SegmentSpawner : MonoBehaviour
 {
@@ -9,8 +9,14 @@ public class SegmentSpawner : MonoBehaviour
     public Transform pipeSetEnvironment;
 
     [Header("Enemy segment Settings")]
-    public Transform enemyEnvironment;
     public SpawnBounds spawnBounds;
+    public Transform enemyEnvironment;
+
+    // Distance-based spawning
+    private int enemiesSpawnedInSegment = 0;
+    private float distanceSinceLastEnemy = 0f;
+    private float distanceSinceLastPipeSet = 0f;
+    private float lastXPosition;
     private GameBalancer balancer;
 
     [System.Serializable]
@@ -24,34 +30,64 @@ public class SegmentSpawner : MonoBehaviour
 
     private void Start()
     {
+        lastXPosition = transform.position.x;
+
         balancer = GameSettingsManager.Instance.balancer;
-        StartCoroutine(SpawnSegments());
+
+        StartCoroutine(RunGameLoop());
     }
 
-    private IEnumerator SpawnSegments()
+    private IEnumerator RunGameLoop()
     {
         while (true)
         {
-            // Entry pipe
-            SpawnPipeSet();
+            yield return StartCoroutine(SpawnEnemies());
+            yield return new WaitForSeconds(balancer.globalDelayAfterEnemies);    
 
-            // Wait before spawning obstacles
+            yield return StartCoroutine(SpawnCheckpoint());
             yield return new WaitForSeconds(balancer.globalDelayBeforeEnemies);
-
-            // Obstacles segment
-            for (int i = 0; i < balancer.globalEnemiesPerSegment; i++)
-            {
-                SpawnObstacle();
-                yield return new WaitForSeconds(balancer.globalEnemySpawnInterval);
-            }
-
-            // Exit pipe
-            yield return new WaitForSeconds(balancer.globalDelayAfterEnemies);
-            SpawnPipeSet();
-
-            // Delay before next segment (this will change)
-            yield return new WaitForSeconds(balancer.checkpointGap);
         }
+    }
+
+    private IEnumerator SpawnEnemies()
+    {
+        enemiesSpawnedInSegment = 0;
+        distanceSinceLastEnemy = 0f;
+
+        // Spawn enemies until cap reached
+        while (enemiesSpawnedInSegment <= balancer.globalEnemiesPerSegment)
+        {
+            // Accumulate distance traveled
+            distanceSinceLastEnemy += balancer.globalWorldSpeed * Time.deltaTime;
+
+            // If enough distance passed, spawn enemy
+            if (distanceSinceLastEnemy >= balancer.globalEnemySpawnDistance)
+            {
+                distanceSinceLastEnemy = 0;
+                SpawnEnemy();
+                enemiesSpawnedInSegment++;
+            }
+            yield return null;
+        }
+    }
+
+    private IEnumerator SpawnCheckpoint()
+    {
+        // Spawn first pipe set
+        SpawnPipeSet();
+
+        // Reset distance tracker
+        distanceSinceLastPipeSet = 0f;
+
+        // Wait until the world travels the distance set in balancer
+        while (distanceSinceLastPipeSet < balancer.pipeSetSpawnDistance)
+        {
+            distanceSinceLastPipeSet += balancer.globalWorldSpeed * Time.deltaTime;
+            yield return null;
+        }
+
+        // Spawn second pipe set
+        SpawnPipeSet();
     }
 
     private void SpawnPipeSet()
@@ -66,13 +102,13 @@ public class SegmentSpawner : MonoBehaviour
         pipeSet.transform.SetParent(pipeSetEnvironment);
         pipeSet.transform.SetPositionAndRotation
         (
-            new Vector3(balancer.globalObjectSpawnZone, randomY, 0f),
+            new Vector3(balancer.globalObjectSpawnZone, randomY, -1f),
             transform.rotation
         );
         pipeSet.SetActive(true);
     }
     
-    private void SpawnObstacle()
+    private void SpawnEnemy()
     {
         // Pick based on weight
         GameBalancer.EnemySpawnConfig config = RollEnemy();
@@ -114,6 +150,7 @@ public class SegmentSpawner : MonoBehaviour
         return null;
     }
 
+    // Algorithm for deciding what enemy to spawn based on weighted table
     private GameBalancer.EnemySpawnConfig RollEnemy()
     {
         var table = balancer.enemySpawnTable;

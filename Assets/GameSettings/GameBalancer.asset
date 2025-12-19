@@ -15,22 +15,25 @@ MonoBehaviour:
   globalWorldSpeed: 4
   globalObjectSpawnZone: 10
   globalObjectsDeadZone: -10
+  fcTilesOnScreen: 12
+  fcYPositionFromCenter: 11.3
   playerJumpForce: 8
   playerGravity: 3
   playerSpriteJumpDuration: 0.15
+  pipeSetSpawnDistance: 10
   pipeHeightOffset: 3.5
   checkpointGap: 3
-  globalEnemiesPerSegment: 30
-  globalDelayBeforeEnemies: 2.5
-  globalEnemySpawnInterval: 1
+  globalEnemiesPerSegment: 10
+  globalEnemySpawnDistance: 2
+  globalDelayBeforeEnemies: 3.5
   globalDelayAfterEnemies: 1
   enemySpawnTable:
   - enemyName: Batty
     enabled: 1
-    weight: 5
+    weight: 8
   - enemyName: Waller
     enabled: 0
-    weight: 5
+    weight: 2
   - enemyName: Bouncer
     enabled: 0
     weight: 5
@@ -43,7 +46,7 @@ MonoBehaviour:
   battyFlapDuration: 0.5
   battySpeedMultiplier: 1.5
   wallerStartingAngle: 0
-  wallerEndingAngle: 360
+  wallerEndingAngle: 90
   bouncerTopLimit: 8
   bouncerBottomLimit: -10
   bouncerVerticalSpeed: 8
