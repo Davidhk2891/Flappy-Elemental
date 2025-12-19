@@ -16,15 +16,15 @@ MonoBehaviour:
   globalObjectSpawnZone: 10
   globalObjectsDeadZone: -10
   fcTilesOnScreen: 12
-  fcYPositionFromCenter: 11
+  fcYPositionFromCenter: 11.3
   playerJumpForce: 8
   playerGravity: 3
   playerSpriteJumpDuration: 0.15
-  pipeSetSpawnDistance: 3
+  pipeSetSpawnDistance: 10
   pipeHeightOffset: 3.5
   checkpointGap: 3
-  globalEnemiesPerSegment: 20
-  globalEnemySpawnDistance: 6
+  globalEnemiesPerSegment: 10
+  globalEnemySpawnDistance: 2
   globalDelayBeforeEnemies: 3.5
   globalDelayAfterEnemies: 1
   enemySpawnTable:
@@ -32,7 +32,7 @@ MonoBehaviour:
     enabled: 1
     weight: 8
   - enemyName: Waller
-    enabled: 1
+    enabled: 0
     weight: 2
   - enemyName: Bouncer
     enabled: 0

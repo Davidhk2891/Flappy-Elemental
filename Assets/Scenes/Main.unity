@@ -675,8 +675,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SegmentSpawner
   pipePool: {fileID: 2088792555}
   pipeSetEnvironment: {fileID: 2068439782}
-  enemyEnvironment: {fileID: 1470979003}
   spawnBounds: {fileID: 1941206077}
+  enemyEnvironment: {fileID: 1470979003}
   enemyPools:
   - enemyName: Batty
     pool: {fileID: 305768540}
@@ -1165,7 +1165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpawnBounds
   floorCollider: {fileID: 849628063518642710, guid: 301f671e93293492481f139c95c49ab2, type: 3}
   ceilingCollider: {fileID: 223122483603420474, guid: 533eb4b6141a542a3a9204b80e921a66, type: 3}
-  buffer: 1
+  buffer: 2
 --- !u!1 &1970395489
 GameObject:
   m_ObjectHideFlags: 0

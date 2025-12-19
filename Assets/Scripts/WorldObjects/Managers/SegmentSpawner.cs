@@ -13,14 +13,9 @@ public class SegmentSpawner : MonoBehaviour
     public Transform enemyEnvironment;
 
     // Distance-based spawning
-    private float distanceSinceLastEnemy = 0f;
-
-    private float distanceSinceLastPipeSet = 0f;
-
-    // Enemies spawned in segment
     private int enemiesSpawnedInSegment = 0;
-
-    // Cached last x position to measure distance moved
+    private float distanceSinceLastEnemy = 0f;
+    private float distanceSinceLastPipeSet = 0f;
     private float lastXPosition;
     private GameBalancer balancer;
 
@@ -38,39 +33,46 @@ public class SegmentSpawner : MonoBehaviour
         lastXPosition = transform.position.x;
 
         balancer = GameSettingsManager.Instance.balancer;
+
+        StartCoroutine(RunGameLoop());
     }
 
-    private void Update()
+    private IEnumerator RunGameLoop()
     {
-        // Accumulate distance traveled
-        float worldSpeed = balancer.globalWorldSpeed;
-        distanceSinceLastEnemy += worldSpeed * Time.deltaTime;
+        while (true)
+        {
+            yield return StartCoroutine(SpawnEnemies());
+            yield return new WaitForSeconds(balancer.globalDelayAfterEnemies);    
 
-        // First check for enemies counted
+            yield return StartCoroutine(SpawnCheckpoint());
+            yield return new WaitForSeconds(balancer.globalDelayBeforeEnemies);
+        }
+    }
+
+    private IEnumerator SpawnEnemies()
+    {
+        enemiesSpawnedInSegment = 0;
+        // Accumulate distance traveled
+        distanceSinceLastEnemy += balancer.globalWorldSpeed * Time.deltaTime;
+
+        // Check for enemies counted
         if (enemiesSpawnedInSegment <= balancer.globalEnemiesPerSegment)
         {
-            // If enough distance passed. Spawn enemy
+            // If enough distance passed, spawn enemy
             if (distanceSinceLastEnemy >= balancer.globalEnemySpawnDistance)
             {
-                distanceSinceLastEnemy = 0f;
+                distanceSinceLastEnemy = 0;
                 SpawnEnemy();
-                enemiesSpawnedInSegment++;  
+                enemiesSpawnedInSegment++;
             }
         }
         else
         {
-            /*
-            Figure out a way to:
-                - Give buffer time between last enemy and first pipeset of checkpoint
-                - Give buffer time between first pipeset of checkpoint and first enemy of new segment
-            */
-
-            enemiesSpawnedInSegment = 0;
-            StartCoroutine(SpawnCheckpointRoutine());
-        }   
+            yield return null;
+        }
     }
 
-    private IEnumerator SpawnCheckpointRoutine()
+    private IEnumerator SpawnCheckpoint()
     {
         // Spawn first pipe set
         SpawnPipeSet();

@@ -26,8 +26,8 @@ public class GameBalancer : ScriptableObject
     [Header("Global Enemy settings")]
     public int globalEnemiesPerSegment = 20; //------------------------> IN PLACE 
     public float globalEnemySpawnDistance = 6f; //---------------------> IN PLACE
-    public float globalDelayBeforeEnemies = 3.5f; //-------------------> IN PLACE
-    public float globalDelayAfterEnemies = 1f; //----------------------> IN PLACE
+    public float globalDelayBeforeEnemies = 2f; //---------------------> IN PLACE
+    public float globalDelayAfterEnemies = 2f; //----------------------> IN PLACE
 
     [System.Serializable]
     public class EnemySpawnConfig
