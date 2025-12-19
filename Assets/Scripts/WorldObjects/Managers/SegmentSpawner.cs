@@ -52,12 +52,14 @@ public class SegmentSpawner : MonoBehaviour
     private IEnumerator SpawnEnemies()
     {
         enemiesSpawnedInSegment = 0;
-        // Accumulate distance traveled
-        distanceSinceLastEnemy += balancer.globalWorldSpeed * Time.deltaTime;
+        distanceSinceLastEnemy = 0f;
 
-        // Check for enemies counted
-        if (enemiesSpawnedInSegment <= balancer.globalEnemiesPerSegment)
+        // Spawn enemies until cap reached
+        while (enemiesSpawnedInSegment <= balancer.globalEnemiesPerSegment)
         {
+            // Accumulate distance traveled
+            distanceSinceLastEnemy += balancer.globalWorldSpeed * Time.deltaTime;
+
             // If enough distance passed, spawn enemy
             if (distanceSinceLastEnemy >= balancer.globalEnemySpawnDistance)
             {
@@ -65,9 +67,6 @@ public class SegmentSpawner : MonoBehaviour
                 SpawnEnemy();
                 enemiesSpawnedInSegment++;
             }
-        }
-        else
-        {
             yield return null;
         }
     }
