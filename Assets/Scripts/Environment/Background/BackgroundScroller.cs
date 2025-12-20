@@ -2,67 +2,89 @@ using UnityEngine;
 
 public class BackgroundScroller : MonoBehaviour
 {
-    [Header("Background settings")]
+    [Header("Background prefab")]
     [SerializeField] private GameObject backgroundTilePrefab;
+    [Header("Parent")]
     [SerializeField] private Transform backgroundParent;
-
-    [Header("Scrolling settings")]
-    [SerializeField] private float scrollSpeed = 2f;
-
-    [Header("Debug")]
-    [SerializeField] private bool enableBackground = true;
 
     private float tileWidth;
     private GameObject[] bgTiles;
+    private GameBalancer balancer;
+
+    private void OnEnable()
+    {
+        balancer = GameSettingsManager.Instance.balancer;       
+    }
 
     private void Start()
     {
-        if (!enableBackground)
-        {
-            enabled = false;
-            return;
-        } 
+        if (!balancer.enableBackground) return;
 
-        // Measure prefab width
+        // Get tile width based on sprite bounds
         SpriteRenderer sr = backgroundTilePrefab.GetComponentInChildren<SpriteRenderer>();
         tileWidth = sr.bounds.size.x;
 
+        // Calculate left camera edge
+        Camera camera = Camera.main;
+        float halfWidth = camera.orthographicSize * camera.aspect;
+        float leftEdgeX = camera.transform.position.x - halfWidth;
+
         // Create two tiles side by side
-        SpawnInitialBgTiles();
+        SpawnInitialBgTiles(leftEdgeX);
     }
 
-    private void SpawnInitialBgTiles()
+    private void SpawnInitialBgTiles(float leftEdgeX)
     {
-        bgTiles = new GameObject[2];
-        bgTiles[0] = Instantiate(backgroundTilePrefab, new Vector3(0, 0, 0), Quaternion.identity, backgroundParent);
-        bgTiles[1] = Instantiate(backgroundTilePrefab, new Vector3(tileWidth, 0, 0), Quaternion.identity, backgroundParent);
+        bgTiles = new GameObject[balancer.bgTilesOnScreen];
+
+        for (int i = 0; i < balancer.bgTilesOnScreen; i++)
+        {
+            // Background
+            bgTiles[i] = Instantiate(
+                backgroundTilePrefab,
+                new Vector3(
+                    leftEdgeX + i * tileWidth,
+                    0,
+                    0
+                ),
+                Quaternion.identity,
+                backgroundParent
+            );
+        }
     }
 
     private void Update()
     {
-        ScrollBackgroundTiles();
+        ScrollBgTiles(bgTiles);
     }
 
-    private void ScrollBackgroundTiles()
+    private void ScrollBgTiles(GameObject[] bgTiles)
     {
         for (int i = 0; i < bgTiles.Length; i++)
         {
-            bgTiles[i].transform.Translate(scrollSpeed * Time.deltaTime * Vector3.left);
+            bgTiles[i].transform.Translate(balancer.bgSpeed * Time.deltaTime * Vector3.left);
 
-            // If background tile has moved completely off-screen, recycle it
-            if (bgTiles[i].transform.position.x <= -tileWidth)
-                ResetPosition(i);   
+            // If background tile has moved completely off-screen to the left, recycle it
+            if (bgTiles[i].transform.position.x <= balancer.globalObjectsDeadZone - 
+                balancer.bgDeadZoneBuffer)
+            {
+                ResetPosition(bgTiles, i);                
+            }
+                   
         }
     }
 
-    private void ResetPosition(int position)
+    private void ResetPosition(GameObject[] bgTiles, int position)
     {
-        float rightMostX = GetRightmostTileX();
+        float rightMostX = GetRightmostTileX(bgTiles);
         bgTiles[position].transform.position = new Vector3(rightMostX + tileWidth, 0, 0);
     }
 
-    private float GetRightmostTileX()
+    private float GetRightmostTileX(GameObject[] bgTiles)
     {
-        return Mathf.Max(bgTiles[0].transform.position.x, bgTiles[1].transform.position.x);
+        float max = float.MinValue;
+        foreach(var t in bgTiles)
+            max = Mathf.Max(max, t.transform.position.x);
+        return max;
     }
 }

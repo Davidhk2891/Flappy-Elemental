@@ -32,17 +32,10 @@ public class CeilingFloorScroller : MonoBehaviour
         float leftEdgeX = cam.transform.position.x - halfWidth;
 
         // Build row of tiles
-        SpawnInitialTiles(leftEdgeX);
+        SpawnInitialFcTiles(leftEdgeX);
     }
 
-
-    private void Update()
-    {
-        ScrollTiles(floorTiles);
-        ScrollTiles(ceilingTiles);
-    }
-
-    private void SpawnInitialTiles(float leftEdgeX)
+    private void SpawnInitialFcTiles(float leftEdgeX)
     {
         floorTiles = new GameObject[balancer.fcTilesOnScreen];
         ceilingTiles = new GameObject[balancer.fcTilesOnScreen];
@@ -60,26 +53,40 @@ public class CeilingFloorScroller : MonoBehaviour
             // Ceiling
             ceilingTiles[i] = Instantiate(
                 ceilingTilePrefab,
-                new Vector3(leftEdgeX + i * tileWidth, balancer.fcYPositionFromCenter, 0),
+                new Vector3(
+                    leftEdgeX + i * tileWidth,
+                    balancer.fcYPositionFromCenter,
+                    0),
                 Quaternion.identity,
                 ceilingParent
             );
         }
     }
 
-    private void ScrollTiles(GameObject[] tiles)
+    private void Update()
+    {
+        ScrollFcTiles(floorTiles);
+        ScrollFcTiles(ceilingTiles);
+    }
+
+    private void ScrollFcTiles(GameObject[] tiles)
     {
         for (int i = 0; i < tiles.Length; i++)
         {
-            tiles[i].transform.Translate(Vector3.left * balancer.globalWorldSpeed * Time.deltaTime);
+            tiles[i].transform.Translate(balancer.globalWorldSpeed * Time.deltaTime * Vector3.left);
 
-            // If tile moved fully off-screen to the left
+            // If tile moved fully off-screen to the left, recycle it
             if (tiles[i].transform.position.x < balancer.globalObjectsDeadZone)
             {
-                float rightMostX = GetRightmostTileX(tiles);
-                tiles[i].transform.position = new Vector3(rightMostX + tileWidth, tiles[i].transform.position.y, 0);   
+                ResetPosition(tiles, i);
             }
         }
+    }
+
+    private void ResetPosition(GameObject[] tiles, int position)
+    {
+        float rightMostX = GetRightmostTileX(tiles);
+        tiles[position].transform.position = new Vector3(rightMostX + tileWidth, tiles[position].transform.position.y, 0);   
     }
 
     private float GetRightmostTileX(GameObject[] tiles)
