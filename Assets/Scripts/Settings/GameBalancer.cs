@@ -43,9 +43,20 @@ public class GameBalancer : ScriptableObject
     public float battyFlapDuration = 1f; //----------------------------> IN PLACE
     public float battySpeedMultiplier = 1.5f; //-----------------------> IN PLACE
 
+    public enum WallerSizeType
+    {
+        Short,
+        Medium,
+        Long
+    }
+    [System.Serializable]
+    public class WallerVariantWeight
+    {
+        public WallerSizeType size;
+        public int weight = 1;
+    }
     [Header("- Waller settings")]
-    public float wallerStartingAngle = 0f; //--------------------------> IN PLACE
-    public float wallerEndingAngle = 360f; //--------------------------> IN PLACE
+    public WallerVariantWeight[] wallerVariantWeights = new WallerVariantWeight[3];
 
     [Header("- Bouncer settings")]
     public float bouncerTopLimit = 8f; //------------------------------> IN PLACE

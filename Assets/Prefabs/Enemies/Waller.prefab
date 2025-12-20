@@ -120,7 +120,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4332631e7f2140ad8c5c0dcc9e070b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WallerController
-  enableFreeRotation: 0
 --- !u!1 &777940644381386865
 GameObject:
   m_ObjectHideFlags: 0
