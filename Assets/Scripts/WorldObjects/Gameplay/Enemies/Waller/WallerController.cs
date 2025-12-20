@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class WallerController : BaseObjectController, IEnemy
 {
-    [SerializeField] private bool enableFreeRotation = false;
+    float wallerHeight;
+     
     protected override void Update()
     {
         base.Update();
@@ -13,20 +14,30 @@ public class WallerController : BaseObjectController, IEnemy
         base.OnEnable();
     }
 
-    public void OnSpawn(SpawnBounds bounds)
+    private void Awake()
     {
-        // Random Y spawning
-        float randomY = Random.Range(bounds.BottomLimit, bounds.TopLimit);
-        var spawnPosition = new Vector3(transform.position.x, randomY, -1f);
-        transform.position = spawnPosition;
-
-        // Random angle
-        if (enableFreeRotation) addRandomAngle();
+        var sr = GetComponentInChildren<SpriteRenderer>();
+        wallerHeight = sr.bounds.size.y;
     }
 
-    private void addRandomAngle()
+    public void OnSpawn(SpawnBounds bounds)
     {
-        float randomAngle = Random.Range(balancer.wallerStartingAngle, balancer.wallerEndingAngle);
-        transform.rotation = Quaternion.Euler(0f, 0f, randomAngle);
+        // Rotation
+        transform.rotation = Quaternion.identity;
+
+        // Random spawn place (top or bottom)
+        bool spawnTop = Random.value > 0.5f;
+
+        // Waller half height
+        float halfHeight = wallerHeight / 2;
+
+        // Compute Y spawn
+        float YSpawn = spawnTop ? bounds.TopViewportY - halfHeight :
+         bounds.BottomViewportY + halfHeight;
+
+        // Compute position
+        var spawnPosition = new Vector3(balancer.globalObjectSpawnZone, YSpawn, -1f);
+        transform.position = spawnPosition;
+
     }
 }

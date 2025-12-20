@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class SpawnBounds : MonoBehaviour
 {
+    public float BottomViewportY { get; private set; }
+    public float TopViewportY { get; private set; }
     public float BottomLimit { get; private set; }
     public float TopLimit { get; private set; }
 
@@ -13,16 +15,16 @@ public class SpawnBounds : MonoBehaviour
     {
         Camera cam = Camera.main;
 
-        float topViewportY = cam.transform.position.y + cam.orthographicSize;
-        float bottomViewportY = cam.transform.position.y - cam.orthographicSize;
+        TopViewportY = cam.transform.position.y + cam.orthographicSize;
+        BottomViewportY = cam.transform.position.y - cam.orthographicSize;
 
         float floorHeight = floorCollider.bounds.size.y;
         float ceilingHeight = ceilingCollider.bounds.size.y;
 
         // Correct: Use floor height at the bottom
-        BottomLimit = bottomViewportY + floorHeight + buffer;
+        BottomLimit = BottomViewportY + floorHeight + buffer;
 
         // Correct: Use ceiling height at the top
-        TopLimit = topViewportY - ceilingHeight - buffer;
+        TopLimit = TopViewportY - ceilingHeight - buffer;
     }
 }
