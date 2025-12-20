@@ -79,12 +79,12 @@ SpriteRenderer:
   m_SortingLayerID: 1920931829
   m_SortingLayer: 1
   m_SortingOrder: -10
-  m_Sprite: {fileID: 8219305855978482157, guid: 3fd3c2776bdb84687891df1464c975f6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4f97326e90af24613bf6f11241d66686, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 125.96874, y: 7.5039973}
+  m_Size: {x: 13.5, y: 67.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -99,6 +99,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7388721274376849940}
+  - component: {fileID: 4729138562533711001}
   m_Layer: 0
   m_Name: BackgroundTile
   m_TagString: Untagged
@@ -122,3 +123,24 @@ Transform:
   - {fileID: 9181899988276696759}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4729138562533711001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6534381194299402809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f8d87be8c704d2183d8e225d025eb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BackgroundTileController
+  tileSprites:
+  - {fileID: 21300000, guid: 668c4903444ba4bb9bccec51ded2e961, type: 3}
+  - {fileID: 21300000, guid: 2852c52608381439c8d28c49ab405c02, type: 3}
+  - {fileID: 21300000, guid: 4f97326e90af24613bf6f11241d66686, type: 3}
+  - {fileID: 21300000, guid: cb2c29ddacace4b5cb3291a769fc89f9, type: 3}
+  - {fileID: 21300000, guid: 3da68fd2025e34ae3b547ee536d6bed6, type: 3}
+  - {fileID: 21300000, guid: b8c972d17ee24446e81e45abe553b7bb, type: 3}
+  - {fileID: 21300000, guid: f734ac38a9a884a178278d134d529296, type: 3}
+  spriteRenderer: {fileID: 464551949744247245}

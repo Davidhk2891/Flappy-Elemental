@@ -13,6 +13,12 @@ public class GameBalancer : ScriptableObject
     public int fcTilesOnScreen = 12; //--------------------------------> IN PLACE
     public float fcYPositionFromCenter = 11.3f; //---------------------> IN PLACE
 
+    [Header("Background")]
+    public bool enableBackground = true; //----------------------------> IN PLACE
+    public int bgTilesOnScreen = 8; //---------------------------------> IN PLACE
+    public float bgSpeed = 2f; //--------------------------------------> IN PLACE
+    public float bgDeadZoneBuffer = 5f; //-----------------------------> IN PLACE
+
     [Header("Player Settings")]
     public float playerJumpForce = 10f; //-----------------------------> IN PLACE
     public float playerGravity = 2f; //--------------------------------> IN PLACE
