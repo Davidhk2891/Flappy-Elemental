@@ -65,8 +65,8 @@ public class GameBalancer : ScriptableObject
     public WallerVariantWeight[] wallerVariantWeights = new WallerVariantWeight[3];
 
     [Header("- Bouncer settings")]
-    public float[] bouncerTopLimit = { 5f, 6f, 7f }; //----------------> IN PLACE
-    public float[] bouncerBottomLimit = { -8f, -9f, -10f }; //---------> IN PLACE
+    public float[] bouncerTopLimit = { 1f, 5f, 10f }; //---------------> IN PLACE
+    public float[] bouncerBottomLimit = { -9f, -5f, -2f }; //----------> IN PLACE
     public float bouncerChewDuration = 1f;
     public float bouncerVerticalSpeed = 8f; //-------------------------> IN PLACE
 
