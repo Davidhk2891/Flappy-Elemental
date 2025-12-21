@@ -62,25 +62,13 @@ public class BattyController : BaseObjectController, IEnemy
         float flapDuration = balancer.battyFlapDuration;
         float frameTime = flapDuration / battyAnimation.Length;
 
-        for (int i = 1; i < battyAnimation.Length; i++)
+        while (true)
         {
-            sr.sprite = battyAnimation[i];
-            yield return new WaitForSeconds(frameTime);
-        }
-
-        while(true)
-        {
-            sr.sprite = battyAnimation[0];
-            yield return new WaitForSeconds(frameTime);
-
-            sr.sprite = battyAnimation[1];
-            yield return new WaitForSeconds(frameTime);
-
-            sr.sprite = battyAnimation[2];
-            yield return new WaitForSeconds(frameTime);
-
-            sr.sprite = battyAnimation[3];
-            yield return new WaitForSeconds(frameTime);
+            for (int i = 1; i < battyAnimation.Length; i++)
+            {
+                sr.sprite = battyAnimation[i];
+                yield return new WaitForSeconds(frameTime);
+            }   
         }
     }
 }

@@ -17,6 +17,10 @@ MonoBehaviour:
   globalObjectsDeadZone: -10
   fcTilesOnScreen: 12
   fcYPositionFromCenter: 11.3
+  enableBackground: 1
+  bgTilesOnScreen: 8
+  bgSpeed: 2
+  bgDeadZoneBuffer: 5
   playerJumpForce: 8
   playerGravity: 3
   playerSpriteJumpDuration: 0.15
@@ -24,19 +28,19 @@ MonoBehaviour:
   pipeHeightOffset: 3.5
   checkpointGap: 3
   globalEnemiesPerSegment: 20
-  globalEnemySpawnDistance: 2
+  globalEnemySpawnDistance: 4
   globalDelayBeforeEnemies: 2
   globalDelayAfterEnemies: 2
   enemySpawnTable:
   - enemyName: Batty
-    enabled: 0
-    weight: 8
+    enabled: 1
+    weight: 9
   - enemyName: Waller
     enabled: 1
-    weight: 2
+    weight: 3
   - enemyName: Bouncer
-    enabled: 0
-    weight: 5
+    enabled: 1
+    weight: 6
   - enemyName: Turner
     enabled: 0
     weight: 5
@@ -45,10 +49,22 @@ MonoBehaviour:
     weight: 5
   battyFlapDuration: 0.5
   battySpeedMultiplier: 1.5
-  wallerStartingAngle: 0
-  wallerEndingAngle: 90
-  bouncerTopLimit: 8
-  bouncerBottomLimit: -10
+  wallerVariantWeights:
+  - size: 0
+    weight: 4
+  - size: 1
+    weight: 6
+  - size: 2
+    weight: 1
+  bouncerTopLimit:
+  - 5
+  - 6
+  - 7
+  bouncerBottomLimit:
+  - -8
+  - -9
+  - -10
+  bouncerChewDuration: 1
   bouncerVerticalSpeed: 8
   turnerRotationSpeed: 180
   turnerPivotOffset: {x: 0, y: 0, z: 0}
