@@ -27,17 +27,17 @@ MonoBehaviour:
   pipeSetSpawnDistance: 10
   pipeHeightOffset: 3.5
   checkpointGap: 3
-  globalEnemiesPerSegment: 20
-  globalEnemySpawnDistance: 4
+  globalEnemiesPerSegment: 50
+  globalEnemySpawnDistance: 5
   globalDelayBeforeEnemies: 2
   globalDelayAfterEnemies: 2
   enemySpawnTable:
   - enemyName: Batty
-    enabled: 1
+    enabled: 0
     weight: 9
   - enemyName: Waller
-    enabled: 1
-    weight: 3
+    enabled: 0
+    weight: 5
   - enemyName: Bouncer
     enabled: 1
     weight: 6
@@ -57,14 +57,14 @@ MonoBehaviour:
   - size: 2
     weight: 1
   bouncerTopLimit:
+  - 1
   - 5
-  - 6
-  - 7
+  - 10
   bouncerBottomLimit:
-  - -8
   - -9
-  - -10
-  bouncerChewDuration: 1
+  - -5
+  - -2
+  bouncerChewDuration: 0.1
   bouncerVerticalSpeed: 8
   turnerRotationSpeed: 180
   turnerPivotOffset: {x: 0, y: 0, z: 0}
