@@ -79,12 +79,12 @@ SpriteRenderer:
   m_SortingLayerID: 1920931829
   m_SortingLayer: 1
   m_SortingOrder: -10
-  m_Sprite: {fileID: 21300000, guid: 4f97326e90af24613bf6f11241d66686, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 140ef03ec76664342860c7162dd31acf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 13.5, y: 67.5}
+  m_Size: {x: 13.714286, y: 20}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -136,11 +136,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BackgroundTileController
   tileSprites:
-  - {fileID: 21300000, guid: 668c4903444ba4bb9bccec51ded2e961, type: 3}
-  - {fileID: 21300000, guid: 2852c52608381439c8d28c49ab405c02, type: 3}
-  - {fileID: 21300000, guid: 4f97326e90af24613bf6f11241d66686, type: 3}
-  - {fileID: 21300000, guid: cb2c29ddacace4b5cb3291a769fc89f9, type: 3}
-  - {fileID: 21300000, guid: 3da68fd2025e34ae3b547ee536d6bed6, type: 3}
-  - {fileID: 21300000, guid: b8c972d17ee24446e81e45abe553b7bb, type: 3}
-  - {fileID: 21300000, guid: f734ac38a9a884a178278d134d529296, type: 3}
+  - {fileID: 21300000, guid: 140ef03ec76664342860c7162dd31acf, type: 3}
+  - {fileID: 21300000, guid: 6d8dbe89b2d2249958a4a2bf8cd17095, type: 3}
+  - {fileID: 21300000, guid: 38e3d56320538487fac190a783bc5ec4, type: 3}
+  - {fileID: 21300000, guid: c58c04c44b1e7493ea70574a02bddea2, type: 3}
   spriteRenderer: {fileID: 464551949744247245}
