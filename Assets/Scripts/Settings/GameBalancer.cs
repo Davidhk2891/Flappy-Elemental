@@ -15,9 +15,9 @@ public class GameBalancer : ScriptableObject
 
     [Header("Background")]
     public bool enableBackground = true; //----------------------------> IN PLACE
-    public int bgTilesOnScreen = 8; //---------------------------------> IN PLACE
+    public int bgTilesOnScreen = 3; //---------------------------------> IN PLACE
     public float bgSpeed = 2f; //--------------------------------------> IN PLACE
-    public float bgDeadZoneBuffer = 5f; //-----------------------------> IN PLACE
+    public float bgDeadZoneBuffer = 7f; //-----------------------------> IN PLACE
 
     [Header("Player Settings")]
     public float playerJumpForce = 10f; //-----------------------------> IN PLACE
@@ -65,13 +65,15 @@ public class GameBalancer : ScriptableObject
     public WallerVariantWeight[] wallerVariantWeights = new WallerVariantWeight[3];
 
     [Header("- Bouncer settings")]
-    public float bouncerTopLimit = 8f; //------------------------------> IN PLACE
-    public float bouncerBottomLimit = -10f; //-------------------------> IN PLACE
+    public float[] bouncerTopLimit = { 1f, 5f, 10f }; //---------------> IN PLACE
+    public float[] bouncerBottomLimit = { -9f, -5f, -2f }; //----------> IN PLACE
+    public float bouncerChewDuration = 1f;
     public float bouncerVerticalSpeed = 8f; //-------------------------> IN PLACE
 
     [Header("- Turner settings")]
     public float turnerRotationSpeed = 180f; //------------------------> IN PLACE
     public Vector3 turnerPivotOffset; //-------------------------------> IN PLACE
+    public float turnerTailAnimDuration = 0.3f; //---------------------> IN PLACE
 
     [Header("- Pulsar settings")]
     public float pulsarBaseScale = 0.5f; //----------------------------> IN PLACE
