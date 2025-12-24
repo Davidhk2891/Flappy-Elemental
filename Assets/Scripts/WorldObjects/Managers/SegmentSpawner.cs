@@ -11,6 +11,7 @@ public class SegmentSpawner : MonoBehaviour
     [Header("Enemy segment Settings")]
     public SpawnBounds spawnBounds;
     public Transform enemyEnvironment;
+    private string previousName = "";
 
     // Distance-based spawning
     private int enemiesSpawnedInSegment = 0;
@@ -155,25 +156,34 @@ public class SegmentSpawner : MonoBehaviour
     {
         var table = balancer.enemySpawnTable;
         var active = table.Where(e => e.enabled).ToList();
+
         if (active.Count == 0)
             return null;
+        else if (active.Count == 1)
+            return active[0];
         
-        // 1. Calculate total weight
-        int total = active.Sum(e => e.weight);
-
-        // 2. Get random number
-        int roll = Random.Range(0, total);
-
-        // 3. Walk through ranges until we match
-        int cumulative = 0;
-        foreach (var e in active)
+        while (true)
         {
-            cumulative += e.weight;
-            if (roll < cumulative)
-                return e;
-        }
+            // 1. Calculate total weight
+            int total = active.Sum(e => e.weight);
 
-        // 4. Fallback (should never happen)
-        return active[0];
+            // 2. Get random number
+            int roll = Random.Range(0, total);
+
+            // 3. Walk through ranges until there is a match
+            int cumulative = 0;
+            foreach (var e in active)
+            {
+                cumulative += e.weight;
+                if (roll < cumulative)
+                {
+                    if (!e.canRepeat && e.enemyName == previousName)
+                        break; // Break out of foreach, go back to while
+
+                    previousName = e.enemyName;
+                    return e;   
+                }
+            }   
+        }
     }
 }

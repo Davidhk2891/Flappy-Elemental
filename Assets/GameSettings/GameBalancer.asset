@@ -20,7 +20,7 @@ MonoBehaviour:
   enableBackground: 1
   bgTilesOnScreen: 8
   bgSpeed: 2
-  bgDeadZoneBuffer: 5
+  bgDeadZoneBuffer: 7
   playerJumpForce: 8
   playerGravity: 3
   playerSpriteJumpDuration: 0.15
@@ -68,6 +68,7 @@ MonoBehaviour:
   bouncerVerticalSpeed: 8
   turnerRotationSpeed: 180
   turnerPivotOffset: {x: 0, y: 0, z: 0}
+  turnerTailAnimDuration: 0.3
   pulsarBaseScale: 0.5
   pulsarMinPulseScale: 0.5
   pulsarMaxPulseScale: 1

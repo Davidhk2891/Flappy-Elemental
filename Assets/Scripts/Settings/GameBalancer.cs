@@ -40,6 +40,7 @@ public class GameBalancer : ScriptableObject
     {
         public string enemyName;
         public bool enabled = true;
+        public bool canRepeat = false;
         public int weight = 1;
     }
     
