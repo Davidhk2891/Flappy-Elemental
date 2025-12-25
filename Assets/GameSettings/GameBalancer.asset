@@ -33,19 +33,24 @@ MonoBehaviour:
   globalDelayAfterEnemies: 2
   enemySpawnTable:
   - enemyName: Batty
-    enabled: 0
+    enabled: 1
+    canRepeat: 1
     weight: 9
   - enemyName: Waller
-    enabled: 0
+    enabled: 1
+    canRepeat: 0
     weight: 5
   - enemyName: Bouncer
     enabled: 1
+    canRepeat: 0
     weight: 6
   - enemyName: Turner
     enabled: 0
+    canRepeat: 0
     weight: 5
   - enemyName: Pulsar
     enabled: 0
+    canRepeat: 0
     weight: 5
   battyFlapDuration: 0.5
   battySpeedMultiplier: 1.5
