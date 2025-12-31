@@ -4,10 +4,13 @@ public class BaseObjectController : MonoBehaviour
 {
     protected GameBalancer balancer;
 
+    protected RunSessionManager run;
+
     protected virtual void OnEnable()
     {
         // Base behavior to be added when needed.
         balancer = GameSettingsManager.Instance.balancer;
+        run = RunSessionManager.Instance;
     }
 
     protected virtual void Update()
@@ -26,9 +29,22 @@ public class BaseObjectController : MonoBehaviour
     protected void HandleDeadZone()
     {
         float globalObjectsDeadZone = balancer.globalObjectsDeadZone;
+
         if (transform.position.x < globalObjectsDeadZone)
         {
-            gameObject.SetActive(false);
+            ReturnObject();
+        }
+    }
+
+    protected void ReturnObject()
+    {
+        if (TryGetComponent<PooledReference>(out var pr) && pr.Pool != null)
+        {
+            pr.Pool.ReturnObject(gameObject);
+        }
+        else
+        {
+            DisableObject();   
         }
     }
 

@@ -27,9 +27,9 @@ public class OrbController : BaseObjectController
     {
         if (other.CompareTag("Player"))
         {
-            // What to do when touching orb
-            Debug.Log("Orb touched");
-            DisableObject();
+            ReturnObject();
+            run.AddOrb();
+            Debug.Log($"Orbs collected this run: {run.orbsCollected}");
         }
     }
 

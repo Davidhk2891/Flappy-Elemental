@@ -34,7 +34,6 @@ public class GameBalancer : ScriptableObject
     public float spawnAttemptRadius = 1f; //---------------------------> IN PLACE
     public float globalOrbSpawnDistance = 10f; //----------------------> IN PLACE
     public float shineDuration = 1f; //--------------------------------> IN PLACE
-    public int startingAmount = 0; //----------------------------------> IN PLACE
     [System.Serializable]
     public class OrbSpawnConfig
     {
