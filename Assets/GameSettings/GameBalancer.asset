@@ -34,7 +34,6 @@ MonoBehaviour:
   orbSpawnTable:
   - orbName: Orb
     enabled: 1
-    spawnFrequency: 1
   globalEnemiesPerSegment: 50
   globalEnemySpawnDistance: 5
   globalDelayBeforeEnemies: 2
