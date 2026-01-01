@@ -29,6 +29,7 @@ public class OrbController : BaseObjectController
         {
             // What to do when touching orb
             Debug.Log("Orb touched");
+            DisableObject();
         }
     }
 

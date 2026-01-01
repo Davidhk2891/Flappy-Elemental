@@ -31,4 +31,8 @@ public class BaseObjectController : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
+
+    protected void DisableObject(){
+        gameObject.SetActive(false);
+    }
 }

@@ -25,6 +25,14 @@ public class BaseObjectPool : MonoBehaviour
         for (int i = 0; i < PoolSize; i++)
         {
             GameObject obj = Instantiate(prefab, transform);
+            
+            var pr = obj.GetComponent<PooledReference>();
+            if (pr != null)
+                pr = obj.AddComponent<PooledReference>();
+            
+            pr.Pool = this;
+
+            pr.pool = this;
             obj.SetActive(false);
             pool.Enqueue(obj);
         }
@@ -35,6 +43,7 @@ public class BaseObjectPool : MonoBehaviour
         // If pool is empty, expand it
         if (pool.Count == 0)
         {
+            Debug.Log("Pool empty, Instantiatin new object");
             GameObject obj = Instantiate(prefab, transform);
             obj.SetActive(false);
             return obj;
