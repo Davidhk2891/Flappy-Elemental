@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5044563199187322684}
   - component: {fileID: 3359472631770660212}
   - component: {fileID: 4208178228117934870}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bouncer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22bf69596bc6a474ebda96f8ab2cd548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BouncerController
-  spawnBounds: {fileID: 0}
   bouncerAnimation:
   - {fileID: -4739273822881544383, guid: 13fdbc6ef6b714bf7bb3c37876493401, type: 3}
   - {fileID: 9047129675701418797, guid: 13fdbc6ef6b714bf7bb3c37876493401, type: 3}
@@ -216,7 +215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2949966845322091804}
   - component: {fileID: 2189350337228868105}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BouncerSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

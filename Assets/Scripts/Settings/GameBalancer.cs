@@ -29,6 +29,11 @@ public class GameBalancer : ScriptableObject
     public float pipeHeightOffset = 3.5f; //---------------------------> IN PLACE
     public float checkpointGap = 3f; //--------------------------------> IN PLACE
 
+    [Header("Coins settings")]
+    public int maxSpawningAttempts = 15;
+    public float spawnAttemptRadius = 0.5f;
+    public float globalCoinSpawnDistance = 10f;
+
     [Header("Global Enemy settings")]
     public int globalEnemiesPerSegment = 20; //------------------------> IN PLACE 
     public float globalEnemySpawnDistance = 6f; //---------------------> IN PLACE

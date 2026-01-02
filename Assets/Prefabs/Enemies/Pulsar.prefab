@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2750907822678285471}
   - component: {fileID: 6998453513804061710}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PulsarSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 6457691766048070219}
   - component: {fileID: 7143275219351295067}
   - component: {fileID: 3845561865211116038}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pulsar
   m_TagString: Untagged
   m_Icon: {fileID: 0}

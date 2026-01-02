@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 620791784599371884}
   - component: {fileID: 4553442187744076996}
   - component: {fileID: 6400298217183223874}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Waller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,6 +120,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4332631e7f2140ad8c5c0dcc9e070b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WallerController
+  shortScale: {x: 0.15, y: 0.6, z: 1}
+  mediumScale: {x: 0.15, y: 1.2, z: 1}
+  longScale: {x: 0.15, y: 1.8, z: 1}
 --- !u!1 &777940644381386865
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4875727307097881042}
   - component: {fileID: 7333549030708174932}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WallerChild
   m_TagString: Untagged
   m_Icon: {fileID: 0}

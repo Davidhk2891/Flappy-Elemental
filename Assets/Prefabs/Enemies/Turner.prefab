@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8906608143498640566}
   - component: {fileID: 1402610425118625831}
   - component: {fileID: 4415778695299798913}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Turner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +156,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4801521660416999496}
   - component: {fileID: 4491918557898308570}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TurnerChild
   m_TagString: Untagged
   m_Icon: {fileID: 0}

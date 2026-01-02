@@ -12,12 +12,6 @@ public class SegmentSpawner : MonoBehaviour
     public SpawnBounds spawnBounds;
     public Transform enemyEnvironment;
     private string previousName = "";
-
-    // Distance-based spawning
-    private int enemiesSpawnedInSegment = 0;
-    private float distanceSinceLastEnemy = 0f;
-    private float distanceSinceLastPipeSet = 0f;
-    private float lastXPosition;
     private GameBalancer balancer;
 
     [System.Serializable]
@@ -31,8 +25,6 @@ public class SegmentSpawner : MonoBehaviour
 
     private void Start()
     {
-        lastXPosition = transform.position.x;
-
         balancer = GameSettingsManager.Instance.balancer;
 
         StartCoroutine(RunGameLoop());
@@ -52,8 +44,8 @@ public class SegmentSpawner : MonoBehaviour
 
     private IEnumerator SpawnEnemies()
     {
-        enemiesSpawnedInSegment = 0;
-        distanceSinceLastEnemy = 0f;
+        int enemiesSpawnedInSegment = 0;
+        float distanceSinceLastEnemy = 0f;
 
         // Spawn enemies until cap reached
         while (enemiesSpawnedInSegment <= balancer.globalEnemiesPerSegment)
@@ -78,7 +70,7 @@ public class SegmentSpawner : MonoBehaviour
         SpawnPipeSet();
 
         // Reset distance tracker
-        distanceSinceLastPipeSet = 0f;
+        float distanceSinceLastPipeSet = 0f;
 
         // Wait until the world travels the distance set in balancer
         while (distanceSinceLastPipeSet < balancer.pipeSetSpawnDistance)

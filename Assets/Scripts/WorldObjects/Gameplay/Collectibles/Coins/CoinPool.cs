@@ -1,0 +1,1 @@
+public class CoinPool : BaseObjectPool{}
