@@ -106,7 +106,7 @@ public class SegmentSpawner : MonoBehaviour
         // Pick based on weight
         GameBalancer.EnemySpawnConfig config = RollEnemy();
 
-        BaseObjectPool pool = FindPool(config.enemyName);
+        BaseObjectPool pool = FindEnemyPool(config.enemyName);
         if (pool == null)
         {
             Debug.Log("No pool found for enemy: " + config.enemyName);
@@ -122,23 +122,24 @@ public class SegmentSpawner : MonoBehaviour
         // Get enemy current y
         var enemyCurrentY = enemy.transform.position.y;
 
-        // Spawn position (X controlled here, Y controlled by each obstacle internally)
+        // Spawn position (X controlled globally, Y controlled by each obstacle internally)
         enemy.transform.position = new Vector3(balancer.globalObjectSpawnZone, enemyCurrentY, 0f);
 
         // Inject spawn bounds into the enemy
         var enemyLogic = enemy.GetComponent<IEnemy>();
+        
         enemyLogic?.OnSpawn(spawnBounds);
 
         // Enable it (object pooling)
         enemy.SetActive(true);
     }
 
-    private BaseObjectPool FindPool(string name)
+    private BaseObjectPool FindEnemyPool(string name)
     {
-        foreach (var binding in enemyPools)
+        foreach (var enemyPool in enemyPools)
         {
-            if (binding.enemyName == name)
-                return binding.pool;
+            if (enemyPool.enemyName == name)
+                return enemyPool.pool;
         }
         return null;
     }
