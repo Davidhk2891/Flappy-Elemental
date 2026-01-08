@@ -34,7 +34,6 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("Update running. Player enabled = " + gameObject.activeSelf);
         bool tap = false;
 
         // Keyboard (for PC testing)
@@ -72,19 +71,14 @@ public class PlayerController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Player collided with; " + collision.gameObject.name);
         GameOver();
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        // Log for debuging
-        Debug.Log($"Player entered trigger: {other.gameObject.name}");
-
         // Check if trigger has tag Boundry
         if (other.gameObject.CompareTag("Boundary"))
         {
-            Debug.Log("Player hit floor or ceiling. Restarting game");
             GameOver();
         }
     }

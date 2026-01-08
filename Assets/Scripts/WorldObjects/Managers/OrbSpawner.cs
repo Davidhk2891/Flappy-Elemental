@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Linq;
 using UnityEngine;
 
 public class OrbSpawner : MonoBehaviour
@@ -33,7 +34,7 @@ public class OrbSpawner : MonoBehaviour
 
     private IEnumerator SpawnOrbs()
     {
-        Vector3 coinPosition;
+        Vector3 orbPosition;
         int enemiesSpawnedInSegment = 0;
         float distanceSinceLastCoin = 0f;
 
@@ -45,39 +46,20 @@ public class OrbSpawner : MonoBehaviour
 
             // If enough distance passed, spawn orbs
             if (distanceSinceLastCoin > balancer.globalOrbSpawnDistance 
-                && TryFindValidSpawnPosition(out coinPosition))
+                && TryFindValidSpawnPosition(out orbPosition))
             {
                 distanceSinceLastCoin = 0f;
-                SpawnCoin(coinPosition);
+                SpawnOrb(orbPosition);
                 enemiesSpawnedInSegment++;
             }
             yield return null;
         }
     }
 
-    /*
-    1) Copy from SpawnEnemy() in SegmentSpawner
-    2) You also have to pass the pool which you need to add to scene
-    */
-    // Logic for spawning individual coin
-    /*
-    private void SpawnBouncer()
-    {
-        GameObject bouncer = bouncerPool.GetBouncer();
-        bouncer.transform.SetParent(environmentParent);
-
-        if (bouncer != null)
-        {
-            float randomY = Random.Range(minY, maxY);
-            bouncer.transform.position = new Vector3(spawnX, randomY, 0f);
-            bouncer.SetActive(true);
-        }
-    }
-    */
-    private void SpawnCoin(Vector3 coinPosition)
+    private void SpawnOrb(Vector3 orbPosition)
     {
         // Call Orb config class from balancer
-        GameBalancer.OrbSpawnConfig config = balancer.orbSpawnTable[0];
+        GameBalancer.OrbSpawnConfig config = RollOrbs();
 
         // Get the orbs pool by matching name from balancer
         BaseObjectPool pool = FindOrbPool(config.orbName);
@@ -94,10 +76,10 @@ public class OrbSpawner : MonoBehaviour
         orb.transform.SetParent(OrbEnvironment);
 
         // Get orb current y
-        var orbCurrentY = coinPosition.y;
+        var orbCurrentY = orbPosition.y;
 
         // Set spawn position (x controlled globally, y controlled by OrbController)
-        orb.transform.position = new Vector3(balancer.globalObjectSpawnZone, orbCurrentY, 0f);
+        orb.transform.position = new Vector3(spawnX, orbCurrentY, 0f);
 
         // Enable orb (object pooling)
         orb.SetActive(true);
@@ -138,5 +120,16 @@ public class OrbSpawner : MonoBehaviour
         // Fallback
         result = Vector2.zero;
         return false;
+    }
+
+    private GameBalancer.OrbSpawnConfig RollOrbs()
+    {
+        var table = balancer.orbSpawnTable;
+        var active = table.Where(e => e.enabled).ToList();
+
+        if (active.Count == 0)
+            return null;
+        
+        return active[0];
     }
 }

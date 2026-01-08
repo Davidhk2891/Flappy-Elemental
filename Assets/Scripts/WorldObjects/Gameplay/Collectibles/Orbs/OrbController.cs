@@ -23,6 +23,15 @@ public class OrbController : BaseObjectController
       - No persistance
     */
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            // What to do when touching orb
+            Debug.Log("Orb touched");
+        }
+    }
+
     protected override void OnEnable()
     {
         base.OnEnable();
@@ -40,7 +49,7 @@ public class OrbController : BaseObjectController
     {
         if (orbAnimCoroutine != null)
         {
-            StopCoroutine(OrbShineAnimation());
+            StopCoroutine(orbAnimCoroutine);
             orbAnimCoroutine = null;
         }
     }

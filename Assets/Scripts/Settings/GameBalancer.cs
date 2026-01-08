@@ -39,7 +39,6 @@ public class GameBalancer : ScriptableObject
     {
         public string orbName;
         public bool enabled = true;
-        public int spawnFrequency = 1;
     }
     public OrbSpawnConfig[] orbSpawnTable; //--------------------------> IN PLACE
 
