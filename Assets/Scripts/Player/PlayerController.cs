@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         // Since PlayerController relies on balancer. Load balancer last
+        // Here is where the issue was
         balancer = GameSettingsManager.Instance.balancer;
         run = RunSessionManager.Instance;   
     }
