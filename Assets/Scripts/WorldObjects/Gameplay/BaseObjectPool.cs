@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using NUnit.Framework.Constraints;
 using UnityEngine;
 /*
 Base pooling class
@@ -25,6 +26,9 @@ public class BaseObjectPool : MonoBehaviour
         for (int i = 0; i < PoolSize; i++)
         {
             GameObject obj = Instantiate(prefab, transform);
+            
+            GetPoolReference(obj);
+
             obj.SetActive(false);
             pool.Enqueue(obj);
         }
@@ -35,7 +39,11 @@ public class BaseObjectPool : MonoBehaviour
         // If pool is empty, expand it
         if (pool.Count == 0)
         {
+            Debug.Log("Pool empty, Instantiating new object");
             GameObject obj = Instantiate(prefab, transform);
+
+            GetPoolReference(obj);
+
             obj.SetActive(false);
             return obj;
         }
@@ -48,7 +56,19 @@ public class BaseObjectPool : MonoBehaviour
 
     public void ReturnObject(GameObject obj)
     {
+        Debug.Log("Returning object to its pool");
         obj.SetActive(false);
         pool.Enqueue(obj);
+    }
+
+
+    private void GetPoolReference(GameObject obj)
+    {
+        if (!obj.TryGetComponent<PooledReference>(out var pr))
+                pr = obj.AddComponent<PooledReference>();
+            
+        // Assign BaseObjectPool reference to object's
+        // 'this' refers to the current instance of the class the code is running
+        pr.Pool = this;
     }
 }

@@ -6,7 +6,6 @@ public class BattyController : BaseObjectController, IEnemy
     [Header("Batty settings")]
     [SerializeField] private SpawnBounds spawnBounds;
     public Sprite[] battyAnimation = new Sprite[4];
-    private Rigidbody2D rb;
     private SpriteRenderer sr;
     private float randomY;
     private float battySpeedMultiplier;
@@ -29,7 +28,6 @@ public class BattyController : BaseObjectController, IEnemy
 
         battySpeedMultiplier = balancer.battySpeedMultiplier;
 
-        rb = GetComponent<Rigidbody2D>();
         sr = GetComponentInChildren<SpriteRenderer>();
         sr.sprite = battyAnimation[0];
 

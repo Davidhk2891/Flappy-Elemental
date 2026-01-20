@@ -29,7 +29,20 @@ public class GameBalancer : ScriptableObject
     public float pipeHeightOffset = 3.5f; //---------------------------> IN PLACE
     public float checkpointGap = 3f; //--------------------------------> IN PLACE
 
-    [Header("Global Enemy settings")]
+    [Header("Global orb settings")]
+    public int maxSpawningAttempts = 15; //----------------------------> IN PLACE
+    public float spawnAttemptRadius = 1f; //---------------------------> IN PLACE
+    public float globalOrbSpawnDistance = 10f; //----------------------> IN PLACE
+    public float shineDuration = 1f; //--------------------------------> IN PLACE
+    [System.Serializable]
+    public class OrbSpawnConfig
+    {
+        public string orbName;
+        public bool enabled = true;
+    }
+    public OrbSpawnConfig[] orbSpawnTable; //--------------------------> IN PLACE
+
+    [Header("Global enemy settings")]
     public int globalEnemiesPerSegment = 20; //------------------------> IN PLACE 
     public float globalEnemySpawnDistance = 6f; //---------------------> IN PLACE
     public float globalDelayBeforeEnemies = 2f; //---------------------> IN PLACE

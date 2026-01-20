@@ -27,6 +27,13 @@ MonoBehaviour:
   pipeSetSpawnDistance: 10
   pipeHeightOffset: 3.5
   checkpointGap: 3
+  maxSpawningAttempts: 15
+  spawnAttemptRadius: 1
+  globalOrbSpawnDistance: 10
+  shineDuration: 1
+  orbSpawnTable:
+  - orbName: Orb
+    enabled: 1
   globalEnemiesPerSegment: 50
   globalEnemySpawnDistance: 5
   globalDelayBeforeEnemies: 2

@@ -12,12 +12,6 @@ public class SegmentSpawner : MonoBehaviour
     public SpawnBounds spawnBounds;
     public Transform enemyEnvironment;
     private string previousName = "";
-
-    // Distance-based spawning
-    private int enemiesSpawnedInSegment = 0;
-    private float distanceSinceLastEnemy = 0f;
-    private float distanceSinceLastPipeSet = 0f;
-    private float lastXPosition;
     private GameBalancer balancer;
 
     [System.Serializable]
@@ -31,8 +25,6 @@ public class SegmentSpawner : MonoBehaviour
 
     private void Start()
     {
-        lastXPosition = transform.position.x;
-
         balancer = GameSettingsManager.Instance.balancer;
 
         StartCoroutine(RunGameLoop());
@@ -52,8 +44,8 @@ public class SegmentSpawner : MonoBehaviour
 
     private IEnumerator SpawnEnemies()
     {
-        enemiesSpawnedInSegment = 0;
-        distanceSinceLastEnemy = 0f;
+        int enemiesSpawnedInSegment = 0;
+        float distanceSinceLastEnemy = 0f;
 
         // Spawn enemies until cap reached
         while (enemiesSpawnedInSegment <= balancer.globalEnemiesPerSegment)
@@ -78,7 +70,7 @@ public class SegmentSpawner : MonoBehaviour
         SpawnPipeSet();
 
         // Reset distance tracker
-        distanceSinceLastPipeSet = 0f;
+        float distanceSinceLastPipeSet = 0f;
 
         // Wait until the world travels the distance set in balancer
         while (distanceSinceLastPipeSet < balancer.pipeSetSpawnDistance)
@@ -114,7 +106,7 @@ public class SegmentSpawner : MonoBehaviour
         // Pick based on weight
         GameBalancer.EnemySpawnConfig config = RollEnemy();
 
-        BaseObjectPool pool = FindPool(config.enemyName);
+        BaseObjectPool pool = FindEnemyPool(config.enemyName);
         if (pool == null)
         {
             Debug.Log("No pool found for enemy: " + config.enemyName);
@@ -130,23 +122,24 @@ public class SegmentSpawner : MonoBehaviour
         // Get enemy current y
         var enemyCurrentY = enemy.transform.position.y;
 
-        // Spawn position (X controlled here, Y controlled by each obstacle internally)
+        // Spawn position (X controlled globally, Y controlled by each obstacle internally)
         enemy.transform.position = new Vector3(balancer.globalObjectSpawnZone, enemyCurrentY, 0f);
 
         // Inject spawn bounds into the enemy
         var enemyLogic = enemy.GetComponent<IEnemy>();
+        
         enemyLogic?.OnSpawn(spawnBounds);
 
         // Enable it (object pooling)
         enemy.SetActive(true);
     }
 
-    private BaseObjectPool FindPool(string name)
+    private BaseObjectPool FindEnemyPool(string name)
     {
-        foreach (var binding in enemyPools)
+        foreach (var enemyPool in enemyPools)
         {
-            if (binding.enemyName == name)
-                return binding.pool;
+            if (enemyPool.enemyName == name)
+                return enemyPool.pool;
         }
         return null;
     }

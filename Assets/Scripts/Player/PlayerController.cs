@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
+[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(SpriteRenderer))]
 public class PlayerController : MonoBehaviour
 {
     [Header("Slime Sprites")]
@@ -10,7 +12,10 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer sr;
     private bool isAnimating = false;
     private GameBalancer balancer;
+    private RunSessionManager run;
+    private bool playerIsAlive = false;
 
+    // Runs 1st
     void Awake()
     {
         // Cache references
@@ -18,23 +23,27 @@ public class PlayerController : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
     }
 
+    // Runs 2nd
     void OnEnable()
     {
-        // Apply dynamic values (like gravity)
-        rb.gravityScale = balancer.playerGravity;
-        sr.sprite = slimeAnimation[0];
-        Debug.Log("OnEnable fired");
+        // Nothing that relies on balancer should be here
+        playerIsAlive = true;
     }
 
+    // Runs 3rd
     void Start()
     {
         // Since PlayerController relies on balancer. Load balancer last
         balancer = GameSettingsManager.Instance.balancer;
+        run = RunSessionManager.Instance;   
+
+        rb.gravityScale = balancer.playerGravity;
+        sr.sprite = slimeAnimation[0];
     }
 
+    // Runs 4th
     void Update()
     {
-        Debug.Log("Update running. Player enabled = " + gameObject.activeSelf);
         bool tap = false;
 
         // Keyboard (for PC testing)
@@ -50,6 +59,27 @@ public class PlayerController : MonoBehaviour
             rb.linearVelocity = Vector2.up * balancer.playerJumpForce;
             StartCoroutine(FlapAnimation());
         }
+
+        TrackDistance();
+        PrintOrbsAndDistance();
+    }
+
+    private void PrintOrbsAndDistance()
+    {
+        Debug.Log($"Depth: {run.distanceTraveled}");
+        Debug.Log($"Orbs: {run.orbsCollected}");
+    }
+
+    private void TrackDistance()
+    {
+        if (!playerIsAlive) return;
+
+        float worldSpeed = balancer.globalWorldSpeed;
+
+        // Distance = speed * deltaTime
+        float distanceThisFrame = worldSpeed * Time.deltaTime;
+
+        run.AddDistance(distanceThisFrame);
     }
 
     private IEnumerator FlapAnimation()
@@ -72,25 +102,22 @@ public class PlayerController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Player collided with; " + collision.gameObject.name);
         GameOver();
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        // Log for debuging
-        Debug.Log($"Player entered trigger: {other.gameObject.name}");
-
         // Check if trigger has tag Boundry
         if (other.gameObject.CompareTag("Boundary"))
         {
-            Debug.Log("Player hit floor or ceiling. Restarting game");
             GameOver();
         }
     }
     
     void GameOver()
     {
+        playerIsAlive = false;
+        run.ResetSession();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

@@ -9,10 +9,10 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Enemies
   - Water
   - UI
-  - 
+  - Environment
   - 
   - 
   - 
@@ -50,6 +50,9 @@ TagManager:
     locked: 0
   - name: Floor & Ceiling
     uniqueID: 3529085359
+    locked: 0
+  - name: Collectibles
+    uniqueID: 2213141921
     locked: 0
   - name: Enemies
     uniqueID: 3365978173

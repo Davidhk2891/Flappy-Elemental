@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 418185211645998757}
   - component: {fileID: 4059587268789566201}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BattyChild
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 6580437660773382695}
   - component: {fileID: 5955750514906743253}
   - component: {fileID: 5016823871850586861}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Batty
   m_TagString: Untagged
   m_Icon: {fileID: 0}
