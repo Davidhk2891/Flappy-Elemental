@@ -26,7 +26,7 @@ public class RunSessionManager : MonoBehaviour
     }
 
     // Called when the game starts or is restarted
-    public void ResetRession()
+    public void ResetSession()
     {
         orbsCollected = 0;
         distanceTraveled = 0f;

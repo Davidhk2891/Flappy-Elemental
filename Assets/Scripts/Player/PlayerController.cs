@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
+[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(SpriteRenderer))]
 public class PlayerController : MonoBehaviour
 {
     [Header("Slime Sprites")]
@@ -24,9 +26,7 @@ public class PlayerController : MonoBehaviour
     // Runs 2nd
     void OnEnable()
     {
-        // Apply dynamic values (like gravity)
-        rb.gravityScale = balancer.playerGravity;
-        sr.sprite = slimeAnimation[0];
+        // Nothing that relies on balancer should be here
         playerIsAlive = true;
     }
 
@@ -34,9 +34,11 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         // Since PlayerController relies on balancer. Load balancer last
-        // Here is where the issue was
         balancer = GameSettingsManager.Instance.balancer;
         run = RunSessionManager.Instance;   
+
+        rb.gravityScale = balancer.playerGravity;
+        sr.sprite = slimeAnimation[0];
     }
 
     // Runs 4th
@@ -60,9 +62,6 @@ public class PlayerController : MonoBehaviour
 
         TrackDistance();
         PrintOrbsAndDistance();
-
-        if (RunSessionManager.Instance == null)
-            Debug.Log("RunSessionManager is NULL");
     }
 
     private void PrintOrbsAndDistance()
@@ -118,7 +117,7 @@ public class PlayerController : MonoBehaviour
     void GameOver()
     {
         playerIsAlive = false;
-        run.ResetRession();
+        run.ResetSession();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
