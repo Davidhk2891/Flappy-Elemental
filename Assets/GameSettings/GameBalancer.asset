@@ -21,7 +21,7 @@ MonoBehaviour:
   bgTilesOnScreen: 8
   bgSpeed: 2
   bgDeadZoneBuffer: 7
-  playerJumpForce: 8
+  playerJumpForce: 9
   playerGravity: 3
   playerSpriteJumpDuration: 0.15
   pipeSetSpawnDistance: 10
