@@ -37,6 +37,8 @@ public class PlayerController : MonoBehaviour
         balancer = GameSettingsManager.Instance.balancer;
         run = RunSessionManager.Instance;   
 
+        run.ResetSession();
+
         rb.gravityScale = balancer.playerGravity;
         sr.sprite = slimeAnimation[0];
     }
@@ -61,13 +63,6 @@ public class PlayerController : MonoBehaviour
         }
 
         TrackDistance();
-        PrintOrbsAndDistance();
-    }
-
-    private void PrintOrbsAndDistance()
-    {
-        Debug.Log($"Depth: {run.distanceTraveled}");
-        Debug.Log($"Orbs: {run.orbsCollected}");
     }
 
     private void TrackDistance()
@@ -117,7 +112,13 @@ public class PlayerController : MonoBehaviour
     void GameOver()
     {
         playerIsAlive = false;
-        run.ResetSession();
+
+        // Save best distance
+        if (run.DistanceTraveled > run.BestDistanceTraveled)
+        {
+            SaveManager.SaveBestDistance(run.DistanceTraveled);
+        }
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

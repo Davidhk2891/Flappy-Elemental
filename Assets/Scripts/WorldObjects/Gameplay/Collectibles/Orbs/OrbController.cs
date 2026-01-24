@@ -29,7 +29,7 @@ public class OrbController : BaseObjectController
         {
             ReturnObject();
             run.AddOrb();
-            Debug.Log($"Orbs collected this run: {run.orbsCollected}");
+            Debug.Log($"Orbs collected this run: {run.OrbsCollected}");
         }
     }
 
