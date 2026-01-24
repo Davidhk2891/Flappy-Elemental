@@ -8,9 +8,10 @@ public class RunSessionManager : MonoBehaviour
 {
     public static RunSessionManager Instance { get; private set; }
 
-    public int orbsCollected { get; private set; }
-    public float distanceTraveled { get; private set; }
-    public int enemiesPassed { get; private set; }
+    public int OrbsCollected { get; private set; }
+    public float DistanceTraveled { get; private set; }
+    public float BestDistanceTraveled { get; private set; }
+    public int EnemiesPassed { get; private set; }
 
     private void Awake()
     {
@@ -28,26 +29,27 @@ public class RunSessionManager : MonoBehaviour
     // Called when the game starts or is restarted
     public void ResetSession()
     {
-        orbsCollected = 0;
-        distanceTraveled = 0f;
-        enemiesPassed = 0;
+        OrbsCollected = 0;
+        DistanceTraveled = 0f;
+        BestDistanceTraveled = SaveManager.LoadBestDistance();
+        EnemiesPassed = 0;
     }
 
     // Add orb
     public void AddOrb(int amount = 1)
     {
-        orbsCollected += amount;
+        OrbsCollected += amount;
     }
 
     // Add distance
     public void AddDistance(float amount)
     {
-        distanceTraveled += amount;
+        DistanceTraveled += amount;
     }
 
     // Add enemy pass
     public void AddEnemyPass()
     {
-        enemiesPassed++;
+        EnemiesPassed++;
     }
 }

@@ -45,7 +45,10 @@ public class CeilingFloorScroller : MonoBehaviour
             // Floor
             floorTiles[i] = Instantiate(
                 floorTilePrefab,
-                new Vector3(leftEdgeX + i * tileWidth, -balancer.fcYPositionFromCenter, 0f),
+                new Vector3(
+                    leftEdgeX + i * tileWidth,
+                    -balancer.fcYPositionFromCenter,
+                    0f),
                 Quaternion.identity,
                 floorParent
             );
