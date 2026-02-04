@@ -44,7 +44,7 @@ public class OrbSpawner : MonoBehaviour
             // Accumulate distance traveled
             distanceSinceLastCoin += balancer.globalWorldSpeed * Time.deltaTime;
 
-            // If enough distance passed, spawn orbs
+            // If enough distance passed, and (x,y) is available, spawn orbs
             if (distanceSinceLastCoin > balancer.globalOrbSpawnDistance 
                 && TryFindValidSpawnPosition(out orbPosition))
             {
@@ -109,8 +109,10 @@ public class OrbSpawner : MonoBehaviour
             float y = Random.Range(verticalBounds.BottomLimit, verticalBounds.TopLimit);
             Vector3 tryPos = new Vector3(spawnX, y, 0f);
 
-            // If OverlapCircle returns null -> No collider -> (x,y) spot is open for business
-            if (!Physics2D.OverlapCircle(tryPos, radius, obstacleMask))
+            // DEBUG: Draw circle for every attempt
+            bool hit = Physics2D.OverlapCircle(tryPos, radius, obstacleMask);
+            ShapeDrawer.DrawDebugCircle(tryPos, radius, hit ? Color.red : Color.green, 5f);
+            if (!hit)
             {
                 result = tryPos;
                 return true;
