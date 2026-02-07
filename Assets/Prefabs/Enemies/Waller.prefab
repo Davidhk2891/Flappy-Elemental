@@ -123,6 +123,8 @@ MonoBehaviour:
   shortScale: {x: 0.15, y: 0.6, z: 1}
   mediumScale: {x: 0.15, y: 1.2, z: 1}
   longScale: {x: 0.15, y: 1.8, z: 1}
+  wallerAnimation:
+  - {fileID: 21300000, guid: eb5ae6354222048c7b8c57a6cd2b4fff, type: 3}
 --- !u!1 &777940644381386865
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,7 +204,7 @@ SpriteRenderer:
   m_SortingLayerID: -1889482203
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fd253849e260d4f88ab6081885356d6e, type: 3}
+  m_Sprite: {fileID: 7547899136476780353, guid: eb5ae6354222048c7b8c57a6cd2b4fff, type: 3}
   m_Color: {r: 0.52156866, g: 0.29411766, b: 0.1764706, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -210,6 +212,6 @@ SpriteRenderer:
   m_Size: {x: 8, y: 8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0

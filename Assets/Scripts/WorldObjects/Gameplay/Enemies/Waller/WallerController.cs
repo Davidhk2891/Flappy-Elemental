@@ -9,6 +9,8 @@ public class WallerController : BaseObjectController, IEnemy
 
     public enum WallerSize { Short, Medium, Long }
     private Transform spriteTransform;
+    private SpriteRenderer sr;
+    public Sprite[] wallerAnimation = new Sprite[1];
     private float wallerHeight;
      
     protected override void Update()
@@ -19,6 +21,9 @@ public class WallerController : BaseObjectController, IEnemy
     protected override void OnEnable()
     {
         base.OnEnable();
+
+        sr = GetComponentInChildren<SpriteRenderer>();
+        sr.sprite = wallerAnimation[0];
     }
 
     private void Awake()
