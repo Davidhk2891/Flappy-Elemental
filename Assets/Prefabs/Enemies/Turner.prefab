@@ -142,10 +142,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TurnerController
   turnerAnimation:
-  - {fileID: 1183065919228092151, guid: 378f869255dd84496b9d02fb04e8b905, type: 3}
-  - {fileID: -1916068092116117020, guid: 378f869255dd84496b9d02fb04e8b905, type: 3}
-  - {fileID: 1700065140898905028, guid: 378f869255dd84496b9d02fb04e8b905, type: 3}
-  - {fileID: -3236334981779157509, guid: 378f869255dd84496b9d02fb04e8b905, type: 3}
+  - {fileID: 2070259200005531930, guid: 89b44cfd38485402c820a35687edf0f3, type: 3}
+  - {fileID: 4163760941950842627, guid: 89b44cfd38485402c820a35687edf0f3, type: 3}
+  - {fileID: 3472116093011112147, guid: 89b44cfd38485402c820a35687edf0f3, type: 3}
+  - {fileID: -9101299655624072664, guid: 89b44cfd38485402c820a35687edf0f3, type: 3}
+  - {fileID: 7848762315923030392, guid: 89b44cfd38485402c820a35687edf0f3, type: 3}
+  - {fileID: 5735233515690521920, guid: 89b44cfd38485402c820a35687edf0f3, type: 3}
+  - {fileID: -8333361216477476268, guid: 89b44cfd38485402c820a35687edf0f3, type: 3}
 --- !u!1 &8637903884517227685
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,7 +226,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -928989123
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -6244106314132906123, guid: 5438251895c1d490eabdd9e3b5df2293, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -233,6 +236,6 @@ SpriteRenderer:
   m_Size: {x: 8, y: 8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
