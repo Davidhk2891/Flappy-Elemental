@@ -17,7 +17,7 @@ public class GameBalancer : ScriptableObject
     public bool enableBackground = true; //----------------------------> IN PLACE
     public int bgTilesOnScreen = 3; //---------------------------------> IN PLACE
     public float bgSpeed = 2f; //--------------------------------------> IN PLACE
-    public float bgDeadZoneBuffer = 7f; //-----------------------------> IN PLACE
+    public float bgDeadZoneBuffer = 16f; //----------------------------> IN PLACE
 
     [Header("Player Settings")]
     public float playerJumpForce = 10f; //-----------------------------> IN PLACE
