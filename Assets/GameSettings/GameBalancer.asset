@@ -20,7 +20,7 @@ MonoBehaviour:
   enableBackground: 1
   bgTilesOnScreen: 8
   bgSpeed: 2
-  bgDeadZoneBuffer: 7
+  bgDeadZoneBuffer: 16
   playerJumpForce: 9
   playerGravity: 3
   playerSpriteJumpDuration: 0.15
@@ -41,10 +41,10 @@ MonoBehaviour:
   enemySpawnTable:
   - enemyName: Batty
     enabled: 0
-    canRepeat: 0
+    canRepeat: 1
     weight: 9
   - enemyName: Waller
-    enabled: 0
+    enabled: 1
     canRepeat: 0
     weight: 5
   - enemyName: Bouncer
@@ -52,11 +52,11 @@ MonoBehaviour:
     canRepeat: 0
     weight: 6
   - enemyName: Turner
-    enabled: 1
+    enabled: 0
     canRepeat: 0
     weight: 5
   - enemyName: Pulsar
-    enabled: 1
+    enabled: 0
     canRepeat: 0
     weight: 5
   battyFlapDuration: 0.5

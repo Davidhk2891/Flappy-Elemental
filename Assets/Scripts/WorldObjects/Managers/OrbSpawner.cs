@@ -24,6 +24,14 @@ public class OrbSpawner : MonoBehaviour
 
         spawnX = balancer.globalObjectSpawnZone;
 
+        StartCoroutine(InitAfterFrame());
+    }
+
+    private IEnumerator InitAfterFrame()
+    {
+        yield return null;
+        yield return null;
+
         StartCoroutine(RunOrbsLoop());
     }
 
