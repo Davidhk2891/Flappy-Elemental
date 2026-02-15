@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using NUnit.Framework.Constraints;
 using UnityEngine;
 /*
 Base pooling class
@@ -39,7 +38,6 @@ public class BaseObjectPool : MonoBehaviour
         // If pool is empty, expand it
         if (pool.Count == 0)
         {
-            Debug.Log("Pool empty, Instantiating new object");
             GameObject obj = Instantiate(prefab, transform);
 
             GetPoolReference(obj);
@@ -56,7 +54,6 @@ public class BaseObjectPool : MonoBehaviour
 
     public void ReturnObject(GameObject obj)
     {
-        Debug.Log("Returning object to its pool");
         obj.SetActive(false);
         pool.Enqueue(obj);
     }

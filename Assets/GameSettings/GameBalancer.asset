@@ -13,28 +13,29 @@ MonoBehaviour:
   m_Name: GameBalancer
   m_EditorClassIdentifier: Assembly-CSharp::GameBalancer
   globalWorldSpeed: 5
-  globalObjectSpawnZone: 10
+  globalEnemySpawnZone: 10
+  globalCollectibleSpawnZone: 10
   globalObjectsDeadZone: -10
   fcTilesOnScreen: 12
   fcYPositionFromCenter: 11.3
-  enableBackground: 1
+  enableBackground: 0
   bgTilesOnScreen: 8
   bgSpeed: 2
-  bgDeadZoneBuffer: 7
+  bgDeadZoneBuffer: 16
   playerJumpForce: 9
   playerGravity: 3
   playerSpriteJumpDuration: 0.15
   pipeSetSpawnDistance: 10
   pipeHeightOffset: 3.5
   checkpointGap: 3
-  maxSpawningAttempts: 15
-  spawnAttemptRadius: 1
-  globalOrbSpawnDistance: 10
+  maxSpawningAttempts: 10
+  spawnAttemptRadius: 0.5
+  globalOrbSpawnDistance: 15
   shineDuration: 1
   orbSpawnTable:
   - orbName: Orb
     enabled: 1
-  globalEnemiesPerSegment: 50
+  globalEnemiesPerSegment: 25
   globalEnemySpawnDistance: 5
   globalDelayBeforeEnemies: 2
   globalDelayAfterEnemies: 2
@@ -48,7 +49,7 @@ MonoBehaviour:
     canRepeat: 0
     weight: 5
   - enemyName: Bouncer
-    enabled: 1
+    enabled: 0
     canRepeat: 0
     weight: 6
   - enemyName: Turner

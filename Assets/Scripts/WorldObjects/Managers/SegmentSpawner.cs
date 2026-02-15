@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Linq;
 using System.Collections;
+using System;
 
 public class SegmentSpawner : MonoBehaviour
 {
@@ -13,8 +14,10 @@ public class SegmentSpawner : MonoBehaviour
     public Transform enemyEnvironment;
     private string previousName = "";
     private GameBalancer balancer;
+    public static event Action OnNewSegment;
+    public static event Action OnEnemySpawned;
 
-    [System.Serializable]
+    [Serializable]
     public class EnemyPoolBinding
     {
         public string enemyName;
@@ -39,6 +42,7 @@ public class SegmentSpawner : MonoBehaviour
 
             yield return StartCoroutine(SpawnCheckpoint());
             yield return new WaitForSeconds(balancer.globalDelayBeforeEnemies);
+            OnNewSegment?.Invoke();
         }
     }
 
@@ -59,6 +63,7 @@ public class SegmentSpawner : MonoBehaviour
                 distanceSinceLastEnemy = 0;
                 SpawnEnemy();
                 enemiesSpawnedInSegment++;
+                OnEnemySpawned?.Invoke();
             }
             yield return null;
         }
@@ -89,13 +94,13 @@ public class SegmentSpawner : MonoBehaviour
         float lowestPoint = transform.position.y - balancer.pipeHeightOffset;
         float highestPoint = transform.position.y + balancer.pipeHeightOffset;
 
-        float randomY = Random.Range(lowestPoint, highestPoint);
+        float randomY = UnityEngine.Random.Range(lowestPoint, highestPoint);
 
         GameObject pipeSet = pipePool.GetObject();
         pipeSet.transform.SetParent(pipeSetEnvironment);
         pipeSet.transform.SetPositionAndRotation
         (
-            new Vector3(balancer.globalObjectSpawnZone, randomY, -1f),
+            new Vector3(balancer.globalEnemySpawnZone, randomY, -1f),
             transform.rotation
         );
         pipeSet.SetActive(true);
@@ -123,7 +128,7 @@ public class SegmentSpawner : MonoBehaviour
         var enemyCurrentY = enemy.transform.position.y;
 
         // Spawn position (X controlled globally, Y controlled by each obstacle internally)
-        enemy.transform.position = new Vector3(balancer.globalObjectSpawnZone, enemyCurrentY, 0f);
+        enemy.transform.position = new Vector3(balancer.globalEnemySpawnZone, enemyCurrentY, 0f);
 
         // Inject spawn bounds into the enemy
         var enemyLogic = enemy.GetComponent<IEnemy>();
@@ -161,7 +166,7 @@ public class SegmentSpawner : MonoBehaviour
             int total = active.Sum(e => e.weight);
 
             // 2. Get random number
-            int roll = Random.Range(0, total);
+            int roll = UnityEngine.Random.Range(0, total);
 
             // 3. Walk through ranges until there is a match
             int cumulative = 0;
