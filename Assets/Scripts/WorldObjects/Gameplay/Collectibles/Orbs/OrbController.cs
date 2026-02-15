@@ -14,22 +14,12 @@ public class OrbController : BaseObjectController
         base.Update();
     }
 
-    /*
-    > Orb grabbing logic
-      - Use trigger
-      - Copy from Jetpack Joyride
-      - Simply collect them for now
-      - Only save on memory
-      - No persistance
-    */
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             ReturnObject();
             run.AddOrb();
-            Debug.Log($"Orbs collected this run: {run.OrbsCollected}");
         }
     }
 

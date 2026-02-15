@@ -9,6 +9,8 @@ public class OrbSpawner : MonoBehaviour
     public Transform OrbEnvironment;
     private GameBalancer balancer;
     private float spawnX;
+    private int enemiesSpawnedInSegment = 0;
+    private float distanceSinceLastOrb = 0f;
 
     [System.Serializable]
     public class OrbPoolBinding
@@ -22,46 +24,81 @@ public class OrbSpawner : MonoBehaviour
     {
         balancer = GameSettingsManager.Instance.balancer;
 
-        spawnX = balancer.globalObjectSpawnZone;
+        spawnX = balancer.globalCollectibleSpawnZone;
 
         StartCoroutine(InitAfterFrame());
+    }
+
+    private void OnEnable(){
+        SegmentSpawner.OnNewSegment += ResetOrbCounter;
+        SegmentSpawner.OnEnemySpawned += OnEnemySpawned;
+    }
+    private void OnDisable(){
+        SegmentSpawner.OnNewSegment -= ResetOrbCounter;
+        SegmentSpawner.OnEnemySpawned -= OnEnemySpawned;
+    }
+    private void ResetOrbCounter(){
+        enemiesSpawnedInSegment = 0;
+        distanceSinceLastOrb = 0f;
+    }
+    private void OnEnemySpawned()
+    {
+        enemiesSpawnedInSegment++;
     }
 
     private IEnumerator InitAfterFrame()
     {
         yield return null;
-        yield return null;
-
         StartCoroutine(RunOrbsLoop());
     }
 
     private IEnumerator RunOrbsLoop()
     {
-        yield return StartCoroutine(SpawnOrbs());    
+        while (true)
+        {
+            yield return StartCoroutine(SpawnOrbs());
+
+            // Prevents tight loops
+            yield return null;       
+        }
     }
 
     private IEnumerator SpawnOrbs()
-    {
-        Vector3 orbPosition;
-        int enemiesSpawnedInSegment = 0;
-        float distanceSinceLastCoin = 0f;
+    {     
+        distanceSinceLastOrb = 0f;
 
         // Spawn orbs as long as there are enemies to spawn
-        while (enemiesSpawnedInSegment <= balancer.globalEnemiesPerSegment)
+        while (enemiesSpawnedInSegment < balancer.globalEnemiesPerSegment)
         {
             // Accumulate distance traveled
-            distanceSinceLastCoin += balancer.globalWorldSpeed * Time.deltaTime;
+            distanceSinceLastOrb += balancer.globalWorldSpeed * Time.deltaTime;
 
             // If enough distance passed, and (x,y) is available, spawn orbs
-            if (distanceSinceLastCoin > balancer.globalOrbSpawnDistance 
-                && TryFindValidSpawnPosition(out orbPosition))
+            if (distanceSinceLastOrb > balancer.globalOrbSpawnDistance)
             {
-                distanceSinceLastCoin = 0f;
-                SpawnOrb(orbPosition);
-                enemiesSpawnedInSegment++;
+                bool found = false;
+                Vector3 spawnPos = Vector3.zero;
+
+                // Wait for the overlap check to complete AFTER physics step
+                yield return StartCoroutine(
+                    TryFindValidSpawnPosition_Coroutine((ok, pos) => 
+                    {
+                        found = ok;
+                        spawnPos = pos;
+                    })
+                );
+
+                if (found)
+                {
+                    distanceSinceLastOrb = 0f;
+                    SpawnOrb(spawnPos);
+                }
             }
             yield return null;
         }
+
+        // Ensures stable pacing
+        yield return null;
     }
 
     private void SpawnOrb(Vector3 orbPosition)
@@ -71,11 +108,7 @@ public class OrbSpawner : MonoBehaviour
 
         // Get the orbs pool by matching name from balancer
         BaseObjectPool pool = FindOrbPool(config.orbName);
-        if (pool == null)
-        {
-            Debug.Log("No pool found for orb " + config.orbName);
-            return;
-        }
+        if (pool == null) return;
         
         // Get orb object from its pool
         GameObject orb = pool.GetObject();
@@ -105,31 +138,49 @@ public class OrbSpawner : MonoBehaviour
         return null;
     }
 
-    private bool TryFindValidSpawnPosition(out Vector3 result)
+    private IEnumerator TryFindValidSpawnPosition_Coroutine(System.Action<bool, Vector3> callback)
     {
-        // Max attempts for spawning orb
+
+        yield return new WaitForFixedUpdate();
+
+        Vector3 finalPos = Vector3.zero;
+        bool found = false;
+
         int maxAttempts = balancer.maxSpawningAttempts;
-        // Orb radius for safety check (is the space in radius available?)
         float radius = balancer.spawnAttemptRadius;
 
         for (int i = 0; i < maxAttempts; i++)
         {
             float y = Random.Range(verticalBounds.BottomLimit, verticalBounds.TopLimit);
-            Vector3 tryPos = new Vector3(spawnX, y, 0f);
+            Vector3 tryPos = new(spawnX, y, 0f);
 
             // DEBUG: Draw circle for every attempt
             bool hit = Physics2D.OverlapCircle(tryPos, radius, obstacleMask);
-            ShapeDrawer.DrawDebugCircle(tryPos, radius, hit ? Color.red : Color.green, 5f);
+            // DEBUG: Create debug marker
+            CreateDebugMarker(tryPos, radius, hit ? Color.red : Color.green);
+
             if (!hit)
             {
-                result = tryPos;
-                return true;
+                finalPos = tryPos;
+                found = true;
+                break;
             }
         }
 
-        // Fallback
-        result = Vector2.zero;
-        return false;
+        callback(found, finalPos);
+    }
+
+    private void CreateDebugMarker(Vector3 pos, float radius, Color color)
+    {
+        GameObject marker = new("SpawnDebugCircle");
+        marker.transform.position = pos;
+
+        var circle = marker.AddComponent<DebugMovingCircle>();
+        circle.radius = radius;
+        circle.color = color;
+
+        // Auto-destroy to avoid clutter
+        Destroy(marker, 5f);
     }
 
     private GameBalancer.OrbSpawnConfig RollOrbs()

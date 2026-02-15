@@ -59,11 +59,13 @@ public class WallerController : BaseObjectController, IEnemy
 
         // 7. set final position
         var spawnPosition = new Vector3(
-            balancer.globalObjectSpawnZone,
+            balancer.globalEnemySpawnZone,
             YSpawn,
             -1f);
 
         transform.position = spawnPosition;
+
+        Debug.Log($"[WALLER CHECK] Spawned at y={transform.position.y}, frame={Time.frameCount}");
     }
 
     private void ResizeColliderToSprite()
